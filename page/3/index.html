@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta name="google-site-verification" content="zE0Ivgl54SGeWLXsI1gbijoO-Ad8AWqlz2jAFjYyqug">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    hostname: new URL('http://mirari.cc').hostname,
+    root: '/',
+    scheme: 'Mist',
+    version: '7.6.0',
+    exturl: false,
+    sidebar: {"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    comments: {"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: 'search.xml',
+    motion: {"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
+  };
+</script>
+
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Mirari&#39;s Blog">
+<meta property="og:url" content="http://mirari.cc/page/3/index.html">
+<meta property="og:site_name" content="Mirari&#39;s Blog">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="Mirari">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://mirari.cc/page/3/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: true,
+    isPost: false
+  };
+</script>
+
+  <title>Mirari's Blog</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Mirari's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+
+</nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none"
+           placeholder="搜索..." spellcheck="false"
+           type="text" id="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+  <a href="https://github.com/mirari" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://mirari.cc/2017/08/14/%E5%85%A8%E5%B1%8F%E5%88%87%E6%8D%A2%E7%BB%84%E4%BB%B6vue-fullscreen/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Mirari">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Mirari's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2017/08/14/%E5%85%A8%E5%B1%8F%E5%88%87%E6%8D%A2%E7%BB%84%E4%BB%B6vue-fullscreen/" class="post-title-link" itemprop="url">全屏切换组件vue-fullscreen</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2017-08-14 23:57:33" itemprop="dateCreated datePublished" datetime="2017-08-14T23:57:33+00:00">2017-08-14</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E9%A1%B9%E7%9B%AE/" itemprop="url" rel="index">
+                    <span itemprop="name">项目</span>
+                  </a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E9%A1%B9%E7%9B%AE/Vue/" itemprop="url" rel="index">
+                    <span itemprop="name">Vue</span>
+                  </a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2017/08/14/%E5%85%A8%E5%B1%8F%E5%88%87%E6%8D%A2%E7%BB%84%E4%BB%B6vue-fullscreen/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2017/08/14/%E5%85%A8%E5%B1%8F%E5%88%87%E6%8D%A2%E7%BB%84%E4%BB%B6vue-fullscreen/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>4.9k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>4 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="vue-fullscreen"><a href="#vue-fullscreen" class="headerlink" title="vue-fullscreen"></a>vue-fullscreen</h1><p>一个用于将任意页面元素进行全屏切换的vue组件，基于 <a href="https://github.com/sindresorhus/screenfull.js" target="_blank" rel="noopener">screenfull.js</a></p>
+<p><strong>有任何问题请<a href="https://github.com/mirari/vue-fullscreen/issues" target="_blank" rel="noopener">到github项目页提交issue</a>，博客的留言我可能无法及时看到，谢谢各位支持👍。</strong></p>
+<p><a href="https://www.npmjs.com/package/vue-fullscreen" target="_blank" rel="noopener"><img src="https://img.shields.io/npm/v/vue-fullscreen.svg" alt="npm version"></a> <a href="https://www.npmjs.com/package/vue-fullscreen" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/language-Vue2-brightgreen.svg" alt="language"></a></p>
+<p><a href="https://www.npmjs.com/package/vue-fullscreen" target="_blank" rel="noopener"><img src="https://img.shields.io/npm/v/vue-fullscreen/next.svg" alt="npm version"></a> <a href="https://www.npmjs.com/package/vue-fullscreen" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/language-Vue3-brightgreen.svg" alt="language"></a></p>
+<p><a href="https://www.npmjs.com/package/vue-fullscreen" target="_blank" rel="noopener"><img src="https://img.shields.io/npm/dw/vue-fullscreen.svg" alt="npm download"></a> <a href="https://mit-license.org/" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/license-MIT-brightgreen.svg" alt="license"></a></p>
+<h2 id="vue-fullscreen-for-vue3"><a href="#vue-fullscreen-for-vue3" class="headerlink" title="vue-fullscreen for vue3"></a><a href="https://github.com/mirari/vue-fullscreen/tree/v3" target="_blank" rel="noopener">vue-fullscreen for vue3</a></h2><h2 id="在线演示"><a href="#在线演示" class="headerlink" title="在线演示"></a><a href="http://mirari.github.io/vue-fullscreen/" target="_blank" rel="noopener">在线演示</a></h2><h2 id="使用示例"><a href="#使用示例" class="headerlink" title="使用示例"></a>使用示例</h2><ul>
+<li><a href="https://codepen.io/mirari/pen/MWprxEZ" target="_blank" rel="noopener">组件形式调用</a></li>
+<li><a href="https://codepen.io/mirari/pen/eYvyXGX" target="_blank" rel="noopener">api形式调用</a></li>
+<li><a href="https://codepen.io/mirari/pen/zYZpbEV" target="_blank" rel="noopener">iPhone兼容处理 &amp; 全屏下弹窗</a></li>
+<li><a href="https://codepen.io/mirari/pen/VwjyKPL" target="_blank" rel="noopener">跳转到新页面且不退出全屏</a></li>
+</ul>
+<h2 id="支持"><a href="#支持" class="headerlink" title="支持"></a>支持</h2><p><a href="http://caniuse.com/fullscreen" target="_blank" rel="noopener">浏览器支持</a></p>
+<p><strong>注意</strong>: 在IE浏览器下使用需要先实现Promise的polyfill.</p>
+<p><strong>注意</strong>: Safari浏览器在桌面和iPad下支持，但iPhone不支持.</p>
+<p><strong>注意:</strong> 当处在全屏模式中，浏览其他页面，切换标签页，或者切换到其他应用（例如使用 Alt-Tab）也会导致退出全屏模式。</p>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Fullscreen_API" target="_blank" rel="noopener">了解更多</a></p>
+<h2 id="从-lt-2-3-5版本迁移"><a href="#从-lt-2-3-5版本迁移" class="headerlink" title="从&lt;=2.3.5版本迁移"></a>从&lt;=2.3.5版本迁移</h2><h3 id="组件"><a href="#组件" class="headerlink" title="组件"></a>组件</h3><p>一般情况下你可以直接使用双向绑定来修改组件全屏状态了，无需直接调用组件的内部方法。</p>
+<p><code>background</code>属性已移除，你可以直接在组件上设置样式。</p>
+<h3 id="Api"><a href="#Api" class="headerlink" title="Api"></a>Api</h3><p><code>wrapper</code>和<code>background</code>等与它相关的配置项已移除，它们使用场景有限，可定制性不强，而且你可以自己简单地实现它。</p>
+<p>方法名更改如下:</p>
+<table>
+<thead>
+<tr>
+<th>旧</th>
+<th>新</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>enter</td>
+<td>request</td>
+</tr>
+<tr>
+<td>support</td>
+<td>isEnabled</td>
+</tr>
+<tr>
+<td>getState()</td>
+<td>isFullscreen</td>
+</tr>
+</tbody></table>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>使用npm命令安装</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install vue-fullscreen</span><br></pre></td></tr></table></figure>
+<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>引入<code>vue-fullscreen</code>，并使用<code>Vue.use()</code>注册插件，之后即可使用。</p>
+<p>组件和api会被一起安装到app全局。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">fullscreen</span> <span class="attr">:fullscreen.sync</span>=<span class="string">"fullscreen"</span>&gt;</span></span><br><span class="line">      content</span><br><span class="line">    <span class="tag">&lt;/<span class="name">fullscreen</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">button</span> <span class="attr">type</span>=<span class="string">"button"</span> @<span class="attr">click</span>=<span class="string">"toggle"</span> &gt;</span>Fullscreen<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"fullscreen-wrapper"</span>&gt;</span></span><br><span class="line">      content</span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">button</span> <span class="attr">type</span>=<span class="string">"button"</span> @<span class="attr">click</span>=<span class="string">"toggleApi"</span> &gt;</span>FullscreenApi<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">  <span class="keyword">import</span> VueFullscreen <span class="keyword">from</span> <span class="string">'vue-fullscreen'</span></span></span><br><span class="line"><span class="javascript">  <span class="keyword">import</span> Vue <span class="keyword">from</span> <span class="string">'vue'</span></span></span><br><span class="line">  Vue.use(VueFullscreen)</span><br><span class="line"><span class="javascript">  <span class="keyword">export</span> <span class="keyword">default</span> &#123;</span></span><br><span class="line">    methods: &#123;</span><br><span class="line">      toggle () &#123;</span><br><span class="line"><span class="actionscript">        <span class="keyword">this</span>.fullscreen = !<span class="keyword">this</span>.fullscreen</span></span><br><span class="line">      &#125;,</span><br><span class="line">      toggleApi () &#123;</span><br><span class="line"><span class="actionscript">        <span class="keyword">this</span>.$fullscreen.toggle(<span class="keyword">this</span>.$el.querySelector(<span class="string">'.fullscreen-wrapper'</span>), &#123;</span></span><br><span class="line"><span class="actionscript">          teleport: <span class="keyword">this</span>.teleport,</span></span><br><span class="line"><span class="javascript">          callback: <span class="function">(<span class="params">isFullscreen</span>) =&gt;</span> &#123;</span></span><br><span class="line"><span class="actionscript">            <span class="keyword">this</span>.fullscreen = isFullscreen</span></span><br><span class="line">          &#125;,</span><br><span class="line">        &#125;)</span><br><span class="line">      &#125;,</span><br><span class="line">    &#125;,</span><br><span class="line">    data() &#123;</span><br><span class="line"><span class="actionscript">      <span class="keyword">return</span> &#123;</span></span><br><span class="line"><span class="actionscript">        fullscreen: <span class="literal">false</span>,</span></span><br><span class="line"><span class="actionscript">        teleport: <span class="literal">true</span>,</span></span><br><span class="line"><span class="actionscript">        pageOnly: <span class="literal">false</span>,</span></span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>注意:</strong> 由于浏览器的安全限制，全屏切换必须由一个用户操作事件发起，比如<code>click</code>或<code>keypress</code>。</p>
+<h2 id="以api形式使用"><a href="#以api形式使用" class="headerlink" title="以api形式使用"></a>以api形式使用</h2><p>在Vue组件实例中，可以直接调用<code>this.$fullscreen</code>来获取全屏api。</p>
+<p>或者你可以单独引入api然后执行它。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"fullscreen-wrapper"</span>&gt;</span></span><br><span class="line">      Content</span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">button</span> <span class="attr">type</span>=<span class="string">"button"</span> @<span class="attr">click</span>=<span class="string">"toggle"</span> &gt;</span>Fullscreen<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript"><span class="keyword">import</span> &#123; api <span class="keyword">as</span> fullscreen &#125; <span class="keyword">from</span> <span class="string">'vue-fullscreen'</span></span></span><br><span class="line"><span class="javascript"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span></span><br><span class="line">  methods: &#123;</span><br><span class="line">    toggle () &#123;</span><br><span class="line"><span class="actionscript">      fullscreen.toggle(<span class="keyword">this</span>.$el.querySelector(<span class="string">'.fullscreen-wrapper'</span>), &#123;</span></span><br><span class="line"><span class="actionscript">        teleport: <span class="keyword">this</span>.teleport,</span></span><br><span class="line"><span class="javascript">        callback: <span class="function">(<span class="params">isFullscreen</span>) =&gt;</span> &#123;</span></span><br><span class="line"><span class="actionscript">          <span class="keyword">this</span>.fullscreen = isFullscreen</span></span><br><span class="line">        &#125;,</span><br><span class="line">      &#125;)</span><br><span class="line">    &#125;,</span><br><span class="line">  &#125;,</span><br><span class="line">  data() &#123;</span><br><span class="line"><span class="actionscript">    <span class="keyword">return</span> &#123;</span></span><br><span class="line"><span class="actionscript">      fullscreen: <span class="literal">false</span>,</span></span><br><span class="line"><span class="actionscript">      teleport: <span class="literal">true</span>,</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="方法-amp-属性"><a href="#方法-amp-属性" class="headerlink" title="方法 &amp; 属性"></a>方法 &amp; 属性</h3><h4 id="toggle-target-options-force"><a href="#toggle-target-options-force" class="headerlink" title="toggle([target, options, force])"></a>toggle([target, options, force])</h4><p>切换全屏模式。</p>
+<ul>
+<li><strong>target</strong>:<ul>
+<li>类型: <code>Element</code></li>
+<li>默认值: <code>document.body</code></li>
+<li>全屏操作的目标元素。</li>
+</ul>
+</li>
+<li><strong>options</strong> (可选):<ul>
+<li>类型: <code>Object</code></li>
+<li>配置项，详见下文。</li>
+</ul>
+</li>
+<li><strong>force</strong> (可选):<ul>
+<li>类型: <code>Boolean</code></li>
+<li>默认值: <code>undefined</code></li>
+<li>传入<code>true</code>可以指定进入全屏模式，效果与<code>request</code>方法相同，<code>false</code>反之。</li>
+</ul>
+</li>
+</ul>
+<h4 id="request-target-options"><a href="#request-target-options" class="headerlink" title="request([target, options])"></a>request([target, options])</h4><p>进入全屏模式。</p>
+<ul>
+<li><strong>target</strong>:<ul>
+<li>类型: <code>Element</code></li>
+<li>默认值: <code>document.body</code></li>
+<li>全屏操作的目标元素。</li>
+</ul>
+</li>
+<li><strong>options</strong> (optional):<ul>
+<li>默认值: <code>Object</code></li>
+<li>配置项，详见下文。</li>
+</ul>
+</li>
+</ul>
+<h4 id="exit"><a href="#exit" class="headerlink" title="exit()"></a>exit()</h4><p>退出全屏模式。</p>
+<h4 id="isFullscreen"><a href="#isFullscreen" class="headerlink" title="isFullscreen"></a>isFullscreen</h4><p>判断是否处于全屏状态。</p>
+<ul>
+<li>类型: <code>Boolean</code></li>
+</ul>
+<p><strong>注意:</strong> 唤起全屏的动作是异步的,在调用方法后你无法立即获取预期的结果。</p>
+<h4 id="isEnabled"><a href="#isEnabled" class="headerlink" title="isEnabled"></a>isEnabled</h4><p>判断环境是否支持全屏API。</p>
+<ul>
+<li>类型: <code>Boolean</code></li>
+</ul>
+<h4 id="element"><a href="#element" class="headerlink" title="element"></a>element</h4><p>获取当前全屏的元素</p>
+<ul>
+<li>类型: <code>Element | null</code></li>
+</ul>
+<h3 id="Options"><a href="#Options" class="headerlink" title="Options"></a>Options</h3><h3 id="callback"><a href="#callback" class="headerlink" title="callback"></a>callback</h3><ul>
+<li>类型: <code>Function</code></li>
+<li>默认值: <code>null</code></li>
+</ul>
+<p>当全屏状态变更时执行。</p>
+<h3 id="fullscreenClass"><a href="#fullscreenClass" class="headerlink" title="fullscreenClass"></a>fullscreenClass</h3><ul>
+<li>类型: <code>String</code></li>
+<li>默认值: <code>fullscreen</code></li>
+</ul>
+<p>这个样式会在进入全屏状态时被添加到目标元素上。</p>
+<h4 id="pageOnly"><a href="#pageOnly" class="headerlink" title="pageOnly"></a>pageOnly</h4><ul>
+<li>类型: <code>Boolean</code></li>
+<li>默认值: <code>false</code></li>
+</ul>
+<p>如果为<code>true</code>，不调用全屏API，而是将当前元素撑满网页。</p>
+<p><strong>注意:</strong> 如果浏览器不支持全屏API，这个选项默认值为true.</p>
+<h3 id="teleport"><a href="#teleport" class="headerlink" title="teleport"></a>teleport</h3><ul>
+<li>类型: <code>Boolean</code></li>
+<li>默认值: <code>true</code></li>
+</ul>
+<p>如果为<code>true</code>， 进入全屏时目标元素会被移动到<code>document.body</code>下。</p>
+<p>这可以避免一些弹窗在全屏模式下看不到的问题。</p>
+<h2 id="以组件形式使用"><a href="#以组件形式使用" class="headerlink" title="以组件形式使用"></a>以组件形式使用</h2><p>你可以单独引入全屏组件并局部注册它。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">fullscreen</span> <span class="attr">:fullscreen.sync</span>=<span class="string">"fullscreen"</span> <span class="attr">:teleport</span>=<span class="string">"teleport"</span> <span class="attr">:page-only</span>=<span class="string">"pageOnly"</span> &gt;</span></span><br><span class="line">      Content</span><br><span class="line">    <span class="tag">&lt;/<span class="name">fullscreen</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">button</span> <span class="attr">type</span>=<span class="string">"button"</span> @<span class="attr">click</span>=<span class="string">"toggle"</span> &gt;</span>Fullscreen<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">  <span class="keyword">import</span> &#123; component &#125; <span class="keyword">from</span> <span class="string">'vue-fullscreen'</span></span></span><br><span class="line"><span class="javascript">  <span class="keyword">export</span> <span class="keyword">default</span> &#123;</span></span><br><span class="line">    components: &#123;</span><br><span class="line">      fullscreen: component,</span><br><span class="line">    &#125;,</span><br><span class="line">    methods: &#123;</span><br><span class="line">      toggle () &#123;</span><br><span class="line"><span class="actionscript">        <span class="keyword">this</span>.fullscreen = !<span class="keyword">this</span>.fullscreen</span></span><br><span class="line">      &#125;,</span><br><span class="line">    &#125;,</span><br><span class="line">    data() &#123;</span><br><span class="line"><span class="actionscript">      <span class="keyword">return</span> &#123;</span></span><br><span class="line"><span class="actionscript">        fullscreen: <span class="literal">false</span>,</span></span><br><span class="line"><span class="actionscript">        teleport: <span class="literal">true</span>,</span></span><br><span class="line"><span class="actionscript">        pageOnly: <span class="literal">false</span>,</span></span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="Props属性"><a href="#Props属性" class="headerlink" title="Props属性"></a>Props属性</h3><h4 id="fullscreen-class"><a href="#fullscreen-class" class="headerlink" title="fullscreen-class"></a>fullscreen-class</h4><ul>
+<li>类型: <code>String</code></li>
+<li>默认值: <code>fullscreen</code></li>
+</ul>
+<p>全屏组件的样式类，只有全屏时才生效。</p>
+<h4 id="exit-on-click-wrapper"><a href="#exit-on-click-wrapper" class="headerlink" title="exit-on-click-wrapper"></a>exit-on-click-wrapper</h4><ul>
+<li>类型: <code>Boolean</code></li>
+<li>默认值: <code>true</code></li>
+</ul>
+<p>如果为<code>true</code>， 点击全屏组件的空白部分会退出全屏。</p>
+<h4 id="page-only"><a href="#page-only" class="headerlink" title="page-only"></a>page-only</h4><ul>
+<li>类型: <code>Boolean</code></li>
+<li>默认值: <code>false</code></li>
+</ul>
+<p>如果为<code>true</code>，不调用全屏API，而是将当前组件撑满网页。</p>
+<p><strong>注意:</strong> 如果浏览器不支持全屏API，这个选项默认值为true.</p>
+<h3 id="teleport-1"><a href="#teleport-1" class="headerlink" title="teleport"></a>teleport</h3><ul>
+<li>类型: <code>Boolean</code></li>
+<li>默认值: <code>true</code></li>
+</ul>
+<p>如果为<code>true</code>, 进入全屏时当前组件会被移动到<code>document.body</code>下。</p>
+<p>这可以避免一些弹窗在全屏模式下看不到的问题。</p>
+<h3 id="事件"><a href="#事件" class="headerlink" title="事件"></a>事件</h3><h4 id="change"><a href="#change" class="headerlink" title="change"></a>change</h4><ul>
+<li><strong>isFullscreen</strong>:  当前的全屏状态。</li>
+</ul>
+<p>在全屏状态改变时触发。</p>
+<h2 id="插件配置项"><a href="#插件配置项" class="headerlink" title="插件配置项"></a>插件配置项</h2><h3 id="name"><a href="#name" class="headerlink" title="name"></a>name</h3><ul>
+<li>类型: <code>String</code></li>
+<li>默认值: <code>fullscreen</code></li>
+</ul>
+<p>如果你需要避免重名冲突，可以像这样引入:</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">fs</span> <span class="attr">:fullscreen.sync</span>=<span class="string">"fullscreen"</span> <span class="attr">:teleport</span>=<span class="string">"teleport"</span> <span class="attr">:page-only</span>=<span class="string">"pageOnly"</span> &gt;</span></span><br><span class="line">      content</span><br><span class="line">    <span class="tag">&lt;/<span class="name">fs</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">button</span> <span class="attr">type</span>=<span class="string">"button"</span> @<span class="attr">click</span>=<span class="string">"toggle"</span> &gt;</span>Fullscreen<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"fullscreen-wrapper"</span>&gt;</span></span><br><span class="line">      content</span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">button</span> <span class="attr">type</span>=<span class="string">"button"</span> @<span class="attr">click</span>=<span class="string">"toggleApi"</span> &gt;</span>FullscreenApi<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">  <span class="keyword">import</span> VueFullscreen <span class="keyword">from</span> <span class="string">'vue-fullscreen'</span></span></span><br><span class="line"><span class="javascript">  <span class="keyword">import</span> Vue <span class="keyword">from</span> <span class="string">'vue'</span></span></span><br><span class="line"><span class="actionscript">  Vue.use(VueFullscreen, &#123;name: <span class="string">'fs'</span>&#125;)</span></span><br><span class="line"><span class="javascript">  <span class="keyword">export</span> <span class="keyword">default</span> &#123;</span></span><br><span class="line">    methods: &#123;</span><br><span class="line">      toggle () &#123;</span><br><span class="line"><span class="actionscript">        <span class="keyword">this</span>.fullscreen = !<span class="keyword">this</span>.fullscreen</span></span><br><span class="line">      &#125;,</span><br><span class="line">      toggleApi() &#123;</span><br><span class="line"><span class="actionscript">        <span class="keyword">this</span>.$fs.toggle(<span class="keyword">this</span>.$el.querySelector(<span class="string">'.fullscreen-wrapper'</span>), &#123;</span></span><br><span class="line"><span class="actionscript">          teleport: <span class="keyword">this</span>.teleport,</span></span><br><span class="line"><span class="javascript">          callback: <span class="function">(<span class="params">isFullscreen</span>) =&gt;</span> &#123;</span></span><br><span class="line"><span class="actionscript">            <span class="keyword">this</span>.fullscreen = isFullscreen</span></span><br><span class="line">          &#125;,</span><br><span class="line">        &#125;)</span><br><span class="line">      &#125;,</span><br><span class="line">    &#125;,</span><br><span class="line">    data() &#123;</span><br><span class="line"><span class="actionscript">      <span class="keyword">return</span> &#123;</span></span><br><span class="line"><span class="actionscript">        fullscreen: <span class="literal">false</span>,</span></span><br><span class="line"><span class="actionscript">        teleport: <span class="literal">true</span>,</span></span><br><span class="line"><span class="actionscript">        pageOnly: <span class="literal">false</span>,</span></span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://mirari.cc/2017/08/14/%E5%88%97%E8%A1%A8%E5%85%83%E7%B4%A0%E6%97%A0%E5%86%85%E5%AE%B9%E6%97%B6%E9%AB%98%E5%BA%A6%E4%B8%BA0%E5%AF%BC%E8%87%B4%E4%B8%B2%E8%A1%8C%E7%9A%84%E9%97%AE%E9%A2%98/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Mirari">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Mirari's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2017/08/14/%E5%88%97%E8%A1%A8%E5%85%83%E7%B4%A0%E6%97%A0%E5%86%85%E5%AE%B9%E6%97%B6%E9%AB%98%E5%BA%A6%E4%B8%BA0%E5%AF%BC%E8%87%B4%E4%B8%B2%E8%A1%8C%E7%9A%84%E9%97%AE%E9%A2%98/" class="post-title-link" itemprop="url">列表元素无内容时高度为0导致串行的问题</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2017-08-14 22:01:04" itemprop="dateCreated datePublished" datetime="2017-08-14T22:01:04+00:00">2017-08-14</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index">
+                    <span itemprop="name">学习笔记</span>
+                  </a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2017/08/14/%E5%88%97%E8%A1%A8%E5%85%83%E7%B4%A0%E6%97%A0%E5%86%85%E5%AE%B9%E6%97%B6%E9%AB%98%E5%BA%A6%E4%B8%BA0%E5%AF%BC%E8%87%B4%E4%B8%B2%E8%A1%8C%E7%9A%84%E9%97%AE%E9%A2%98/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2017/08/14/%E5%88%97%E8%A1%A8%E5%85%83%E7%B4%A0%E6%97%A0%E5%86%85%E5%AE%B9%E6%97%B6%E9%AB%98%E5%BA%A6%E4%B8%BA0%E5%AF%BC%E8%87%B4%E4%B8%B2%E8%A1%8C%E7%9A%84%E9%97%AE%E9%A2%98/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>480</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>如果有一组标题-内容形式的数据需要展现，用table感觉太笨重了一些，最符合语义化的做法应该是使用<code>dl</code>元素。<br>比如下面这个例子，展现了一个水平列表，样式定义来自bootstrap：</p>
+<iframe scrolling="no" width="100%" height="300" src="https://jsfiddle.net/xdf8qzzf/1/embedded/result,css,html/light" frameborder="0" loading="lazy" allowfullscreen></iframe>
+
+<p>可以看到一个问题，当某些数据没有值时，它所在的dd元素高度会变成0，结果下面行的数据会顶上来，造成串行。</p>
+<p>一种笨办法是在数据渲染时强制给所有<code>dd</code>元素一个<code>&amp;nbsp;</code>,利用空格强行撑开元素高度。但是这种做法会影响页面处理逻辑，既麻烦又不整洁。</p>
+<p>另一种做法是修改对齐方式：</p>
+<iframe scrolling="no" width="100%" height="300" src="https://jsfiddle.net/xdf8qzzf/2/embedded/result,css,html/light" frameborder="0" loading="lazy" allowfullscreen></iframe>
+
+<p>表面上看是解决了问题，但是当缩小浏览器，使内容过长超出页面宽度导致换行时，就可以发现内容的文字跑到了标题那边，对强迫症来说很难受。</p>
+<p>最完美的做法是使用CSS伪类为元素添加内容：</p>
+<iframe scrolling="no" width="100%" height="300" src="https://jsfiddle.net/xdf8qzzf/3/embedded/result,css,html/light" frameborder="0" loading="lazy" allowfullscreen></iframe>
+
+<p>伪类的content属性如果填的是<code>&#39;&#39;</code>或者<code>&amp;nbsp;</code>都会被忽略，无法生效。所以这里用的是Unicode的零宽无连接符。<code>\200c</code>和<code>\200d</code>分别是零宽无连接符和零宽连接符，分别用于阻止本来会连接的前后两个字符和强行合并本来不会连接的前后两个字符。它们的附加特性非常适合用在这种需要有字符但又希望它看不到的场合。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+  </div>
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span>
+  </nav>
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Mirari"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">Mirari</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">22</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">38</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/mirari" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;mirari" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:clover4@gmail.com" title="E-Mail → mailto:clover4@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title">
+      <i class="fa fa-fw fa-link"></i>
+      Links
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://youngjuning.js.org/" title="https:&#x2F;&#x2F;youngjuning.js.org&#x2F;" rel="noopener" target="_blank">杨俊宁的博客</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Mirari</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    <span title="站点总字数">58k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">52 分钟</span>
+</div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+  <script>
+    (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el: '#valine-comments',
+      verify: false,
+      notify: false,
+      appId: 'PIjXtxRhVtNErChUJIMq8APR-gzGzoHsz',
+      appKey: '6MKibCkAhd6hFf2s81MRYMd2',
+      placeholder: "Just go go",
+      avatar: 'mm',
+      meta: guest,
+      pageSize: '10' || 10,
+      visitor: false,
+      lang: '' || 'zh-cn',
+      path: location.pathname,
+      recordIP: false,
+      serverURLs: ''
+    });
+  }, window.Valine);
+});
+</script>
+
+</body>
+</html>

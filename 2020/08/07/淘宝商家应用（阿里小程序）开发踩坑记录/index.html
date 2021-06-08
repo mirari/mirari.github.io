@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta name="google-site-verification" content="zE0Ivgl54SGeWLXsI1gbijoO-Ad8AWqlz2jAFjYyqug">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    hostname: new URL('http://mirari.cc').hostname,
+    root: '/',
+    scheme: 'Mist',
+    version: '7.6.0',
+    exturl: false,
+    sidebar: {"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    comments: {"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: 'search.xml',
+    motion: {"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
+  };
+</script>
+
+  <meta name="description" content="阿里正在将淘宝无线开放平台等业务整合为商家应用，类似于支付宝小程序，也就是以小程序的形式进行淘宝天猫店铺的展现、营销。 最近正在开发商家应用小程序，踩了无数坑，原本以为微信小程序已经够坑了，没想到这个几乎照搬微信小程序模式的淘宝小程序更坑。毕竟刚起步，抱怨也没用，将我遇到的问题先记录下来，让后来者可以少花一些时间。 微信小程序遇到开发问题时有一个社区平台可以交流。优点是开发者之间可以互相交流，有一">
+<meta property="og:type" content="article">
+<meta property="og:title" content="淘宝商家应用（阿里小程序）开发踩坑记录（已弃坑）">
+<meta property="og:url" content="http://mirari.cc/2020/08/07/%E6%B7%98%E5%AE%9D%E5%95%86%E5%AE%B6%E5%BA%94%E7%94%A8%EF%BC%88%E9%98%BF%E9%87%8C%E5%B0%8F%E7%A8%8B%E5%BA%8F%EF%BC%89%E5%BC%80%E5%8F%91%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/index.html">
+<meta property="og:site_name" content="Mirari&#39;s Blog">
+<meta property="og:description" content="阿里正在将淘宝无线开放平台等业务整合为商家应用，类似于支付宝小程序，也就是以小程序的形式进行淘宝天猫店铺的展现、营销。 最近正在开发商家应用小程序，踩了无数坑，原本以为微信小程序已经够坑了，没想到这个几乎照搬微信小程序模式的淘宝小程序更坑。毕竟刚起步，抱怨也没用，将我遇到的问题先记录下来，让后来者可以少花一些时间。 微信小程序遇到开发问题时有一个社区平台可以交流。优点是开发者之间可以互相交流，有一">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-08-07T15:53:55.000Z">
+<meta property="article:modified_time" content="2021-06-08T06:38:23.088Z">
+<meta property="article:author" content="Mirari">
+<meta property="article:tag" content="小程序">
+<meta property="article:tag" content="商家应用">
+<meta property="article:tag" content="淘宝">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://mirari.cc/2020/08/07/%E6%B7%98%E5%AE%9D%E5%95%86%E5%AE%B6%E5%BA%94%E7%94%A8%EF%BC%88%E9%98%BF%E9%87%8C%E5%B0%8F%E7%A8%8B%E5%BA%8F%EF%BC%89%E5%BC%80%E5%8F%91%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true
+  };
+</script>
+
+  <title>淘宝商家应用（阿里小程序）开发踩坑记录（已弃坑） | Mirari's Blog</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Mirari's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+
+</nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none"
+           placeholder="搜索..." spellcheck="false"
+           type="text" id="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+  <a href="https://github.com/mirari" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://mirari.cc/2020/08/07/%E6%B7%98%E5%AE%9D%E5%95%86%E5%AE%B6%E5%BA%94%E7%94%A8%EF%BC%88%E9%98%BF%E9%87%8C%E5%B0%8F%E7%A8%8B%E5%BA%8F%EF%BC%89%E5%BC%80%E5%8F%91%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Mirari">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Mirari's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          淘宝商家应用（阿里小程序）开发踩坑记录（已弃坑）
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-08-07 15:53:55" itemprop="dateCreated datePublished" datetime="2020-08-07T15:53:55+00:00">2020-08-07</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index">
+                    <span itemprop="name">学习笔记</span>
+                  </a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2020/08/07/%E6%B7%98%E5%AE%9D%E5%95%86%E5%AE%B6%E5%BA%94%E7%94%A8%EF%BC%88%E9%98%BF%E9%87%8C%E5%B0%8F%E7%A8%8B%E5%BA%8F%EF%BC%89%E5%BC%80%E5%8F%91%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/08/07/%E6%B7%98%E5%AE%9D%E5%95%86%E5%AE%B6%E5%BA%94%E7%94%A8%EF%BC%88%E9%98%BF%E9%87%8C%E5%B0%8F%E7%A8%8B%E5%BA%8F%EF%BC%89%E5%BC%80%E5%8F%91%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>7.7k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>7 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>阿里正在将淘宝无线开放平台等业务整合为商家应用，类似于支付宝小程序，也就是以小程序的形式进行淘宝天猫店铺的展现、营销。</p>
+<p>最近正在开发商家应用小程序，踩了无数坑，原本以为微信小程序已经够坑了，没想到这个几乎照搬微信小程序模式的淘宝小程序更坑。毕竟刚起步，抱怨也没用，将我遇到的问题先记录下来，让后来者可以少花一些时间。</p>
+<p>微信小程序遇到开发问题时有一个社区平台可以交流。优点是开发者之间可以互相交流，有一些回帖非常有价值；缺点是提问不一定能得到官方解答，很多帖子可能会石沉大海。</p>
+<p>而阿里系这边，反馈问题不能通过社区，只能使用工单系统。优点是有问必答，工作日一般半小时内就可以看到回复，几句话说不清的还可以转钉钉详聊；缺点则是回答者对专业问题几乎一窍不通，只能算是小程序开发者与官方平台开发者的传话人，与所有客服系统一样，只会把平台文档里已经有的东西车轱辘话来回说，除非你用明确的语言表示自己这个问题确实不在文档里。而且一旦客服表示问题复杂邀请你进了钉钉详聊，那这个问题可能很快能解答，也可能再也没有回音。另外，工单系统看上去是10年前开发的样子，贴图、贴代码都极不友好，搜索功能也几乎是废弃状态。</p>
+<p>再多吐槽一句，文档系统也非常糟糕，V1和V3文档同时存在并运行，很多文档中的链接都没有更新，你会在逐步的浏览中先后打开v1、v3甚至支付宝小程序的文档，而更复杂的TOP接口文档，可能会让你进一步陷入迷惑，甚至连你想要的功能应该属于哪个分类都难以确定。</p>
+<p>言归正传，记录下我开发中遇到的问题。</p>
+<h3 id="发起网络请求"><a href="#发起网络请求" class="headerlink" title="发起网络请求"></a>发起网络请求</h3><p>我原本已经封装了一套基于<code>my.request</code>的api工具，结果真机一调，发现不能用。</p>
+<p><a href="https://miniapp.open.taobao.com/docV3.htm?spm=a219a.7386797.0.0.5538669adQh0cK&source=search&docId=117502&docType=1" target="_blank" rel="noopener">文档</a>没有删干净，仿微信的<code>my.request</code>已经被废弃了。</p>
+<p>对于云应用，现在官方强推的唯一用法是<code>cloud.application.httpRequest</code></p>
+<p><a href="https://miniapp.open.taobao.com/docV3.htm?docId=118538&docType=1" target="_blank" rel="noopener">https://miniapp.open.taobao.com/docV3.htm?docId=118538&amp;docType=1</a></p>
+<h3 id="父组件不能定义自定义子组件的class"><a href="#父组件不能定义自定义子组件的class" class="headerlink" title="父组件不能定义自定义子组件的class"></a>父组件不能定义自定义子组件的class</h3><p>比如</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;aaa class&#x3D;&quot;test&quot; &#x2F;&gt;</span><br></pre></td></tr></table></figure>
+<p>这种写法是无效的，父组件定义到自定义组件上的样式会被丢弃。</p>
+<p>微信小程序和VUE中，像这样的定义在最终会与组件最外层内部定义的class合并到一起，但在淘宝小程序里就是不行（官方提供的组件倒是可以）。</p>
+<p>我的临时处理方式是：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;view class&#x3D;&quot;test&quot;&gt;</span><br><span class="line">    &lt;aaa &#x2F;&gt;</span><br><span class="line">&lt;&#x2F;view&gt;</span><br></pre></td></tr></table></figure>
+<p>然后样式写:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">.test &gt; view</span><br></pre></td></tr></table></figure>
+<p>如果你用了stylelint之类的校验工具，记得将view这个标签关键字加到白名单。</p>
+<p><em>也许也可以加一个名叫class的props来迂回实现，待验证</em></p>
+<h3 id="上传图片"><a href="#上传图片" class="headerlink" title="上传图片"></a>上传图片</h3><p>上传图片的实现折腾了我很久，而这几乎是所有开发者绕不开的问题，我很诧异官方竟然没有及时更新文档来指出。正确的方法在本节内容的最后，前面的试错方法是行不通的。</p>
+<p>首先，<a href="https://miniapp.open.taobao.com/docV3.htm?docId=970&docType=20" target="_blank" rel="noopener">文档</a>确实存在了这样一个接口：<code>my.uploadFile</code></p>
+<p>所以我的第一反应就是用它来实现图片上传，微信小程序也是这么做的。</p>
+<p>实际上<code>my.uploadFile</code>就是一个传递流的HTTP请求，我希望将图片上传到阿里云OSS服务，因此，我需要手写模拟出OSS上传所需的各种参数。</p>
+<p>参考了<a href="https://help.aliyun.com/document_detail/92883.html?spm=a2c4g.11186623.2.14.5b5f74b8XlBvll#concept-egs-zv1-kfb" target="_blank" rel="noopener">这篇文档</a>来实现。</p>
+<p>注意，这是在小程序客户端实现根据密钥生成签名，私钥暴露到了前端，理论上有安全隐患。</p>
+<p>拼完参数以后，还要指定上传服务器地址，也就是HTTP请求的URL。</p>
+<p>例如：<code>https://my-oss-name.oss-cn-hangzhou.aliyuncs.com</code></p>
+<p>四级域名是阿里云OSS的bucket名称。</p>
+<p>折腾完上面这些以后，在本地开发者工具上测试没有问题，但预览和真机调试时发现报错。<br>错误信息为</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;errorCode:4,errorMessage: &quot;no premission&quot;&#125;</span><br></pre></td></tr></table></figure>
+
+<p>工单反馈才知道，<code>my.uploadFile</code>限制了域名。只允许以下域名规则：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">miniappcloud.taobao.com</span><br><span class="line">media.taobao.com</span><br><span class="line">upload.media.aliyun.com</span><br><span class="line">miniappcloud-common-file.oss-cn-zhangjiakou.aliyuncs.com</span><br><span class="line">\\S\\.alicdn\\.com$</span><br><span class="line">\\S\\.mmstat\\.com$</span><br></pre></td></tr></table></figure>
+
+<p>简单来说，就是<code>my.uploadFile</code>这个接口只有阿里内部服务可以使用，无法被普通开发者调用，应当屏蔽和废弃。</p>
+<p>上传图片现在只有一条路可走，就是改用阿里云开发中的<a href="https://miniapp.open.taobao.com/docV3.htm?docId=118522&docType=1" target="_blank" rel="noopener">云存储</a></p>
+<p>这里问题又来了，文档说，小程序关联云服务，<a href="https://miniapp.open.taobao.com/docV3.htm?docId=118537&docType=1" target="_blank" rel="noopener">只能在云开发和云应用里二选一</a>。</p>
+<p>而我们的后台用的就是云应用，难道就不给用云开发里的云存储功能了？</p>
+<p>幸好实际使用发现，即使选择了云应用，仍然可以使用云开发的云存储功能。不过，云存储的管理只能在开发者工具中进行。</p>
+<p><strong>注意，每次点击开发者工具中的云开发，都会自动在项目下创建server和client目录，并将项目原来的文件包括node_modules全部挪到client下，如果你不希望目录被改变，记得先启用git，没事别点这个按钮</strong></p>
+<p>云存储的调用就不详述了，但还有一个坑待验证：</p>
+<p>使用云存储上传成功后，拿到的是一个cloud协议前缀的内部地址和一个URL。</p>
+<p>文档和客服的反馈都表示，这个URL不是永久有效的，也就是你如果想要访问这个文件，需要先调用云存储的<a href="https://miniapp.open.taobao.com/docV3.htm?docId=118518&docType=1" target="_blank" rel="noopener">接口</a>获取临时地址。</p>
+<p>这个设计带来一个麻烦的问题，不能直接把存储的图片地址赋值给image组件，因为image所需的URL只能异步获取到，你需要自己再封装一个组件用来显示云存储图片。</p>
+<p>不过实际使用发现，上传成功后获得的这个URL到目前为止还没有过期，就先这样用着了。</p>
+<h3 id="预览和真机调试时，二维码丢失全局参数（2020-05-18似乎已修复）"><a href="#预览和真机调试时，二维码丢失全局参数（2020-05-18似乎已修复）" class="headerlink" title="预览和真机调试时，二维码丢失全局参数（2020-05-18似乎已修复）"></a>预览和真机调试时，二维码丢失全局参数（2020-05-18似乎已修复）</h3><p>在编译模式中添加的全局参数，本地调试都能生效，但预览和真机调试时，这些参数都被丢弃了。在编译模式里的配置项只有默认页面是生效的。</p>
+<p>询问工单后得知，只能自行添加参数。</p>
+<p>首先点击编译成功后得到的二维码图案，获得一串地址，类似这样</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https:&#x2F;&#x2F;m.duanqu.com?_ariver_appid&#x3D;xxx&amp;nbsv&#x3D;0.1.2004151019.52&amp;nbsource&#x3D;debug&amp;nbsn&#x3D;DEBUG&amp;channelId&#x3D;1jOXeERZ54A_2IS7tG_0Co1du_0149_1vA&amp;isRemoteX&#x3D;true</span><br></pre></td></tr></table></figure>
+<p>然后需要将全局参数进行url编码，比如原始参数</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dev&#x3D;true&amp;id&#x3D;123</span><br></pre></td></tr></table></figure>
+<p>编码后变成</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dev%3Dtrue%26id%3D123</span><br></pre></td></tr></table></figure>
+<p>作为query参数的值，拼接到url上，变成</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https:&#x2F;&#x2F;m.duanqu.com?_ariver_appid&#x3D;xxx&amp;nbsv&#x3D;0.1.2004151019.52&amp;nbsource&#x3D;debug&amp;nbsn&#x3D;DEBUG&amp;channelId&#x3D;1jOXeERZ54A_2IS7tG_0Co1du_0149_1vA&amp;isRemoteX&#x3D;true&amp;query&#x3D;dev%3Dtrue%26id%3D123</span><br></pre></td></tr></table></figure>
+
+<p>最后在浏览器打开这段地址，然后进行扫码。</p>
+<p>每次真机调试都要这么来一次，非常麻烦，不知道什么时候才能修正。</p>
+<h3 id="PC端基础组件overlay运行不正常"><a href="#PC端基础组件overlay运行不正常" class="headerlink" title="PC端基础组件overlay运行不正常"></a>PC端基础组件overlay运行不正常</h3><p>PC端尝试使用<code>overlay</code>组件实现弹窗效果。</p>
+<p>要弹出一个居中的<code>overlay</code>，需要这样配置：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;overlay</span><br><span class="line">  visible&#x3D;&quot;&#123;&#123; visible &#125;&#125;&quot;</span><br><span class="line">  onRequestClose&#x3D;&quot;onClose&quot;</span><br><span class="line">  align&#x3D;&quot;cc cc&quot;</span><br><span class="line">  hasMask</span><br><span class="line">&gt;</span><br><span class="line">弹窗内容</span><br><span class="line">&lt;&#x2F;overlay&gt;</span><br></pre></td></tr></table></figure>
+
+<p>随后发现两个致命问题：</p>
+<ol>
+<li>overlay层级无法修改</li>
+</ol>
+<p>弹窗内部如果有进行系统级弹窗的操作，比如执行my.chooseImage后，系统弹出的选择相册菜单被盖在了当前弹层下方。<br>并且文档中没有关于overlay层级调整的相关方法。</p>
+<ol start="2">
+<li>overlay中有任意自定义组件，第二次弹出时必定崩溃</li>
+</ol>
+<p>比如最简结构</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;overlay visible&#x3D;&#123;&#123;visible&#125;&#125;&gt;</span><br><span class="line">  &lt;aaa &#x2F;&gt;</span><br><span class="line">&lt;&#x2F;overlay&gt;</span><br></pre></td></tr></table></figure>
+<p>当visible第二次被修改为true时，app崩溃，错误提示为</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">worker render components is not sync! can not find id from path: 1-1-1-3-1:&#x2F;src&#x2F;components&#x2F;aaa&#x2F;index</span><br></pre></td></tr></table></figure>
+
+<p>这个问题客服只说转给开发了，但至今没有反馈，因此<code>overlay</code>无法被实用，只能自己实现一个弹窗组件。</p>
+<h3 id="自定义组件的样式是全局生效的"><a href="#自定义组件的样式是全局生效的" class="headerlink" title="自定义组件的样式是全局生效的"></a>自定义组件的样式是全局生效的</h3><p>page的样式只在page内生效，这是有共识的，但我没想到的是component下定义的样式竟然会是全局生效的。</p>
+<p>不同的自定义组件中出现同名样式时，会互相影响和覆盖。</p>
+<p>而商家PC端现在官方强推的是使用扩展组件里的路由系统（顺带一提这路由系统非常简陋，使用又繁琐），<br>如果使用了路由系统，就意味着所有页面都是component，这时候这种全局scope就会严重影响开发。</p>
+<p>临时的解决方式是，手动在组件样式最外层套上当前组件的class（用scss会比较方便）</p>
+<h3 id="PC端千牛使用远程调试时无法收到调试信息"><a href="#PC端千牛使用远程调试时无法收到调试信息" class="headerlink" title="PC端千牛使用远程调试时无法收到调试信息"></a>PC端千牛使用远程调试时无法收到调试信息</h3><p>按照文档配置：</p>
+<p><a href="https://miniapp.open.taobao.com/docV3.htm?docId=118310&docType=1" target="_blank" rel="noopener">https://miniapp.open.taobao.com/docV3.htm?docId=118310&amp;docType=1</a></p>
+<p>能正常从千牛中启动预览包，能打开chrome上的devtool标签页，并且关闭当前的预览应用时，能看到chrome弹出连接断开的提示。</p>
+<p>但预览应用中执行的各种输出控制台信息，在chrome调试标签页都没有反应，看不到任何变化和输出。</p>
+<p>工单反馈说：</p>
+<p><em>目前发现 chrome 80.0.3985.0 及以上版本（也可能是79以上，边界没有定位得很精确），能连接上小程序js环境，甚至能打断点调试代码，但就是看不到console输出，直接在console里输入 console.log，也是不输出的。此问题已知待解决，请尝试用低版本chrome绕过。</em></p>
+<p>我不想装旧版本的chrome，有精力的同学可以试一下。</p>
+<h3 id="商家后台千牛PC端应用上传后，预览码无法在千牛客户端打开"><a href="#商家后台千牛PC端应用上传后，预览码无法在千牛客户端打开" class="headerlink" title="商家后台千牛PC端应用上传后，预览码无法在千牛客户端打开"></a>商家后台千牛PC端应用上传后，预览码无法在千牛客户端打开</h3><p>商家后台千牛PC端应用上传成功，在版本管理-开发阶段中可以查看到，性能任务已通过，但查看并复制预览码后，在千牛的开发者设置中粘贴预览码并打开时，提示页面不存在。</p>
+<p>在本地调试时点击预览后复制二维码并粘贴打开是正常的。</p>
+<p>这实际上并不是小程序本身的问题，而是千牛端即使处于登录状态，也可能有什么类似session的东西过期了，需要手动重新登录一下千牛。</p>
+<h3 id="hideLoading以后执行showToast无效"><a href="#hideLoading以后执行showToast无效" class="headerlink" title="hideLoading以后执行showToast无效"></a>hideLoading以后执行showToast无效</h3><p>文档里写了</p>
+<blockquote>
+<p>在 my.showToast 之前调用 my.hideLoading，toast 被 my.hideLoading 覆盖，将不展示。</p>
+</blockquote>
+<p>如果我将异步请求封装为公共方法，在请求前showLoading，请求后hideLoading，结果就无法在请求完成后显示结果。</p>
+<p>工单没有对这个问题做出有效解答，实际测试发现在开发者工具上模拟时不会弹出toast，但真机却可以正常弹出。</p>
+<h3 id="分享在path里添加的参数在终端打开时取不到"><a href="#分享在path里添加的参数在终端打开时取不到" class="headerlink" title="分享在path里添加的参数在终端打开时取不到"></a>分享在path里添加的参数在终端打开时取不到</h3><p>这算得上是一个大坑。</p>
+<p>实际测试发现<code>app.onLoad</code>里取不到，<code>page.onLoad</code>里才有。</p>
+<p>通过分享打开小程序时，得从页面onload的query里取参数。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">onLoad(query)&#123;</span><br><span class="line">  console.log(query)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>通过扫码打开时，得从app的options里取参数。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">onLoad(options) &#123;</span><br><span class="line">  console.log(options.query)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>这里有一个很关键的问题，对商家应用来说，启动参数是不可或缺的，比如营销活动的id，没有id，应用就不能进行任何实际操作或展示。</p>
+<p>因此，我只能将初始化动作变成一个分几步走的过程：</p>
+<ol>
+<li>创建全局的初始化promise对象</li>
+<li>从<code>app.onLoad</code>中获取参数，如果没有取到关键字，则跳过</li>
+<li>从<code>page.onLoad</code>中获取参数，如果还是没有取到关键字，则进入模拟数据展示，使用模拟数据进入下一步</li>
+</ol>
+<p><strong>还记得前面二维码不带参数的问题吗？现在提审时不能像微信那样为某个版本添加编译参数，只能把组装好参数的二维码对应的URL贴到审核备注里，而应用审核者经常不看备注直接扫码打开应用，他看到一片空白时，就会拒绝通过。为了增加过审几率，必须制作一个模拟数据展示模式。</strong></p>
+<ol start="4">
+<li>根据参数进行初始化动作，比如判断运行环境，初始化api接口cloud实例，将活动id放到globalData里等等。最后将初始化promise对象置为resolved。</li>
+<li>app或者页面的后续动作都要在初始化promise对象完成后进行。关键在于cloud实例的初始化也是异步的，只有在cloud初始化完毕后，才能执行获取数据等异步请求操作。</li>
+</ol>
+<h3 id="PC端千牛只能在page-onLoad里接受参数"><a href="#PC端千牛只能在page-onLoad里接受参数" class="headerlink" title="PC端千牛只能在page.onLoad里接受参数"></a>PC端千牛只能在page.onLoad里接受参数</h3><p>与前一个问题有微妙的不同。</p>
+<p>生成的二维码地址如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https:&#x2F;&#x2F;m.duanqu.com?_ariver_appid&#x3D;xxx&amp;nbsv&#x3D;0.1.2004161617.2&amp;nbsource&#x3D;debug&amp;nbsn&#x3D;DEBUG&amp;query&#x3D;dev%3Dtrue</span><br></pre></td></tr></table></figure>
+<p>并不能在app的onLoad里拿到query信息。</p>
+<p>只能在page的onLoad里拿到<strong>整个options</strong>对象。</p>
+<p>区别在这里，文档描述的正常场景中，onLoad的入参应该是一个query对象。我不确定这种不协调的差异什么时候会被修正，建议将处理语句写成:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">let query &#x3D; options.query || options</span><br></pre></td></tr></table></figure>
+
+<h3 id="返回结果只有一个false，会自动变成空对象"><a href="#返回结果只有一个false，会自动变成空对象" class="headerlink" title="返回结果只有一个false，会自动变成空对象"></a>返回结果只有一个false，会自动变成空对象</h3><p>后台返回的内容要注意了，比如有个接口是检测用户是否会员或者检测用户剩余游戏次数，不要直接返回一个boolean或者number对象。</p>
+<p>因为<code>cloud.application.httpRequest</code>这个接口我估计会用一个if条件来判断后台返回的data。如果后台返回false或者0，前端拿到的最终结果总是一个空对象<code>{}</code>，前端也用if判断就会出错。</p>
+<p>因此，确保所有接口返回的内容都是一个复杂对象。</p>
+<h3 id="跳转到店铺固定页接口天猫无反应"><a href="#跳转到店铺固定页接口天猫无反应" class="headerlink" title="跳转到店铺固定页接口天猫无反应"></a>跳转到店铺固定页接口天猫无反应</h3><p>使用<code>my.tb.navigateToTaobaoPage</code>跳转到店铺会员页，在手淘上正常，天猫上无反应，且没有错误提示</p>
+<p>工单答复为：</p>
+<blockquote>
+<p>my.tb.xxx 接口预计在月底版本支持天猫客户端</p>
+</blockquote>
+<h3 id="image的相对路径是相对于页面而不是当前组件的"><a href="#image的相对路径是相对于页面而不是当前组件的" class="headerlink" title="image的相对路径是相对于页面而不是当前组件的"></a>image的相对路径是相对于页面而不是当前组件的</h3><p>这个问题也很恶心。等于说组件不能有独属于自己的图片存放目录，无法实现解耦。</p>
+<p>工单答复也是建议图片统一放到assets目录下，或者放到OSS上。</p>
+<p>我反问1耦合性怎么办，2远程请求影响加载速度怎么办。</p>
+<p>我认为这明显是个BUG，客服只说已反馈给开发，目前无下文。</p>
+<h3 id="分享设置的content自定义淘口令无效"><a href="#分享设置的content自定义淘口令无效" class="headerlink" title="分享设置的content自定义淘口令无效"></a>分享设置的content自定义淘口令无效</h3><p>分享的使用<a href="https://miniapp.open.taobao.com/docV3.htm?spm=a219a.7386653.0.0.68f2669aEPMvtV&docId=118186&docType=1" target="_blank" rel="noopener">文档</a></p>
+<p>内容实际上是从支付宝小程序文档里复制的，里面的描述都还是<code>吱口令</code></p>
+<p>工单答复是，暂不支持，文档会去掉（截止发文时还没去掉）</p>
+<h3 id="关注店铺"><a href="#关注店铺" class="headerlink" title="关注店铺"></a>关注店铺</h3><p>需要到C端模板下的权限管理中，申请</p>
+<blockquote>
+<p>商家应用商品收藏、店铺关注权限包</p>
+</blockquote>
+<p>注意不是最外面应用管理下的商家应用，那里的权限管理中没有该权限包</p>
+<p>关注店铺相关接口为</p>
+<p><code>https://miniapp.open.taobao.com/docV3.htm?docId=913&amp;docType=20</code></p>
+<p>注意这里的id，不是店铺Id，而是店铺所属卖家Id。</p>
+<p>需要再申请一个卖家信息查询权限包，由服务端查询并返回给消费者端。</p>
+<p>实际使用时，安卓下测试通过。</p>
+<p>IOS下执行出错，错误为：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123; code:2 , errorMessage: &quot;参数错误：id&quot; &#125;</span><br></pre></td></tr></table></figure>
+
+<p>另外，IOS下的Error对象字段也与安卓不同，不是标准的Error对象。</p>
+<p>安卓下返回的错误提示文字字段为message，而IOS下是errorMessage。</p>
+<p>后来发现原来是id不能为字符串，必须是number类型。</p>
+<h3 id="权益中心插件配置"><a href="#权益中心插件配置" class="headerlink" title="权益中心插件配置"></a>权益中心插件配置</h3><p>发放优惠券需要用到权益中心。</p>
+<p>权益中心插件，本地模拟器不能运行，只能在PC千牛上调试。</p>
+<p>同样的，因为chrome版本问题导致看不到调试信息，目前还未修复。</p>
+<p>使用过程中发现无法以组件形式引入插件，折腾半天以后发现，原来是文档不一致。</p>
+<p><a href="https://console.open.taobao.com/?spm=a219a.7386653.0.0.143d669aiBAGsb#/market/plugin?tabKey=document&pluginId=3000000002026202" target="_blank" rel="noopener">https://console.open.taobao.com/?spm=a219a.7386653.0.0.143d669aiBAGsb#/market/plugin?tabKey=document&amp;pluginId=3000000002026202</a></p>
+<p>插件中心的这篇文档害人不浅。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&quot;plugins&quot;: &#123;</span><br><span class="line">    &quot;myPlugin&quot;: &#123;</span><br><span class="line">      &quot;version&quot;: &quot;0.0.1&quot;,</span><br><span class="line">      &quot;provider&quot;: &quot;3000000002026202&quot;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+<p>注意<code>app.json</code>不要跟着示例写，provider上没有双括号。</p>
+<p>然后插件文档里说支持组件形式调用，实际上是不行的。使用文档以</p>
+<p><a href="https://miniapp.open.taobao.com/docV3.htm?docId=117142&docType=1" target="_blank" rel="noopener">https://miniapp.open.taobao.com/docV3.htm?docId=117142&amp;docType=1</a></p>
+<p>这篇为准。</p>
+<h3 id="页面配置transparentTitle"><a href="#页面配置transparentTitle" class="headerlink" title="页面配置transparentTitle"></a>页面配置transparentTitle</h3><p>设置<code>transparentTitle</code>的值为always时，安卓下表现正常。</p>
+<p>但IOS上向上滑动时，会随着滑动在顶部出现白色导航栏，且导航栏上面没有标题文字，也不能用<code>titleBarColor</code>修改文字颜色，只是一个白色长条。</p>
+<p>结果因为这个长条，审核无法通过。</p>
+<p>需要将该字段删除，默认就是不显示导航栏。</p>
+<h3 id="PC端表单组件文档未完善，validate几乎无法使用"><a href="#PC端表单组件文档未完善，validate几乎无法使用" class="headerlink" title="PC端表单组件文档未完善，validate几乎无法使用"></a>PC端表单组件文档未完善，validate几乎无法使用</h3><p>文档中<code>validateState</code>的描述中提到：</p>
+<p><code>校验状态，如不设置，则会根据校验规则自动生成</code>。</p>
+<p>但并无文档或例子说明校验规则在哪里配置。</p>
+<h3 id="已弃坑"><a href="#已弃坑" class="headerlink" title="已弃坑"></a>已弃坑</h3><p>由于上架应用几乎无人问津，业务已中止，弃坑了╮(╯▽╰)╭</p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/" rel="tag"># 小程序</a>
+              <a href="/tags/%E5%95%86%E5%AE%B6%E5%BA%94%E7%94%A8/" rel="tag"># 商家应用</a>
+              <a href="/tags/%E6%B7%98%E5%AE%9D/" rel="tag"># 淘宝</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/07/22/MyBatisPlus%E5%88%86%E9%A1%B5%E5%A4%9A%E8%A1%A8%E5%85%B3%E8%81%94%E6%9F%A5%E8%AF%A2/" rel="prev" title="MyBatisPlus分页多表关联查询">
+      <i class="fa fa-chevron-left"></i> MyBatisPlus分页多表关联查询
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/09/16/%E5%A6%82%E4%BD%95%E5%9C%A8%E4%B8%80%E6%AE%B5URL%E4%B8%AD%E6%8F%92%E5%85%A5%E5%8F%82%E6%95%B0/" rel="next" title="如何在一段URL中插入参数">
+      如何在一段URL中插入参数 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+    <div class="comments" id="valine-comments"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#发起网络请求"><span class="nav-number">1.</span> <span class="nav-text">发起网络请求</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#父组件不能定义自定义子组件的class"><span class="nav-number">2.</span> <span class="nav-text">父组件不能定义自定义子组件的class</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#上传图片"><span class="nav-number">3.</span> <span class="nav-text">上传图片</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#预览和真机调试时，二维码丢失全局参数（2020-05-18似乎已修复）"><span class="nav-number">4.</span> <span class="nav-text">预览和真机调试时，二维码丢失全局参数（2020-05-18似乎已修复）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#PC端基础组件overlay运行不正常"><span class="nav-number">5.</span> <span class="nav-text">PC端基础组件overlay运行不正常</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自定义组件的样式是全局生效的"><span class="nav-number">6.</span> <span class="nav-text">自定义组件的样式是全局生效的</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#PC端千牛使用远程调试时无法收到调试信息"><span class="nav-number">7.</span> <span class="nav-text">PC端千牛使用远程调试时无法收到调试信息</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#商家后台千牛PC端应用上传后，预览码无法在千牛客户端打开"><span class="nav-number">8.</span> <span class="nav-text">商家后台千牛PC端应用上传后，预览码无法在千牛客户端打开</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#hideLoading以后执行showToast无效"><span class="nav-number">9.</span> <span class="nav-text">hideLoading以后执行showToast无效</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分享在path里添加的参数在终端打开时取不到"><span class="nav-number">10.</span> <span class="nav-text">分享在path里添加的参数在终端打开时取不到</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#PC端千牛只能在page-onLoad里接受参数"><span class="nav-number">11.</span> <span class="nav-text">PC端千牛只能在page.onLoad里接受参数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#返回结果只有一个false，会自动变成空对象"><span class="nav-number">12.</span> <span class="nav-text">返回结果只有一个false，会自动变成空对象</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#跳转到店铺固定页接口天猫无反应"><span class="nav-number">13.</span> <span class="nav-text">跳转到店铺固定页接口天猫无反应</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#image的相对路径是相对于页面而不是当前组件的"><span class="nav-number">14.</span> <span class="nav-text">image的相对路径是相对于页面而不是当前组件的</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分享设置的content自定义淘口令无效"><span class="nav-number">15.</span> <span class="nav-text">分享设置的content自定义淘口令无效</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#关注店铺"><span class="nav-number">16.</span> <span class="nav-text">关注店铺</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#权益中心插件配置"><span class="nav-number">17.</span> <span class="nav-text">权益中心插件配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#页面配置transparentTitle"><span class="nav-number">18.</span> <span class="nav-text">页面配置transparentTitle</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#PC端表单组件文档未完善，validate几乎无法使用"><span class="nav-number">19.</span> <span class="nav-text">PC端表单组件文档未完善，validate几乎无法使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#已弃坑"><span class="nav-number">20.</span> <span class="nav-text">已弃坑</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Mirari"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">Mirari</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">22</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">38</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/mirari" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;mirari" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:clover4@gmail.com" title="E-Mail → mailto:clover4@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title">
+      <i class="fa fa-fw fa-link"></i>
+      Links
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://youngjuning.js.org/" title="https:&#x2F;&#x2F;youngjuning.js.org&#x2F;" rel="noopener" target="_blank">杨俊宁的博客</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Mirari</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    <span title="站点总字数">58k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">52 分钟</span>
+</div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+  <script>
+    (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el: '#valine-comments',
+      verify: false,
+      notify: false,
+      appId: 'PIjXtxRhVtNErChUJIMq8APR-gzGzoHsz',
+      appKey: '6MKibCkAhd6hFf2s81MRYMd2',
+      placeholder: "Just go go",
+      avatar: 'mm',
+      meta: guest,
+      pageSize: '10' || 10,
+      visitor: false,
+      lang: '' || 'zh-cn',
+      path: location.pathname,
+      recordIP: false,
+      serverURLs: ''
+    });
+  }, window.Valine);
+});
+</script>
+
+</body>
+</html>
