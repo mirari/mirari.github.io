@@ -1,0 +1,756 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://mirari.cc/</id>
+    <title>Mirari's Blog</title>
+    <updated>2024-12-03T03:56:15.956Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <author>
+        <name>mirari</name>
+        <email>clover4@gmail.com</email>
+        <uri>mirari.cc</uri>
+    </author>
+    <link rel="alternate" href="https://mirari.cc/"/>
+    <link rel="self" href="https://mirari.cc/atom.xml"/>
+    <subtitle>严重拖延症</subtitle>
+    <logo>https://mirari.cc/avatar.jpg</logo>
+    <icon>https://mirari.cc/favicon.svg</icon>
+    <rights>CC BY-NC-SA 4.0 2024 © mirari</rights>
+    <entry>
+        <title type="html"><![CDATA[Vue图片浏览组件v-viewer，支持旋转、缩放、翻转等操作]]></title>
+        <id>https://mirari.cc/posts/v-viewer</id>
+        <link href="https://mirari.cc/posts/v-viewer"/>
+        <updated>2017-08-27T02:13:35.000Z</updated>
+        <content type="html"><![CDATA[<h1>v-viewer</h1>
+<p>用于图片浏览的Vue组件，支持旋转、缩放、翻转等操作，基于<a href="https://github.com/fengyuanchen/viewerjs">viewer.js</a>。</p>
+<p>**</p>
+<br/><p>访问 <a href="https://mirari.cc/posts/v-viewer" target="_blank">https://mirari.cc/posts/v-viewer</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>mirari</name>
+            <email>clover4@gmail.com</email>
+            <uri>mirari.cc</uri>
+        </author>
+        <published>2024-12-03T03:54:51.666Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[全屏切换组件vue-fullscreen]]></title>
+        <id>https://mirari.cc/posts/vue-fullscreen</id>
+        <link href="https://mirari.cc/posts/vue-fullscreen"/>
+        <updated>2017-08-14T23:57:33.000Z</updated>
+        <content type="html"><![CDATA[<h1>vue-fullscreen</h1>
+<p>一个用于将任意页面元素进行全屏切换的vue组件，基于 [screenfull.js](<a href="https://github.com/sindresorhus/screenf">https://github.com/sindresorhus/screenf</a></p>
+<br/><p>访问 <a href="https://mirari.cc/posts/vue-fullscreen" target="_blank">https://mirari.cc/posts/vue-fullscreen</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>mirari</name>
+            <email>clover4@gmail.com</email>
+            <uri>mirari.cc</uri>
+        </author>
+        <published>2024-12-03T03:54:51.666Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Vue3全屏切换组件vue-fullscreen]]></title>
+        <id>https://mirari.cc/posts/vue3-fullscreen</id>
+        <link href="https://mirari.cc/posts/vue3-fullscreen"/>
+        <updated>2021-06-01T17:06:10.000Z</updated>
+        <content type="html"><![CDATA[<h1>vue-fullscreen</h1>
+<p>一个用于将任意页面元素进行全屏切换的vue组件，基于 [screenfull.js](<a href="https://github.com/sindresorhus/screen">https://github.com/sindresorhus/screen</a></p>
+<br/><p>访问 <a href="https://mirari.cc/posts/vue3-fullscreen" target="_blank">https://mirari.cc/posts/vue3-fullscreen</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>mirari</name>
+            <email>clover4@gmail.com</email>
+            <uri>mirari.cc</uri>
+        </author>
+        <published>2024-12-03T03:54:51.666Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Vue3图片浏览组件v-viewer，支持旋转、缩放、翻转等操作]]></title>
+        <id>https://mirari.cc/posts/vue3-viewer</id>
+        <link href="https://mirari.cc/posts/vue3-viewer"/>
+        <updated>2021-05-31T15:06:59.000Z</updated>
+        <content type="html"><![CDATA[<h1>v-viewer</h1>
+<p>用于图片浏览的Vue3组件，支持旋转、缩放、翻转等操作，基于<a href="https://github.com/fengyuanchen/viewerjs">viewer.js</a>。</p>
+<ul>
+<li></li>
+</ul>
+<br/><p>访问 <a href="https://mirari.cc/posts/vue3-viewer" target="_blank">https://mirari.cc/posts/vue3-viewer</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>mirari</name>
+            <email>clover4@gmail.com</email>
+            <uri>mirari.cc</uri>
+        </author>
+        <published>2024-12-03T03:54:51.666Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[支付宝小程序批量自动化部署]]></title>
+        <id>https://mirari.cc/posts/2024-09-03-alipay_mini_program_automated_deployment/index</id>
+        <link href="https://mirari.cc/posts/2024-09-03-alipay_mini_program_automated_deployment/index"/>
+        <updated>2024-09-03T15:10:46.000Z</updated>
+        <content type="html"><![CDATA[<p>下面梳理一下支付宝小程序的批量自动化部署实现流程。</p>
+<h2>准备工作</h2>
+<p>大致流程与微信小程序类似，请参考[微信小程序批量自动化部署](/posts/2024-07-18-wechat_mini_pr</p>
+<br/><p>访问 <a href="https://mirari.cc/posts/2024-09-03-alipay_mini_program_automated_deployment/index" target="_blank">https://mirari.cc/posts/2024-09-03-alipay_mini_program_automated_deployment/index</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>mirari</name>
+            <email>clover4@gmail.com</email>
+            <uri>mirari.cc</uri>
+        </author>
+        <published>2024-12-03T03:54:51.666Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[头条小程序批量自动化部署]]></title>
+        <id>https://mirari.cc/posts/2024-09-03-toutiao_mini_program_automated_deployment/index</id>
+        <link href="https://mirari.cc/posts/2024-09-03-toutiao_mini_program_automated_deployment/index"/>
+        <updated>2024-09-03T15:10:17.000Z</updated>
+        <content type="html"><![CDATA[<p>下面梳理一下头条小程序的批量自动化部署实现流程。</p>
+<h2>准备工作</h2>
+<p>大致流程与微信小程序类似，请参考[微信小程序批量自动化部署](/posts/2024-07-18-wechat_mini_pro</p>
+<br/><p>访问 <a href="https://mirari.cc/posts/2024-09-03-toutiao_mini_program_automated_deployment/index" target="_blank">https://mirari.cc/posts/2024-09-03-toutiao_mini_program_automated_deployment/index</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>mirari</name>
+            <email>clover4@gmail.com</email>
+            <uri>mirari.cc</uri>
+        </author>
+        <published>2024-12-03T03:54:51.666Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[配置npmrc解决自动化部署时cypress等依赖安装问题]]></title>
+        <id>https://mirari.cc/posts/2024-05-08-configure_npmrc_to_solve_the_dependency_installation_issues_with_automated_deployment/index</id>
+        <link href="https://mirari.cc/posts/2024-05-08-configure_npmrc_to_solve_the_dependency_installation_issues_with_automated_deployment/index"/>
+        <updated>2024-05-05T22:02:19.000Z</updated>
+        <content type="html"><![CDATA[<p>公司的代码仓库在阿里云的云效上，自动化部署使用的是云效的流水线Flow。</p>
+<p>流水线默认提供的node版本最高是18，且默认的pnpm版本也较低。而现在的项目基本都是用pnpm作为包管理工具的。</p>
+<p>如</p>
+<br/><p>访问 <a href="https://mirari.cc/posts/2024-05-08-configure_npmrc_to_solve_the_dependency_installation_issues_with_automated_deployment/index" target="_blank">https://mirari.cc/posts/2024-05-08-configure_npmrc_to_solve_the_dependency_installation_issues_with_automated_deployment/index</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>mirari</name>
+            <email>clover4@gmail.com</email>
+            <uri>mirari.cc</uri>
+        </author>
+        <published>2024-12-03T03:54:51.662Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[vue实现AI问答小助手(1)——播放语音]]></title>
+        <id>https://mirari.cc/posts/2024-05-15-vue_implements_ai_assistant_1_audio_player/index</id>
+        <link href="https://mirari.cc/posts/2024-05-15-vue_implements_ai_assistant_1_audio_player/index"/>
+        <updated>2024-05-15T22:02:19.000Z</updated>
+        <content type="html"><![CDATA[<p>项目需要开发一个类似微信操作体验的AI问答小助手，记录下开发过程。</p>
+<p>先从最简单的功能说起。</p>
+<p>第一步是实现语音播放功能，也就是将从TTS(Text-to-speech)文字转语音服务中获取到的二进</p>
+<br/><p>访问 <a href="https://mirari.cc/posts/2024-05-15-vue_implements_ai_assistant_1_audio_player/index" target="_blank">https://mirari.cc/posts/2024-05-15-vue_implements_ai_assistant_1_audio_player/index</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>mirari</name>
+            <email>clover4@gmail.com</email>
+            <uri>mirari.cc</uri>
+        </author>
+        <published>2024-12-03T03:54:51.662Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[vue实现AI问答小助手(2)——流式TTS文字转语音]]></title>
+        <id>https://mirari.cc/posts/2024-05-16-vue_implements_ai_assistant_2_stream_tts/index</id>
+        <link href="https://mirari.cc/posts/2024-05-16-vue_implements_ai_assistant_2_stream_tts/index"/>
+        <updated>2024-05-16T20:52:43.000Z</updated>
+        <content type="html"><![CDATA[<p>TTS(Text-to-speech)文字转语音使用的是阿里云的服务，文档地址：</p>
+<p><a href="https://help.aliyun.com/zh/isi/developer-reference/stream">https://help.aliyun.com/zh/isi/developer-reference/stream</a></p>
+<br/><p>访问 <a href="https://mirari.cc/posts/2024-05-16-vue_implements_ai_assistant_2_stream_tts/index" target="_blank">https://mirari.cc/posts/2024-05-16-vue_implements_ai_assistant_2_stream_tts/index</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>mirari</name>
+            <email>clover4@gmail.com</email>
+            <uri>mirari.cc</uri>
+        </author>
+        <published>2024-12-03T03:54:51.662Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[vue实现AI问答小助手(3)——实现录音和语音转文字]]></title>
+        <id>https://mirari.cc/posts/2024-05-17-vue_implements_ai_assistant_3_asr/index</id>
+        <link href="https://mirari.cc/posts/2024-05-17-vue_implements_ai_assistant_3_asr/index"/>
+        <updated>2024-05-16T20:52:43.000Z</updated>
+        <content type="html"><![CDATA[<p>由于操作模式是类似微信的按下录音松开发送，所以转换文字就不需要像文字转语音那样流式了。</p>
+<p>大致流程如下：</p>
+<ol>
+<li>按下语音按钮开始录音：调用浏览器api申请麦克风权限，获取音频流。使用Recorde</li>
+</ol>
+<br/><p>访问 <a href="https://mirari.cc/posts/2024-05-17-vue_implements_ai_assistant_3_asr/index" target="_blank">https://mirari.cc/posts/2024-05-17-vue_implements_ai_assistant_3_asr/index</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>mirari</name>
+            <email>clover4@gmail.com</email>
+            <uri>mirari.cc</uri>
+        </author>
+        <published>2024-12-03T03:54:51.662Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[vue实现AI问答小助手(4)——服务端推送(SSE)]]></title>
+        <id>https://mirari.cc/posts/2024-05-18-vue_implements_ai_assistant_4_sse/index</id>
+        <link href="https://mirari.cc/posts/2024-05-18-vue_implements_ai_assistant_4_sse/index"/>
+        <updated>2024-05-18T17:40:12.000Z</updated>
+        <content type="html"><![CDATA[<p>与AI聊天接口交互时，由于生成内容需要一定时间，如果等到所有内容都生成完毕才返回，那用户等待的时间会很长，使用体验就很差。</p>
+<p>因此，必须实现流式返回。</p>
+<p>一般情况下聊天之类的功能往往会用socket</p>
+<br/><p>访问 <a href="https://mirari.cc/posts/2024-05-18-vue_implements_ai_assistant_4_sse/index" target="_blank">https://mirari.cc/posts/2024-05-18-vue_implements_ai_assistant_4_sse/index</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>mirari</name>
+            <email>clover4@gmail.com</email>
+            <uri>mirari.cc</uri>
+        </author>
+        <published>2024-12-03T03:54:51.662Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Mac修复应用无法打开]]></title>
+        <id>https://mirari.cc/posts/2024-05-21-fixing_apps_not_opening_on_mac_systems/index</id>
+        <link href="https://mirari.cc/posts/2024-05-21-fixing_apps_not_opening_on_mac_systems/index"/>
+        <updated>2024-05-21T17:46:29.000Z</updated>
+        <content type="html"><![CDATA[<p>在一些第三方网站下载安装MacOS应用时，打开dmg文件，有时候会有一个“修复无法打开”的图标。</p>
+<p>遇到应用拖动到Applications文件夹无法打开时，双击运行一下就可以解决问题。</p>
+<p>但是在So</p>
+<br/><p>访问 <a href="https://mirari.cc/posts/2024-05-21-fixing_apps_not_opening_on_mac_systems/index" target="_blank">https://mirari.cc/posts/2024-05-21-fixing_apps_not_opening_on_mac_systems/index</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>mirari</name>
+            <email>clover4@gmail.com</email>
+            <uri>mirari.cc</uri>
+        </author>
+        <published>2024-12-03T03:54:51.662Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[微信小程序批量自动化部署]]></title>
+        <id>https://mirari.cc/posts/2024-07-18-wechat_mini_program_automated_deployment/index</id>
+        <link href="https://mirari.cc/posts/2024-07-18-wechat_mini_program_automated_deployment/index"/>
+        <updated>2024-07-18T14:24:14.000Z</updated>
+        <content type="html"><![CDATA[<p>CI/CD这个概念很实用，但我们这种小作坊，没有一些很高大上的应用。</p>
+<p>最常见的使用场景就是，开发者一键提交分支master，交给工作流工具完成构建，部署的后续操作，自动更新测试或线上环境。</p>
+<p>个人</p>
+<br/><p>访问 <a href="https://mirari.cc/posts/2024-07-18-wechat_mini_program_automated_deployment/index" target="_blank">https://mirari.cc/posts/2024-07-18-wechat_mini_program_automated_deployment/index</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>mirari</name>
+            <email>clover4@gmail.com</email>
+            <uri>mirari.cc</uri>
+        </author>
+        <published>2024-12-03T03:54:51.662Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[8年2次装修，分享我的装修经验、建议与笔记(9.阳台)]]></title>
+        <id>https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_9/index</id>
+        <link href="https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_9/index"/>
+        <updated>2023-09-01T19:48:52.000Z</updated>
+        <content type="html"><![CDATA[<h1>目录</h1>
+<p><a href="/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes">1.全屋</a></p>
+<p>[2</p>
+<br/><p>访问 <a href="https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_9/index" target="_blank">https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_9/index</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>mirari</name>
+            <email>clover4@gmail.com</email>
+            <uri>mirari.cc</uri>
+        </author>
+        <published>2024-12-03T03:54:51.654Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[8年2次装修，分享我的装修经验、建议与笔记(8.卫生间)]]></title>
+        <id>https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_8/index</id>
+        <link href="https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_8/index"/>
+        <updated>2023-09-01T19:48:52.000Z</updated>
+        <content type="html"><![CDATA[<h1>目录</h1>
+<p><a href="/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes">1.全屋</a></p>
+<p>[2</p>
+<br/><p>访问 <a href="https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_8/index" target="_blank">https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_8/index</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>mirari</name>
+            <email>clover4@gmail.com</email>
+            <uri>mirari.cc</uri>
+        </author>
+        <published>2024-12-03T03:54:51.650Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[8年2次装修，分享我的装修经验、建议与笔记(7.主卧)]]></title>
+        <id>https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_7/index</id>
+        <link href="https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_7/index"/>
+        <updated>2023-09-01T19:48:52.000Z</updated>
+        <content type="html"><![CDATA[<h1>目录</h1>
+<p><a href="/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes">1.全屋</a></p>
+<p>[2</p>
+<br/><p>访问 <a href="https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_7/index" target="_blank">https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_7/index</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>mirari</name>
+            <email>clover4@gmail.com</email>
+            <uri>mirari.cc</uri>
+        </author>
+        <published>2024-12-03T03:54:51.646Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[8年2次装修，分享我的装修经验、建议与笔记(6.客餐厅)]]></title>
+        <id>https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_6/index</id>
+        <link href="https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_6/index"/>
+        <updated>2023-09-01T19:48:52.000Z</updated>
+        <content type="html"><![CDATA[<h1>目录</h1>
+<p><a href="/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes">1.全屋</a></p>
+<p>[2</p>
+<br/><p>访问 <a href="https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_6/index" target="_blank">https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_6/index</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>mirari</name>
+            <email>clover4@gmail.com</email>
+            <uri>mirari.cc</uri>
+        </author>
+        <published>2024-12-03T03:54:51.634Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[8年2次装修，分享我的装修经验、建议与笔记(5.书房)]]></title>
+        <id>https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_5/index</id>
+        <link href="https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_5/index"/>
+        <updated>2023-09-01T19:48:52.000Z</updated>
+        <content type="html"><![CDATA[<h1>目录</h1>
+<p><a href="/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes">1.全屋</a></p>
+<p>[2</p>
+<br/><p>访问 <a href="https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_5/index" target="_blank">https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_5/index</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>mirari</name>
+            <email>clover4@gmail.com</email>
+            <uri>mirari.cc</uri>
+        </author>
+        <published>2024-12-03T03:54:51.626Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[8年2次装修，分享我的装修经验、建议与笔记(4.儿童房)]]></title>
+        <id>https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_4/index</id>
+        <link href="https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_4/index"/>
+        <updated>2023-09-01T19:48:52.000Z</updated>
+        <content type="html"><![CDATA[<h1>目录</h1>
+<p><a href="/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes">1.全屋</a></p>
+<p>[2</p>
+<br/><p>访问 <a href="https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_4/index" target="_blank">https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_4/index</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>mirari</name>
+            <email>clover4@gmail.com</email>
+            <uri>mirari.cc</uri>
+        </author>
+        <published>2024-12-03T03:54:51.622Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[8年2次装修，分享我的装修经验、建议与笔记(3.厨房)]]></title>
+        <id>https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_3/index</id>
+        <link href="https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_3/index"/>
+        <updated>2023-09-01T19:48:52.000Z</updated>
+        <content type="html"><![CDATA[<h1>目录</h1>
+<p><a href="/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes">1.全屋</a></p>
+<p>[2</p>
+<br/><p>访问 <a href="https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_3/index" target="_blank">https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_3/index</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>mirari</name>
+            <email>clover4@gmail.com</email>
+            <uri>mirari.cc</uri>
+        </author>
+        <published>2024-12-03T03:54:51.618Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[8年2次装修，分享我的装修经验、建议与笔记(1.全屋)]]></title>
+        <id>https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes/index</id>
+        <link href="https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes/index"/>
+        <updated>2023-09-01T19:48:52.000Z</updated>
+        <content type="html"><![CDATA[<h1>目录</h1>
+<p><a href="/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes">1.全屋</a></p>
+<p>[[</p>
+<br/><p>访问 <a href="https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes/index" target="_blank">https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes/index</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>mirari</name>
+            <email>clover4@gmail.com</email>
+            <uri>mirari.cc</uri>
+        </author>
+        <published>2024-12-03T03:54:51.614Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[8年2次装修，分享我的装修经验、建议与笔记(10.其他)]]></title>
+        <id>https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_10/index</id>
+        <link href="https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_10/index"/>
+        <updated>2023-09-03T19:48:52.000Z</updated>
+        <content type="html"><![CDATA[<h1>目录</h1>
+<p><a href="/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes">1.全屋</a></p>
+<p>[2</p>
+<br/><p>访问 <a href="https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_10/index" target="_blank">https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_10/index</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>mirari</name>
+            <email>clover4@gmail.com</email>
+            <uri>mirari.cc</uri>
+        </author>
+        <published>2024-12-03T03:54:51.614Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[8年2次装修，分享我的装修经验、建议与笔记(2.玄关)]]></title>
+        <id>https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_2/index</id>
+        <link href="https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_2/index"/>
+        <updated>2023-09-01T19:48:52.000Z</updated>
+        <content type="html"><![CDATA[<h1>目录</h1>
+<p><a href="/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes">1.全屋</a></p>
+<p>[2</p>
+<br/><p>访问 <a href="https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_2/index" target="_blank">https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_2/index</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>mirari</name>
+            <email>clover4@gmail.com</email>
+            <uri>mirari.cc</uri>
+        </author>
+        <published>2024-12-03T03:54:51.614Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[如何在一段URL中插入参数]]></title>
+        <id>https://mirari.cc/posts/2020-09-16-how_to_insert_parameters_into_a_url</id>
+        <link href="https://mirari.cc/posts/2020-09-16-how_to_insert_parameters_into_a_url"/>
+        <updated>2020-09-16T11:17:03.000Z</updated>
+        <content type="html"><![CDATA[<p>有一个很简单的需求如下：</p>
+<p>给你一段URL，在其中插入一些参数，并返回新的URL，如何实现？</p>
+<p>这里的参数，有时候称为<code>query</code>，有时候称为<code>params</code>，一般称为<code>search</code>，指的是</p>
+<br/><p>访问 <a href="https://mirari.cc/posts/2020-09-16-how_to_insert_parameters_into_a_url" target="_blank">https://mirari.cc/posts/2020-09-16-how_to_insert_parameters_into_a_url</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>mirari</name>
+            <email>clover4@gmail.com</email>
+            <uri>mirari.cc</uri>
+        </author>
+        <published>2024-12-03T03:54:51.550Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Husky6配置正确但无法触发githook的问题]]></title>
+        <id>https://mirari.cc/posts/2021-05-31-issue_with_husky6_configuration_correct_but_unable_to_trigger_githook</id>
+        <link href="https://mirari.cc/posts/2021-05-31-issue_with_husky6_configuration_correct_but_unable_to_trigger_githook"/>
+        <updated>2021-05-31T16:56:24.000Z</updated>
+        <content type="html"><![CDATA[<p>项目中之前一直使用husky进行代码质量控制，主要包含两个步骤：</p>
+<ul>
+<li>代码提交前，先执行eslint校验，不通过则不允许提交。</li>
+<li>commit记录需要符合规范，用于自动生成changelog。</li>
+</ul>
+<br/><p>访问 <a href="https://mirari.cc/posts/2021-05-31-issue_with_husky6_configuration_correct_but_unable_to_trigger_githook" target="_blank">https://mirari.cc/posts/2021-05-31-issue_with_husky6_configuration_correct_but_unable_to_trigger_githook</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>mirari</name>
+            <email>clover4@gmail.com</email>
+            <uri>mirari.cc</uri>
+        </author>
+        <published>2024-12-03T03:54:51.550Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[一段脚本同时编译FatFramework和XCFramework]]></title>
+        <id>https://mirari.cc/posts/2021-07-28-compiling_fatframework_and_xcframework_simultaneously_with_a_script</id>
+        <link href="https://mirari.cc/posts/2021-07-28-compiling_fatframework_and_xcframework_simultaneously_with_a_script"/>
+        <updated>2021-07-28T18:06:16.000Z</updated>
+        <content type="html"><![CDATA[<h3>简介</h3>
+<p>FatFramework即传统的Framework大包，一个二进制文件同时包含了真机和模拟器在不同架构下的代码，是以前闭源分发常用的形式。</p>
+<p>XCFramework本质上是一个文件夹</p>
+<br/><p>访问 <a href="https://mirari.cc/posts/2021-07-28-compiling_fatframework_and_xcframework_simultaneously_with_a_script" target="_blank">https://mirari.cc/posts/2021-07-28-compiling_fatframework_and_xcframework_simultaneously_with_a_script</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>mirari</name>
+            <email>clover4@gmail.com</email>
+            <uri>mirari.cc</uri>
+        </author>
+        <published>2024-12-03T03:54:51.550Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[M1芯片Mac搭建ios开发环境踩坑]]></title>
+        <id>https://mirari.cc/posts/2021-07-28-pitfalls_of_setting_up_ios_development_environment_on_m1_chip_mac</id>
+        <link href="https://mirari.cc/posts/2021-07-28-pitfalls_of_setting_up_ios_development_environment_on_m1_chip_mac"/>
+        <updated>2021-07-28T10:20:47.000Z</updated>
+        <content type="html"><![CDATA[<p>除了能在AppStore下到或者可以轻易获取的工具，我的iOS开发环境还需要以下环境支持：</p>
+<ul>
+<li>homebrew</li>
+<li>cocoapods</li>
+<li>fastlane</li>
+<li>xcode的arm64模拟器</li>
+</ul>
+<br/><p>访问 <a href="https://mirari.cc/posts/2021-07-28-pitfalls_of_setting_up_ios_development_environment_on_m1_chip_mac" target="_blank">https://mirari.cc/posts/2021-07-28-pitfalls_of_setting_up_ios_development_environment_on_m1_chip_mac</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>mirari</name>
+            <email>clover4@gmail.com</email>
+            <uri>mirari.cc</uri>
+        </author>
+        <published>2024-12-03T03:54:51.550Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[微信小程序迁移支付宝踩坑]]></title>
+        <id>https://mirari.cc/posts/2023-06-02-pitfalls_of_migrating_wechat_mini_program_to_alipay</id>
+        <link href="https://mirari.cc/posts/2023-06-02-pitfalls_of_migrating_wechat_mini_program_to_alipay"/>
+        <updated>2023-06-02T11:15:15.000Z</updated>
+        <content type="html"><![CDATA[<p>需要迁移的小程序是原生的微信小程序，涉及大量微信小程序的原生api和功能，工作量不小。</p>
+<p>首先还是要用到迁移工具<a href="https://ant-move.github.io/">Antmove</a>，可惜这个</p>
+<br/><p>访问 <a href="https://mirari.cc/posts/2023-06-02-pitfalls_of_migrating_wechat_mini_program_to_alipay" target="_blank">https://mirari.cc/posts/2023-06-02-pitfalls_of_migrating_wechat_mini_program_to_alipay</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>mirari</name>
+            <email>clover4@gmail.com</email>
+            <uri>mirari.cc</uri>
+        </author>
+        <published>2024-12-03T03:54:51.550Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[babel-preset-env无法确保ES6的for..of语法兼容性]]></title>
+        <id>https://mirari.cc/posts/2018-04-17-babel-preset-env_unable_to_ensure_compatibility_of_es6_for-of_syntax</id>
+        <link href="https://mirari.cc/posts/2018-04-17-babel-preset-env_unable_to_ensure_compatibility_of_es6_for-of_syntax"/>
+        <updated>2018-04-17T16:42:35.000Z</updated>
+        <content type="html"><![CDATA[<p><code>babel-preset-env</code>是现在最主流的babel解决方案，但是前阵子踩到了一个坑。<br>
+部分机型在执行到ES6的<code>for of</code>语句时就会报错。</p>
+<p>原因有两个。</p>
+<p>一是`babel-pres</p>
+<br/><p>访问 <a href="https://mirari.cc/posts/2018-04-17-babel-preset-env_unable_to_ensure_compatibility_of_es6_for-of_syntax" target="_blank">https://mirari.cc/posts/2018-04-17-babel-preset-env_unable_to_ensure_compatibility_of_es6_for-of_syntax</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>mirari</name>
+            <email>clover4@gmail.com</email>
+            <uri>mirari.cc</uri>
+        </author>
+        <published>2024-12-03T03:54:51.546Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[内嵌iframe页面在IOS下会受内部元素影响自动撑开的问题]]></title>
+        <id>https://mirari.cc/posts/2018-05-30-issue_with_embedded_iframe_pages_expanding_due_to_internal_element_impact_on_ios</id>
+        <link href="https://mirari.cc/posts/2018-05-30-issue_with_embedded_iframe_pages_expanding_due_to_internal_element_impact_on_ios"/>
+        <updated>2018-05-30T16:15:07.000Z</updated>
+        <content type="html"><![CDATA[<p>IOS下的webview页面，内嵌iframe元素，将其样式指定为宽高100%：</p>
+<pre><code class="language-css">.iframe {
+  width: 100%;
+  height: 100%;
+}
+</code></pre>
+<p>在安卓下运</p>
+<br/><p>访问 <a href="https://mirari.cc/posts/2018-05-30-issue_with_embedded_iframe_pages_expanding_due_to_internal_element_impact_on_ios" target="_blank">https://mirari.cc/posts/2018-05-30-issue_with_embedded_iframe_pages_expanding_due_to_internal_element_impact_on_ios</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>mirari</name>
+            <email>clover4@gmail.com</email>
+            <uri>mirari.cc</uri>
+        </author>
+        <published>2024-12-03T03:54:51.546Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[CSS3实现转盘抽奖]]></title>
+        <id>https://mirari.cc/posts/2019-06-25-implementing_spin_wheel_lottery_with_css3</id>
+        <link href="https://mirari.cc/posts/2019-06-25-implementing_spin_wheel_lottery_with_css3"/>
+        <updated>2019-06-25T11:11:20.000Z</updated>
+        <content type="html"><![CDATA[<p>最近有个转盘抽奖的需求，搜了一下现有的轮子，有的是用jQuery的动画函数实现的，有的是用canvas绘图然后再用高频率的setTimeout调用旋转方法，前者太老了没法简单移植到vue项目，后者感觉</p>
+<br/><p>访问 <a href="https://mirari.cc/posts/2019-06-25-implementing_spin_wheel_lottery_with_css3" target="_blank">https://mirari.cc/posts/2019-06-25-implementing_spin_wheel_lottery_with_css3</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>mirari</name>
+            <email>clover4@gmail.com</email>
+            <uri>mirari.cc</uri>
+        </author>
+        <published>2024-12-03T03:54:51.546Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[cssnano升级导致z-index被重新计算的解决办法]]></title>
+        <id>https://mirari.cc/posts/2019-08-13-solution_to_z-index_recalculation_due_to_cssnano_upgrade</id>
+        <link href="https://mirari.cc/posts/2019-08-13-solution_to_z-index_recalculation_due_to_cssnano_upgrade"/>
+        <updated>2019-08-13T15:55:08.000Z</updated>
+        <content type="html"><![CDATA[<p>之前遇到了一个遮罩层级的奇怪问题。在dev环境能在弹窗前正常显示的全屏动画，在编译打包以后实际运行时跑到了弹窗的后面。<br>
+弹窗的z-index是500，按理说将动画放到501就应该能显示了，结果发现实际</p>
+<br/><p>访问 <a href="https://mirari.cc/posts/2019-08-13-solution_to_z-index_recalculation_due_to_cssnano_upgrade" target="_blank">https://mirari.cc/posts/2019-08-13-solution_to_z-index_recalculation_due_to_cssnano_upgrade</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>mirari</name>
+            <email>clover4@gmail.com</email>
+            <uri>mirari.cc</uri>
+        </author>
+        <published>2024-12-03T03:54:51.546Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[TypeScript中以变量方式传递类]]></title>
+        <id>https://mirari.cc/posts/2020-01-18-passing_classes_as_variables_in_typescript</id>
+        <link href="https://mirari.cc/posts/2020-01-18-passing_classes_as_variables_in_typescript"/>
+        <updated>2020-01-18T16:29:50.000Z</updated>
+        <content type="html"><![CDATA[<p>最近尝试用TypeScript写一个工具库，需要实现这样一个场景：</p>
+<ol>
+<li>
+<p>声明一个抽象类Parent</p>
+</li>
+<li>
+<p>声明一组子类ChildA、ChildB继承这个Parent，实现它的抽象方法</p>
+</li>
+<li></li>
+</ol>
+<br/><p>访问 <a href="https://mirari.cc/posts/2020-01-18-passing_classes_as_variables_in_typescript" target="_blank">https://mirari.cc/posts/2020-01-18-passing_classes_as_variables_in_typescript</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>mirari</name>
+            <email>clover4@gmail.com</email>
+            <uri>mirari.cc</uri>
+        </author>
+        <published>2024-12-03T03:54:51.546Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[淘宝商家应用（阿里小程序）开发踩坑记录（已弃坑）]]></title>
+        <id>https://mirari.cc/posts/2020-05-05-pitfall_record_of_developing_taobao_merchant_applications_ali_mini_programs</id>
+        <link href="https://mirari.cc/posts/2020-05-05-pitfall_record_of_developing_taobao_merchant_applications_ali_mini_programs"/>
+        <updated>2020-08-07T15:53:55.000Z</updated>
+        <content type="html"><![CDATA[<p>阿里正在将淘宝无线开放平台等业务整合为商家应用，类似于支付宝小程序，也就是以小程序的形式进行淘宝天猫店铺的展现、营销。</p>
+<p>最近正在开发商家应用小程序，踩了无数坑，原本以为微信小程序已经够坑了，没想到</p>
+<br/><p>访问 <a href="https://mirari.cc/posts/2020-05-05-pitfall_record_of_developing_taobao_merchant_applications_ali_mini_programs" target="_blank">https://mirari.cc/posts/2020-05-05-pitfall_record_of_developing_taobao_merchant_applications_ali_mini_programs</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>mirari</name>
+            <email>clover4@gmail.com</email>
+            <uri>mirari.cc</uri>
+        </author>
+        <published>2024-12-03T03:54:51.546Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[移动端页面加载时使用脚本自动跳转不会产生历史记录]]></title>
+        <id>https://mirari.cc/posts/2020-07-01-automatic_redirect_without_history_when_loading_mobile_pages_with_script</id>
+        <link href="https://mirari.cc/posts/2020-07-01-automatic_redirect_without_history_when_loading_mobile_pages_with_script"/>
+        <updated>2020-07-01T18:06:25.000Z</updated>
+        <content type="html"><![CDATA[<p>最近遇到这样一个需求：</p>
+<ul>
+<li>
+<p>打开当前页面时，可能会带上一个参数<code>pid</code>。</p>
+</li>
+<li>
+<p>页面初始化时，如果发现存在此参数，就立刻跳转到其对应的外部页面。</p>
+</li>
+<li>
+<p>当用户从外部页面后退时，可以回到当前页面，</p>
+</li>
+</ul>
+<br/><p>访问 <a href="https://mirari.cc/posts/2020-07-01-automatic_redirect_without_history_when_loading_mobile_pages_with_script" target="_blank">https://mirari.cc/posts/2020-07-01-automatic_redirect_without_history_when_loading_mobile_pages_with_script</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>mirari</name>
+            <email>clover4@gmail.com</email>
+            <uri>mirari.cc</uri>
+        </author>
+        <published>2024-12-03T03:54:51.546Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[MySql批量修改表和表内字段的字符集和排序规则]]></title>
+        <id>https://mirari.cc/posts/2020-07-22-bulk_modification_of_table_and_field_character_set_and_sorting_rules_in_mysql</id>
+        <link href="https://mirari.cc/posts/2020-07-22-bulk_modification_of_table_and_field_character_set_and_sorting_rules_in_mysql"/>
+        <updated>2020-07-22T18:28:35.000Z</updated>
+        <content type="html"><![CDATA[<p>在将测试库的新增表通过Navicat向阿里云的MySql数据库复制后，发现前端页面请求查询失败。</p>
+<p>目标数据库的默认排序规则是<code>utf8mb4_0900_ai_ci</code>，已存在的表都使用了这个编码，而</p>
+<br/><p>访问 <a href="https://mirari.cc/posts/2020-07-22-bulk_modification_of_table_and_field_character_set_and_sorting_rules_in_mysql" target="_blank">https://mirari.cc/posts/2020-07-22-bulk_modification_of_table_and_field_character_set_and_sorting_rules_in_mysql</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>mirari</name>
+            <email>clover4@gmail.com</email>
+            <uri>mirari.cc</uri>
+        </author>
+        <published>2024-12-03T03:54:51.546Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[MyBatisPlus分页多表关联查询]]></title>
+        <id>https://mirari.cc/posts/2020-07-22-mybatisplus_paging_multi-table_association_query</id>
+        <link href="https://mirari.cc/posts/2020-07-22-mybatisplus_paging_multi-table_association_query"/>
+        <updated>2020-07-22T18:33:00.000Z</updated>
+        <content type="html"><![CDATA[<p><code>BaseMapper</code>提供的默认查询方法都是单表的，如果需要多表关联查询，同时还要支持分页，一个方案就是自己写Sql。</p>
+<p>现在自己写Sql一般用的应该不是传统MyBatis那种写xml的老方法，而</p>
+<br/><p>访问 <a href="https://mirari.cc/posts/2020-07-22-mybatisplus_paging_multi-table_association_query" target="_blank">https://mirari.cc/posts/2020-07-22-mybatisplus_paging_multi-table_association_query</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>mirari</name>
+            <email>clover4@gmail.com</email>
+            <uri>mirari.cc</uri>
+        </author>
+        <published>2024-12-03T03:54:51.546Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Chrome升级到版本61后出现偏色问题的解决方法]]></title>
+        <id>https://mirari.cc/posts/2017-09-11-solution_to_color_deviation_issue_after_chrome_upgraded_to_version_61/index</id>
+        <link href="https://mirari.cc/posts/2017-09-11-solution_to_color_deviation_issue_after_chrome_upgraded_to_version_61/index"/>
+        <updated>2017-09-11T14:47:49.000Z</updated>
+        <content type="html"><![CDATA[<p>9月初Chrome发布了最新的正式版，版本号61，升级以后却发现所有网页都变成了奶白清新配色。</p>
+<p>不管CSS原本设置是什么颜色，最终显示效果都会比设置得更白一些。</p>
+<p>如图：</p>
+<br/><p>访问 <a href="https://mirari.cc/posts/2017-09-11-solution_to_color_deviation_issue_after_chrome_upgraded_to_version_61/index" target="_blank">https://mirari.cc/posts/2017-09-11-solution_to_color_deviation_issue_after_chrome_upgraded_to_version_61/index</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>mirari</name>
+            <email>clover4@gmail.com</email>
+            <uri>mirari.cc</uri>
+        </author>
+        <published>2024-12-03T03:54:51.546Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[windows环境下无法提交gh-pages、无法发布npm包的问题]]></title>
+        <id>https://mirari.cc/posts/2018-04-17-problems_with_submitting_gh_pages_and_publishing_npm_packages_in_windows_environment/index</id>
+        <link href="https://mirari.cc/posts/2018-04-17-problems_with_submitting_gh_pages_and_publishing_npm_packages_in_windows_environment/index"/>
+        <updated>2018-04-17T10:47:47.000Z</updated>
+        <content type="html"><![CDATA[<p>以下问题均出现在windows环境，使用IntelliJ IDEA中的npm选项卡双击执行命令时。</p>
+<p>使用npm的gh-pages工具包，可以很方便地一键发布指定目录到项目的gh-pages分支。</p>
+<p>以前用着好好的，但是最近使用的时候，忽然发现以下报错信息：</p>
+<br/><p>访问 <a href="https://mirari.cc/posts/2018-04-17-problems_with_submitting_gh_pages_and_publishing_npm_packages_in_windows_environment/index" target="_blank">https://mirari.cc/posts/2018-04-17-problems_with_submitting_gh_pages_and_publishing_npm_packages_in_windows_environment/index</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>mirari</name>
+            <email>clover4@gmail.com</email>
+            <uri>mirari.cc</uri>
+        </author>
+        <published>2024-12-03T03:54:51.546Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[让IDE识别webpack的别名alias'@']]></title>
+        <id>https://mirari.cc/posts/2019-06-10-make_ide_recognize_webpack_alias/index</id>
+        <link href="https://mirari.cc/posts/2019-06-10-make_ide_recognize_webpack_alias/index"/>
+        <updated>2019-06-10T16:39:39.000Z</updated>
+        <content type="html"><![CDATA[<p>许多项目脚手架默认就会把src目录添加一个<code>@</code>别名，项目中实际引入时，虽然可以精简路径，但也带来一个很麻烦的问题：<br>
+IDE无法识别这些别名，因此导致无法自动完成路径、无法识别引用资源的输出、出现不必</p>
+<br/><p>访问 <a href="https://mirari.cc/posts/2019-06-10-make_ide_recognize_webpack_alias/index" target="_blank">https://mirari.cc/posts/2019-06-10-make_ide_recognize_webpack_alias/index</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>mirari</name>
+            <email>clover4@gmail.com</email>
+            <uri>mirari.cc</uri>
+        </author>
+        <published>2024-12-03T03:54:51.546Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[使用scss开发小程序（各种小程序平台通用）]]></title>
+        <id>https://mirari.cc/posts/2020-04-02-developing_mini_programs_using_scss_universal_for_various_mini_program_platforms/index</id>
+        <link href="https://mirari.cc/posts/2020-04-02-developing_mini_programs_using_scss_universal_for_various_mini_program_platforms/index"/>
+        <updated>2020-04-02T18:13:14.000Z</updated>
+        <content type="html"><![CDATA[<p>微信小程序的<code>wxss</code>、阿里旗下淘宝、支付宝小程序的<code>acss</code>等等语法很类似原生css，但是在web开发里用惯了动态css语言，再写回原生css很不习惯，尤其是父子样式的嵌套写法非常繁琐。</p>
+<p>因</p>
+<br/><p>访问 <a href="https://mirari.cc/posts/2020-04-02-developing_mini_programs_using_scss_universal_for_various_mini_program_platforms/index" target="_blank">https://mirari.cc/posts/2020-04-02-developing_mini_programs_using_scss_universal_for_various_mini_program_platforms/index</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>mirari</name>
+            <email>clover4@gmail.com</email>
+            <uri>mirari.cc</uri>
+        </author>
+        <published>2024-12-03T03:54:51.546Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[解锁网易云音乐的灰色歌曲、会员歌曲]]></title>
+        <id>https://mirari.cc/posts/2020-04-02-unlocking_grayed_out_songs_and_member_songs_on_netease_cloud_music/index</id>
+        <link href="https://mirari.cc/posts/2020-04-02-unlocking_grayed_out_songs_and_member_songs_on_netease_cloud_music/index"/>
+        <updated>2020-04-02T22:48:56.000Z</updated>
+        <content type="html"><![CDATA[<p>首先感谢开源项目<a href="https://github.com/nondanee/UnblockNeteaseMusic">UnblockNeteaseMusic</a>。</p>
+<p>能听被屏蔽的歌曲靠的就是它，这篇教程</p>
+<br/><p>访问 <a href="https://mirari.cc/posts/2020-04-02-unlocking_grayed_out_songs_and_member_songs_on_netease_cloud_music/index" target="_blank">https://mirari.cc/posts/2020-04-02-unlocking_grayed_out_songs_and_member_songs_on_netease_cloud_music/index</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>mirari</name>
+            <email>clover4@gmail.com</email>
+            <uri>mirari.cc</uri>
+        </author>
+        <published>2024-12-03T03:54:51.546Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[列表元素无内容时高度为0导致串行的问题]]></title>
+        <id>https://mirari.cc/posts/2017-08-14-problems_with_serialization_due_to_zero_height_of_list_elements_with_no_content</id>
+        <link href="https://mirari.cc/posts/2017-08-14-problems_with_serialization_due_to_zero_height_of_list_elements_with_no_content"/>
+        <updated>2017-08-14T22:01:04.000Z</updated>
+        <content type="html"><![CDATA[<p>如果有一组标题-内容形式的数据需要展现，用table感觉太笨重了一些，最符合语义化的做法应该是使用<code>dl</code>元素。</p>
+<p>比如下面这个例子，展现了一个水平列表，样式定义来自bootstrap：</p>
+<br/><p>访问 <a href="https://mirari.cc/posts/2017-08-14-problems_with_serialization_due_to_zero_height_of_list_elements_with_no_content" target="_blank">https://mirari.cc/posts/2017-08-14-problems_with_serialization_due_to_zero_height_of_list_elements_with_no_content</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>mirari</name>
+            <email>clover4@gmail.com</email>
+            <uri>mirari.cc</uri>
+        </author>
+        <published>2024-12-03T03:54:51.542Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[使用相对路径发布vue-cli项目的坑]]></title>
+        <id>https://mirari.cc/posts/2017-09-08-pitfalls_of_publishing_vue_cli_projects_using_relative_paths/index</id>
+        <link href="https://mirari.cc/posts/2017-09-08-pitfalls_of_publishing_vue_cli_projects_using_relative_paths/index"/>
+        <updated>2017-09-08T16:21:07.000Z</updated>
+        <content type="html"><![CDATA[<p>使用vue-cli可以快速创建一个webpack项目脚手架，有相当多的项目都使用了相似的配置。<br>
+它们对发布环境的配置差不多是这样的：</p>
+<pre><code class="language-javascript">module.exports = {
+  build: {
+    env: require('./prod.env'),
+    index: path.resolve(__dirname, '../dist/index.html'),
+    assetsRoot: path.resolve(__dirname, '../dist'),
+    assetsSubDirectory: 'assets',
+    assetsPublicPath: '/',
+    productionSourceMap: false,
+    // Gzip off by default as many popular static hosts such as
+    // Surge or Netlify already gzip all static assets for you.
+    // Before setting to `true`, make sure to:
+    // npm install --save-dev compression-webpack-plugin
+    productionGzip: false,
+    productionGzipExtensions: ['js', 'css']
+  },
+  ...
+}
+</code></pre>
+<br/><p>访问 <a href="https://mirari.cc/posts/2017-09-08-pitfalls_of_publishing_vue_cli_projects_using_relative_paths/index" target="_blank">https://mirari.cc/posts/2017-09-08-pitfalls_of_publishing_vue_cli_projects_using_relative_paths/index</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>mirari</name>
+            <email>clover4@gmail.com</email>
+            <uri>mirari.cc</uri>
+        </author>
+        <published>2024-12-03T03:54:51.542Z</published>
+    </entry>
+</feed>
