@@ -1,0 +1,37 @@
+/tags/:tag/ /tags?tag=:tag 301
+/categories/:category/ /categories?category=:category 301
+/archives/page* /archives/ 301
+
+/v-viewer* https://v-viewer.mirari.cc 301
+/vue-fullscreen* https://vue-fullscreen.mirari.cc 301
+/vue3-viewer* https://vue3-viewer.mirari.cc 301
+/vue3-fullscreen* https://vue3-fullscreen.mirari.cc 301
+
+/2017/08/14/全屏切换组件vue-fullscreen* /posts/vue-fullscreen 301
+/2017/08/27/Vue图片浏览组件v-viewer，支持旋转、缩放、翻转等操作* /posts/v-viewer 301
+/2021/05/31/Vue3图片浏览组件v-viewer，支持旋转、缩放、翻转等操作* /posts/vue3-viewer 301
+/2021/06/01/Vue3全屏切换组件vue-fullscreen* /posts/vue3-fullscreen 301
+
+/2017/08/14/列表元素无内容时高度为0导致串行的问题* /posts/2017-08-14-problems_with_serialization_due_to_zero_height_of_list_elements_with_no_content 301
+/2017/09/08/使用相对路径发布vue-cli项目的坑* /posts/2017-09-08-pitfalls_of_publishing_vue_cli_projects_using_relative_paths 301
+/2017/09/11/Chrome升级到版本61后出现偏色问题的解决方法* /posts/2017-09-11-solution_to_color_deviation_issue_after_chrome_upgraded_to_version_61 301
+/2018/04/17/windows环境下无法提交gh-pages、无法发布npm包的问题* /posts/2018-04-17-problems_with_submitting_gh_pages_and_publishing_npm_packages_in_windows_environment 301
+/2018/04/17/babel-preset-env无法确保ES6的for-of语法兼容性* /posts/2018-04-17-babel-preset-env_unable_to_ensure_compatibility_of_ES6_for-of_syntax 301
+/2018/05/30/内嵌iframe页面在IOS下会受内部元素影响自动撑开的问题* /posts/2018-05-30-issue_with_embedded_iframe_pages_expanding_due_to_internal_element_impact_on_ios 301
+/2019/06/10/让IDE识别webpack的别名alias* /posts/2019-06-10-make_ide_recognize_webpack_alias 301
+/2019/06/25/CSS3实现转盘抽奖* /posts/2019-06-25-implementing_spin_wheel_lottery_with_css3 301
+/2019/08/13/cssnano升级导致z-index被重新计算的解决办法* /posts/2019-08-13-solution_to_z-index_recalculation_due_to_cssnano_upgrade 301
+/2020/01/18/Typescript中以变量方式传递类* /posts/2020-01-18-passing_classes_as_variables_in_typescript 301
+/2020/04/02/解锁网易云音乐的灰色歌曲、会员歌曲/* /posts/2020-04-02-unlocking_grayed_out_songs_and_member_songs_on_netease_cloud_music 301
+/2020/04/02/使用scss开发小程序（各种小程序平台通用）* /posts/2020-04-02-developing_mini_programs_using_scss_universal_for_various_mini_program_platforms 301
+/2020/07/01/页面加载时使用脚本自动跳转到新页面移动端浏览器不会产生历史记录* /posts/2020-07-01-automatic_redirect_without_history_when_loading_mobile_pages_with_script 301
+/2020/07/22/MySql批量修改表和表内字段的字符集和排序规则* /posts/2020-07-22-bulk_modification_of_table_and_field_character_set_and_sorting_rules_in_mysql 301
+/2020/07/22/MyBatisPlus分页多表关联查询* /posts/2020-07-22-mybatisplus_paging_multi-table_association_query 301
+/2020/08/07/淘宝商家应用（阿里小程序）开发踩坑记录*  /posts/2020-05-05-pitfall_record_of_developing_taobao_merchant_applications_ali_mini_programs 301
+/2020/09/16/如何在一段URL中插入参数* /posts/2020-09-16-how_to_insert_parameters_into_a_url 301
+/2021/05/31/Husky6配置正确但无法触发githook的问题* /posts/2021-05-31-issue_with_husky6_configuration_correct_but_unable_to_trigger_githook 301
+/2021/07/28/M1芯片Mac搭建ios开发环境踩坑* /posts/2021-07-28-pitfalls_of_setting_up_ios_development_environment_on_m1_chip_mac 301
+/2021/07/28/一段脚本同时编译FatFramework和XCFramework* /posts/2021-07-28-compiling_fatframework_and_xcframework_simultaneously_with_a_script 301
+/2023/06/02/微信小程序迁移支付宝踩坑* /posts/2023-06-02-pitfalls_of_migrating_wechat_mini_program_to_alipay 301
+
+
