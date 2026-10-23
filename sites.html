@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html  lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="/favicon.svg">
+    <script>
+    ;(function () {
+      const prefersDark =
+        window.matchMedia &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches
+      const setting = localStorage.getItem('vueuse-color-scheme') || 'auto'
+      if (setting === 'dark' || (prefersDark && setting !== 'light'))
+        document.documentElement.classList.toggle('dark', true)
+    })()
+    </script>
+  <style type="text/css">
+    :root { color-scheme: light dark; --va-c-bg: #fff; }
+    html.dark { --va-c-bg: #000; }
+    html { background-color: var(--va-c-bg); }
+  </style><style id="valaxy-fouc">body{opacity:0!important}</style><style>body{transition:opacity .15s ease}</style><noscript><style>body{opacity:1!important}</style></noscript><script>(function foucGuardScript(maxDuration) {
+  var done = 0;
+  function reveal() {
+    if (done) return;
+    done = 1;
+    var s = document.getElementById("valaxy-fouc");
+    if (s) s.remove();
+  }
+  function check() {
+    var links = document.querySelectorAll('link[rel="stylesheet"]');
+    for (var i = 0; i < links.length; i++) {
+      if (!links[i].sheet) return;
+    }
+    reveal();
+  }
+  new MutationObserver(check).observe(document.head, {
+    childList: true,
+    attributes: true,
+    attributeFilter: ["media", "rel"]
+  });
+  addEventListener("load", reveal);
+  if (maxDuration)
+    setTimeout(reveal, maxDuration);
+})(5000)</script>
+    <script>
+    const locale = localStorage.getItem('valaxy-locale') || 'zh-CN';
+    document.documentElement.setAttribute('lang', locale);
+    </script>
+    
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3550370964530707"
+          crossorigin="anonymous"></script>
+  <script type="module" crossorigin src="/assets/index.BE1QyuCP.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/rolldown-runtime.BWaJ3C7D.js">
+  <link rel="modulepreload" crossorigin href="/assets/framework.Cowi0K9s.js">
+  <link rel="modulepreload" crossorigin href="/assets/chunks/vue-i18n.CPH0LMY3.js">
+  <link rel="modulepreload" crossorigin href="/assets/chunks/vue-router.9-_rSFdg.js">
+  <link rel="modulepreload" crossorigin href="/assets/chunks/dayjs.Cy-y3ib_.js">
+  <link rel="modulepreload" crossorigin href="/assets/chunks/pinia.CB4ntaYp.js">
+  <link rel="modulepreload" crossorigin href="/assets/chunks/@vueuse/motion.jrlBnzDE.js">
+  <link rel="modulepreload" crossorigin href="/assets/theme.2d3Q2_Ye.js">
+  <link rel="modulepreload" crossorigin href="/assets/chunks/nprogress.B1osA4lt.js">
+  <link rel="stylesheet" crossorigin href="/assets/style.DLNOLKZk.css">
+<link rel="preload" href="/assets/KaTeX_AMS-Regular.BQhdFMY1.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_AMS-Regular.DMm9YOAa.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Caligraphic-Bold.Dq_IR9rO.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Caligraphic-Bold.BEiXGLvX.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Caligraphic-Regular.Di6jR-x-.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Caligraphic-Regular.CTRA-rTL.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Fraktur-Bold.CL6g_b3V.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Fraktur-Bold.BsDP51OF.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Fraktur-Regular.CTYiF6lA.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Fraktur-Regular.Dxdc4cR9.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Main-Bold.Cx986IdX.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Main-Bold.Jm3AIy58.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Main-BoldItalic.DxDJ3AOS.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Main-BoldItalic.SpSLRI95.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Main-Italic.NWA7e6Wa.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Main-Italic.BMLOBm91.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Main-Regular.B22Nviop.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Main-Regular.Dr94JaBh.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Math-BoldItalic.CZnvNsCZ.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Math-BoldItalic.iY-2wyZ7.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Math-Italic.t53AETM-.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Math-Italic.DA0__PXp.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_SansSerif-Bold.D1sUS0GD.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_SansSerif-Bold.DbIhKOiC.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_SansSerif-Italic.C3H0VqGB.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_SansSerif-Italic.DN2j7dab.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_SansSerif-Regular.DDBCnlJ7.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_SansSerif-Regular.CS6fqUqJ.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Script-Regular.D3wIWfF6.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Script-Regular.D5yQViql.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Size1-Regular.mCD8mA8B.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Size1-Regular.C195tn64.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Size2-Regular.Dy4dx90m.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Size2-Regular.oD1tc_U0.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Size3-Regular.CTq5MqoE.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Size4-Regular.Dl5lxZxV.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Size4-Regular.BF-4gkZK.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Typewriter-Regular.CO6r4hn1.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Typewriter-Regular.C0xS9mPB.woff" as="font" type="font/woff" crossorigin>
+<link rel="modulepreload" crossorigin href="/assets/theme.2d3Q2_Ye.js">
+<link rel="preload" href="/assets/none.DLM1AMsD.jpg" as="image">
+<link rel="preload" href="/assets/bg-img.kXdNMxcF.jpg" as="image">
+<link rel="preload" href="/assets/sidebar-bg-img.mp54gEws.webp" as="image">
+<link rel="preload" href="/assets/lg.CosQH4Cu.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/lg.B0dIV2BS.svg" as="image">
+<link rel="preload" href="/assets/loading.BZOHaeKn.gif" as="image">
+<link rel="modulepreload" crossorigin href="/assets/sites.C0plyYeS.js">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>站点地图 - Mirari&#x27;s Blog</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@900&display=swap">
+<meta property="og:locale:alternate" content="en">
+<meta name="description" content="Mirari 的博客、开源项目与常用入口，从这里继续探索。">
+<meta property="og:description" content="Mirari 的博客、开源项目与常用入口，从这里继续探索。">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:site_name" content="Mirari's Blog">
+<meta property="og:title" content="站点地图">
+<meta property="og:image" content="https://mirari.cc/favicon.svg">
+<meta property="og:image:alt" content="站点地图">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mirari.cc/sites">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="Mirari 的博客、开源项目与常用入口，从这里继续探索。">
+<meta name="twitter:image" content="https://mirari.cc/favicon.svg">
+<meta name="twitter:title" content="站点地图">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta name="generator" content="Valaxy 1.2.0">
+<link rel="canonical" href="https://mirari.cc/sites">
+<meta name="theme-color" content="#fff">
+<meta name="msapplication-TileColor" content="#fff">
+</head>
+<body>
+  <div id="app"><!--[--><!--[--><!--[--><!--v-if--><div class="yun-page-header-gradient"></div><div class="yun-nav-menu z-$yun-z-nav-menu fixed bg-transparent is-glass" data-v-e1dd1ae4><!--  --><div class="inline-flex justify-start items-center flex-1" data-v-e1dd1ae4><button type="button" class="vt-hamburger menu-btn sidebar-toggle leading-4 size-12 lg:hidden!" aria-label="mobile navigation" aria-expanded="false" inline-flex cursor="pointer" hover="bg-white/80 dark:bg-black/80" z="$yun-z-menu-btn" data-v-e1dd1ae4><span class="vt-hamburger-container"><span class="vt-hamburger-top"></span><span class="vt-hamburger-middle"></span><span class="vt-hamburger-bottom"></span></span></button><a href="/" class="va-link size-12 inline-flex-center cursor-pointer z-$yun-z-nav-menu text-$va-c-text" hover="bg-white/80 dark:bg-black/80 op-100" op-80 data-v-e1dd1ae4><!--[--><div class="size-6 i-ri-home-4-line"></div><!--]--></a><div class="hidden lg:contents" data-v-e1dd1ae4><!--[--><a href="/posts/" class="va-link size-12 inline-flex-center cursor-pointer z-$yun-z-nav-menu text-$va-c-text" hover="bg-white/80 dark:bg-black/80 op-100" op-80 title="博客文章" data-v-e1dd1ae4><!--[--><div class="size-6 i-ri-article-line"></div><!--]--></a><a aria-current="page" href="/sites/" class="router-link-active router-link-exact-active va-link size-12 inline-flex-center cursor-pointer z-$yun-z-nav-menu text-$va-c-text" hover="bg-white/80 dark:bg-black/80 op-100" op-80 title="站点地图" data-v-e1dd1ae4><!--[--><div class="size-6 i-ri-planet-line"></div><!--]--></a><!--]--></div></div><div class="flex flex-1 flex-center" data-v-e1dd1ae4><div flex="~ center col h-full" class="nav-menu-title-container cursor-pointer" data-v-e1dd1ae4><!----><span class="font-light truncate">Mirari&#39;s Blog</span></div></div><div class="inline-flex-center justify-end items-center flex-1" data-v-e1dd1ae4><!-- <template v-if="!app.isMobile && themeConfig.nav">
+          <template v-for="item in themeConfig.nav" :key="item.text">
+            <AppLink
+              v-if="'link' in item"
+              :to="item.link"
+              class="menu-btn inline-flex-center p-2 transition text-$va-c-text"
+              inline-flex cursor="pointer"
+              hover="bg-white/80 dark:bg-black/80"
+              z="$yun-z-menu-btn"
+            >
+              {{ item.text }}
+            </AppLink>
+            <template v-else-if="'items' in item" />
+          </template>
+        </template> --><button class="yun-icon-btn rounded-none! hidden sm:inline-flex" title="切换语言" style="color:var(--va-c-text);" data-v-e1dd1ae4><div i-ri-translate class="transition transform"></div></button><button type="button" class="yun-icon-btn yun-toggle-dark rounded-none!" title="切换深色模式" aria-label="切换深色模式" data-v-e1dd1ae4><div i="ri-sun-line dark:ri-moon-line"></div></button><!--[--><button class="yun-search-btn yun-icon-btn yun-search-action popup-trigger" title="搜索"><div i-ri-search-line aria-hidden="true"></div></button><!--[--><!--v-if--><!--]--><!--]--></div></div><!----><!--v-if--><!----><!--[--><div class="yun-bg"></div><!--]--><!----><button type="button" class="back-to-top yun-icon-btn" aria-label="回到顶部" title="回到顶部" tabindex="-1" aria-hidden="true" style="--yun-back-top-progress:0deg;"><div class="back-to-top-arrow" i-ri-arrow-up-s-line aria-hidden="true"></div></button><!--]--><!--[--><!--]--><!----><!--]--><div class="min-h-screen flex flex-col" data-v-1b6d2566><!----><div class="mt-12 md:mt-24 yun-layout-wrapper-content yun-layout-wrapper__content"><!--[--><main class="yun-main lt-md:w-full sites-page" flex="~ center" data-v-1b6d2566><!--[--><div class="no-aside content w-full md:w-3xl lg:w-2xl xl:w-2xl 2xl:w-4xl" flex="~ col grow" p="lt-md:0"><div class="yun-card flex-center overflow-hidden" flex="col" min-h="100px" bg="$va-c-bg-light" m="0" data-v-430e6195><!----><!----><div class="yun-card-body relative" w="full" flex="~ col" items="center" data-v-430e6195><!--[--><!----><div class="mt-8 mb-4"><!--[--><header class="post-header"><h1 p="2" text="2xl center" font="serif black" style="color:" class="post-title flex-center"><div m="r-1 t-1px" inline-flex class="i-ri-planet-line icon"></div><span inline-flex class="leading-none">站点地图</span></h1></header><!--]--></div><!--[--><!--]--><div p="x-4 b-8" class="sm:px-6 lg:px-12 xl:px-16" w="full"><!--[--><!--]--><!--[--><!-- <Transition appear> --><article class="markdown-body"><!--[--><!----><!----><!--[--><!--]--><!--[--><section class="site-atlas not-prose" aria-label="站点地图" data-v-187044e4><header class="atlas-intro" data-v-187044e4><span class="atlas-eyebrow" data-v-187044e4>MIRARI / ATLAS</span><p data-v-187044e4>记录、创造，然后在这里相遇。</p><span class="atlas-count" data-v-187044e4>3 个分组 <span aria-hidden="true" data-v-187044e4>·</span> 15 个入口</span></header><div class="atlas-layout" data-v-187044e4><div class="atlas-chart" role="group" aria-label="点选星图中的分组，查看对应入口" data-v-187044e4><span class="chart-coordinate chart-coordinate-top" aria-hidden="true" data-v-187044e4>INDEX / 01—03</span><span class="chart-orbit orbit-outer" aria-hidden="true" data-v-187044e4></span><span class="chart-orbit orbit-inner" aria-hidden="true" data-v-187044e4></span><svg class="chart-lines" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" data-v-187044e4><!--[--><path d="M 50 50 Q 22 50 22 26" class="active" data-v-187044e4></path><path d="M 50 50 Q 78 50 78 36" class="" data-v-187044e4></path><path d="M 50 50 Q 43 50 43 79" class="" data-v-187044e4></path><!--]--></svg><a href="/" class="va-link chart-center" aria-label="返回博客首页" data-v-187044e4><!--[--><span class="center-initial" aria-hidden="true" data-v-187044e4>M</span><span class="center-label" data-v-187044e4>mirari.cc</span><!--]--></a><!--[--><button type="button" class="is-active chart-node" style="left:22%;top:26%;" aria-pressed="true" aria-controls="atlas-directory" data-v-187044e4><span class="node-dot" aria-hidden="true" data-v-187044e4><span class="i-ri-book-open-line" data-v-187044e4></span></span><span class="node-caption" data-v-187044e4>01 / READ</span><span class="node-name" data-v-187044e4>博客阅读</span><span class="node-count" data-v-187044e4>4 个入口</span></button><button type="button" class="chart-node" style="left:78%;top:36%;" aria-pressed="false" aria-controls="atlas-directory" data-v-187044e4><span class="node-dot" aria-hidden="true" data-v-187044e4><span class="i-ri-code-s-slash-line" data-v-187044e4></span></span><span class="node-caption" data-v-187044e4>02 / BUILD</span><span class="node-name" data-v-187044e4>开源项目</span><span class="node-count" data-v-187044e4>6 个入口</span></button><button type="button" class="chart-node" style="left:43%;top:79%;" aria-pressed="false" aria-controls="atlas-directory" data-v-187044e4><span class="node-dot" aria-hidden="true" data-v-187044e4><span class="i-ri-compass-3-line" data-v-187044e4></span></span><span class="node-caption" data-v-187044e4>03 / CONNECT</span><span class="node-name" data-v-187044e4>关于与联系</span><span class="node-count" data-v-187044e4>5 个入口</span></button><!--]--><p class="chart-hint" data-v-187044e4><span class="hint-dot" aria-hidden="true" data-v-187044e4></span>选择一个坐标，展开它的目录</p></div><div class="atlas-mobile-groups" role="group" aria-label="选择导航分组" data-v-187044e4><!--[--><button type="button" class="is-active" aria-pressed="true" aria-controls="atlas-directory" data-v-187044e4><span class="i-ri-book-open-line" aria-hidden="true" data-v-187044e4></span>博客阅读</button><button type="button" class="" aria-pressed="false" aria-controls="atlas-directory" data-v-187044e4><span class="i-ri-code-s-slash-line" aria-hidden="true" data-v-187044e4></span>开源项目</button><button type="button" class="" aria-pressed="false" aria-controls="atlas-directory" data-v-187044e4><span class="i-ri-compass-3-line" aria-hidden="true" data-v-187044e4></span>关于与联系</button><!--]--></div><section id="atlas-directory" class="atlas-directory" aria-labelledby="atlas-group-title" data-v-187044e4><header class="directory-heading" data-v-187044e4><span class="directory-number" aria-hidden="true" data-v-187044e4>01</span><div class="directory-title" aria-live="polite" aria-atomic="true" data-v-187044e4><span class="atlas-eyebrow" data-v-187044e4>READ / 4 个入口</span><h2 id="atlas-group-title" data-v-187044e4>博客阅读</h2></div></header><p class="directory-description" data-v-187044e4>学习笔记、开发记录，还有日常生活里的零碎想法。</p><ul class="directory-links" data-v-187044e4><!--[--><li data-v-187044e4><a href="/posts/" class="va-link atlas-link" data-v-187044e4><!--[--><span class="link-index" aria-hidden="true" data-v-187044e4>01</span><span class="link-copy" data-v-187044e4><span class="link-title" data-v-187044e4>全部文章</span><span class="link-description" data-v-187044e4>按时间翻阅博客文章。</span></span><span class="link-end" data-v-187044e4><span class="link-label" data-v-187044e4>文章</span><span class="i-ri-arrow-right-line" aria-hidden="true" data-v-187044e4></span><!--v-if--></span><!--]--></a></li><li data-v-187044e4><a href="/archives/" class="va-link atlas-link" data-v-187044e4><!--[--><span class="link-index" aria-hidden="true" data-v-187044e4>02</span><span class="link-copy" data-v-187044e4><span class="link-title" data-v-187044e4>文章归档</span><span class="link-description" data-v-187044e4>沿着年份，找回过去的记录。</span></span><span class="link-end" data-v-187044e4><span class="link-label" data-v-187044e4>时间线</span><span class="i-ri-arrow-right-line" aria-hidden="true" data-v-187044e4></span><!--v-if--></span><!--]--></a></li><li data-v-187044e4><a href="/categories/" class="va-link atlas-link" data-v-187044e4><!--[--><span class="link-index" aria-hidden="true" data-v-187044e4>03</span><span class="link-copy" data-v-187044e4><span class="link-title" data-v-187044e4>文章分类</span><span class="link-description" data-v-187044e4>从学习笔记、项目与生活随笔开始。</span></span><span class="link-end" data-v-187044e4><span class="link-label" data-v-187044e4>分类</span><span class="i-ri-arrow-right-line" aria-hidden="true" data-v-187044e4></span><!--v-if--></span><!--]--></a></li><li data-v-187044e4><a href="/tags/" class="va-link atlas-link" data-v-187044e4><!--[--><span class="link-index" aria-hidden="true" data-v-187044e4>04</span><span class="link-copy" data-v-187044e4><span class="link-title" data-v-187044e4>文章标签</span><span class="link-description" data-v-187044e4>跟随一个关键词继续阅读。</span></span><span class="link-end" data-v-187044e4><span class="link-label" data-v-187044e4>标签</span><span class="i-ri-arrow-right-line" aria-hidden="true" data-v-187044e4></span><!--v-if--></span><!--]--></a></li><!--]--></ul></section></div><footer class="atlas-footer" data-v-187044e4><span data-v-187044e4>Mirari’s Blog</span><span data-v-187044e4>从一篇文章，到一个小项目。</span></footer></section><!--]--><!--]--><!----><!----></article><!-- </Transition> --><!--]--><!--[--><!--]--></div><!--]--></div><!----></div><!--[--><!--]--><!--[--><!----><!--]--><!--[--><!--]--><!----><!--[--><!--
+    Empty placeholder, meant to be overridden by the user (see demo/yun/components/YunAdBoard.vue).
+    `v-if="false"` renders a comment node instead of a real element: this avoids the SSR hydration
+    crash a raw `<template>` causes (#711), while still adding no gap to the parent flex layout,
+    which an empty `<div>` would (ab57216f).
+  --><!----><!--]--><!--[--><!--]--><!--[--><!--]--></div><!--]--></main><!--]--></div><footer flex="~ col" class="relative yun-footer va-footer px-4 py-4 pt-0 text-$va-c-text-light w-full mt-14" bg="white dark:$va-c-bg-soft" text="center sm"><div class="yun-cloud absolute top--10 left-0 right-0"><svg class="waves" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" fill="var(--yun-c-cloud)"></path></defs><g class="parallax"><use xlink:href="#gentle-wave" x="48" y="0"></use><use xlink:href="#gentle-wave" x="48" y="3"></use><use xlink:href="#gentle-wave" x="48" y="5"></use><use xlink:href="#gentle-wave" x="48" y="7"></use></g></svg></div><!----><div class="copyright flex justify-center items-center gap-2" p="1"><span> © <!--[-->2017 - <!--]--> 2026</span><!----><span>mirari</span></div><!----><!--[--><!--]--><div class="yun-footer-gradient"></div></footer></div><!--]--></div><script>window.__INITIAL_STATE__='{"pinia":{"yun-app":{"bannerAnimationDone":false},"app":{"showLoading":true}}}'</script><script type="application/ld+json" data-hid="schema-org-graph">{"@context":"https://schema.org","@graph":[{"@id":"https://mirari.cc/#identity","@type":"Person","name":"mirari","url":"https://mirari.cc/","image":{"@id":"https://mirari.cc/#/schema/image/1"},"sameAs":["/atom.xml","https://github.com/mirari","mailto:clover4@gmail.com","https://www.travellings.cn/go.html"]},{"@id":"https://mirari.cc/#website","@type":"WebSite","dateModified":"2026-10-23T18:31:15.000Z","datePublished":"2026-10-23T18:31:15.000Z","inLanguage":"zh-CN","name":"站点地图","url":"https://mirari.cc/","publisher":{"@id":"https://mirari.cc/#identity"}},{"@id":"https://mirari.cc/sites#webpage","@type":"WebPage","description":"Mirari 的博客、开源项目与常用入口，从这里继续探索。","name":"站点地图","url":"https://mirari.cc/sites","isPartOf":{"@id":"https://mirari.cc/#website"},"potentialAction":[{"@type":"ReadAction","target":["https://mirari.cc/sites"]}]},{"@id":"https://mirari.cc/#/schema/image/1","@type":"ImageObject","contentUrl":"https://mirari.cc/avatar.jpg","inLanguage":"zh-CN","url":"https://mirari.cc/avatar.jpg"}]}</script>
+  <div id="valaxy-teleports"></div>
+  
+
+</body>
+</html>

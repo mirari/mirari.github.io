@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html  lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="/favicon.svg">
+    <script>
+    ;(function () {
+      const prefersDark =
+        window.matchMedia &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches
+      const setting = localStorage.getItem('vueuse-color-scheme') || 'auto'
+      if (setting === 'dark' || (prefersDark && setting !== 'light'))
+        document.documentElement.classList.toggle('dark', true)
+    })()
+    </script>
+  <style type="text/css">
+    :root { color-scheme: light dark; --va-c-bg: #fff; }
+    html.dark { --va-c-bg: #000; }
+    html { background-color: var(--va-c-bg); }
+  </style><style id="valaxy-fouc">body{opacity:0!important}</style><style>body{transition:opacity .15s ease}</style><noscript><style>body{opacity:1!important}</style></noscript><script>(function foucGuardScript(maxDuration) {
+  var done = 0;
+  function reveal() {
+    if (done) return;
+    done = 1;
+    var s = document.getElementById("valaxy-fouc");
+    if (s) s.remove();
+  }
+  function check() {
+    var links = document.querySelectorAll('link[rel="stylesheet"]');
+    for (var i = 0; i < links.length; i++) {
+      if (!links[i].sheet) return;
+    }
+    reveal();
+  }
+  new MutationObserver(check).observe(document.head, {
+    childList: true,
+    attributes: true,
+    attributeFilter: ["media", "rel"]
+  });
+  addEventListener("load", reveal);
+  if (maxDuration)
+    setTimeout(reveal, maxDuration);
+})(5000)</script>
+    <script>
+    const locale = localStorage.getItem('valaxy-locale') || 'zh-CN';
+    document.documentElement.setAttribute('lang', locale);
+    </script>
+    
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3550370964530707"
+          crossorigin="anonymous"></script>
+  <script type="module" crossorigin src="/assets/index.BE1QyuCP.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/rolldown-runtime.BWaJ3C7D.js">
+  <link rel="modulepreload" crossorigin href="/assets/framework.Cowi0K9s.js">
+  <link rel="modulepreload" crossorigin href="/assets/chunks/vue-i18n.CPH0LMY3.js">
+  <link rel="modulepreload" crossorigin href="/assets/chunks/vue-router.9-_rSFdg.js">
+  <link rel="modulepreload" crossorigin href="/assets/chunks/dayjs.Cy-y3ib_.js">
+  <link rel="modulepreload" crossorigin href="/assets/chunks/pinia.CB4ntaYp.js">
+  <link rel="modulepreload" crossorigin href="/assets/chunks/@vueuse/motion.jrlBnzDE.js">
+  <link rel="modulepreload" crossorigin href="/assets/theme.2d3Q2_Ye.js">
+  <link rel="modulepreload" crossorigin href="/assets/chunks/nprogress.B1osA4lt.js">
+  <link rel="stylesheet" crossorigin href="/assets/style.DLNOLKZk.css">
+<link rel="preload" href="/assets/KaTeX_AMS-Regular.BQhdFMY1.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_AMS-Regular.DMm9YOAa.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Caligraphic-Bold.Dq_IR9rO.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Caligraphic-Bold.BEiXGLvX.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Caligraphic-Regular.Di6jR-x-.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Caligraphic-Regular.CTRA-rTL.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Fraktur-Bold.CL6g_b3V.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Fraktur-Bold.BsDP51OF.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Fraktur-Regular.CTYiF6lA.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Fraktur-Regular.Dxdc4cR9.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Main-Bold.Cx986IdX.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Main-Bold.Jm3AIy58.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Main-BoldItalic.DxDJ3AOS.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Main-BoldItalic.SpSLRI95.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Main-Italic.NWA7e6Wa.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Main-Italic.BMLOBm91.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Main-Regular.B22Nviop.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Main-Regular.Dr94JaBh.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Math-BoldItalic.CZnvNsCZ.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Math-BoldItalic.iY-2wyZ7.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Math-Italic.t53AETM-.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Math-Italic.DA0__PXp.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_SansSerif-Bold.D1sUS0GD.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_SansSerif-Bold.DbIhKOiC.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_SansSerif-Italic.C3H0VqGB.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_SansSerif-Italic.DN2j7dab.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_SansSerif-Regular.DDBCnlJ7.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_SansSerif-Regular.CS6fqUqJ.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Script-Regular.D3wIWfF6.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Script-Regular.D5yQViql.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Size1-Regular.mCD8mA8B.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Size1-Regular.C195tn64.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Size2-Regular.Dy4dx90m.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Size2-Regular.oD1tc_U0.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Size3-Regular.CTq5MqoE.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Size4-Regular.Dl5lxZxV.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Size4-Regular.BF-4gkZK.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Typewriter-Regular.CO6r4hn1.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Typewriter-Regular.C0xS9mPB.woff" as="font" type="font/woff" crossorigin>
+<link rel="modulepreload" crossorigin href="/assets/theme.2d3Q2_Ye.js">
+<link rel="preload" href="/assets/none.DLM1AMsD.jpg" as="image">
+<link rel="preload" href="/assets/bg-img.kXdNMxcF.jpg" as="image">
+<link rel="preload" href="/assets/sidebar-bg-img.mp54gEws.webp" as="image">
+<link rel="preload" href="/assets/lg.CosQH4Cu.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/lg.B0dIV2BS.svg" as="image">
+<link rel="preload" href="/assets/loading.BZOHaeKn.gif" as="image">
+<link rel="modulepreload" crossorigin href="/assets/2018-04-17-problems_with_submitting_gh_pages_and_publishing_npm_packages_in_windows_environment.ACk_eb3y.js">
+<link rel="preload" href="/assets/1.kiGclqjW.png" as="image">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>windows环境下无法提交gh-pages、无法发布npm包的问题 - Mirari&#x27;s Blog</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@900&display=swap">
+<meta property="og:locale:alternate" content="en">
+<meta name="description" content="严重拖延症">
+<meta property="og:description" content="严重拖延症">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:site_name" content="Mirari's Blog">
+<meta property="og:title" content="windows环境下无法提交gh-pages、无法发布npm包的问题">
+<meta property="og:image" content="https://mirari.cc/1.png">
+<meta property="og:image:alt" content="windows环境下无法提交gh-pages、无法发布npm包的问题">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mirari.cc/posts/2018-04-17-problems_with_submitting_gh_pages_and_publishing_npm_packages_in_windows_environment">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="严重拖延症">
+<meta name="twitter:image" content="https://mirari.cc/1.png">
+<meta name="twitter:title" content="windows环境下无法提交gh-pages、无法发布npm包的问题">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta name="generator" content="Valaxy 1.2.0">
+<link rel="canonical" href="https://mirari.cc/posts/2018-04-17-problems_with_submitting_gh_pages_and_publishing_npm_packages_in_windows_environment">
+<meta name="theme-color" content="#fff">
+<meta name="msapplication-TileColor" content="#fff">
+</head>
+<body>
+  <div id="app"><!--[--><!--[--><!--[--><!--v-if--><div class="yun-page-header-gradient"></div><div class="yun-nav-menu z-$yun-z-nav-menu fixed bg-transparent is-glass" data-v-e1dd1ae4><!--  --><div class="inline-flex justify-start items-center flex-1" data-v-e1dd1ae4><button type="button" class="vt-hamburger menu-btn sidebar-toggle leading-4 size-12 lg:hidden!" aria-label="mobile navigation" aria-expanded="false" inline-flex cursor="pointer" hover="bg-white/80 dark:bg-black/80" z="$yun-z-menu-btn" data-v-e1dd1ae4><span class="vt-hamburger-container"><span class="vt-hamburger-top"></span><span class="vt-hamburger-middle"></span><span class="vt-hamburger-bottom"></span></span></button><a href="/" class="va-link size-12 inline-flex-center cursor-pointer z-$yun-z-nav-menu text-$va-c-text" hover="bg-white/80 dark:bg-black/80 op-100" op-80 data-v-e1dd1ae4><!--[--><div class="size-6 i-ri-home-4-line"></div><!--]--></a><div class="hidden lg:contents" data-v-e1dd1ae4><!--[--><a href="/posts/" class="va-link size-12 inline-flex-center cursor-pointer z-$yun-z-nav-menu text-$va-c-text" hover="bg-white/80 dark:bg-black/80 op-100" op-80 title="博客文章" data-v-e1dd1ae4><!--[--><div class="size-6 i-ri-article-line"></div><!--]--></a><a href="/sites/" class="va-link size-12 inline-flex-center cursor-pointer z-$yun-z-nav-menu text-$va-c-text" hover="bg-white/80 dark:bg-black/80 op-100" op-80 title="站点地图" data-v-e1dd1ae4><!--[--><div class="size-6 i-ri-planet-line"></div><!--]--></a><!--]--></div></div><div class="flex flex-1 flex-center" data-v-e1dd1ae4><div flex="~ center col h-full" class="nav-menu-title-container cursor-pointer" data-v-e1dd1ae4><!----><span class="font-light truncate">Mirari&#39;s Blog</span></div></div><div class="inline-flex-center justify-end items-center flex-1" data-v-e1dd1ae4><!-- <template v-if="!app.isMobile && themeConfig.nav">
+          <template v-for="item in themeConfig.nav" :key="item.text">
+            <AppLink
+              v-if="'link' in item"
+              :to="item.link"
+              class="menu-btn inline-flex-center p-2 transition text-$va-c-text"
+              inline-flex cursor="pointer"
+              hover="bg-white/80 dark:bg-black/80"
+              z="$yun-z-menu-btn"
+            >
+              {{ item.text }}
+            </AppLink>
+            <template v-else-if="'items' in item" />
+          </template>
+        </template> --><button class="yun-icon-btn rounded-none! hidden sm:inline-flex" title="切换语言" style="color:var(--va-c-text);" data-v-e1dd1ae4><div i-ri-translate class="transition transform"></div></button><button type="button" class="yun-icon-btn yun-toggle-dark rounded-none!" title="切换深色模式" aria-label="切换深色模式" data-v-e1dd1ae4><div i="ri-sun-line dark:ri-moon-line"></div></button><!--[--><button class="yun-search-btn yun-icon-btn yun-search-action popup-trigger" title="搜索"><div i-ri-search-line aria-hidden="true"></div></button><!--[--><!--v-if--><!--]--><!--]--></div></div><!----><!--v-if--><!----><!--[--><div class="yun-bg"></div><!--]--><!----><button type="button" class="back-to-top yun-icon-btn" aria-label="回到顶部" title="回到顶部" tabindex="-1" aria-hidden="true" style="--yun-back-top-progress:0deg;"><div class="back-to-top-arrow" i-ri-arrow-up-s-line aria-hidden="true"></div></button><!--]--><!--[--><!--]--><!----><!--]--><div class="min-h-screen flex flex-col"><!----><div class="mt-12 md:mt-24 yun-layout-wrapper-content yun-layout-wrapper__content"><!--[--><div class="yun-layout-left gap-4 sticky top-$yun-margin-top w-80"><!--[--><!--[--><div class="yun-card flex-center overflow-hidden p-4 min-h-sm" flex="~ col gap-1" min-h="100px" bg="$va-c-bg-light" data-v-430e6195><!----><!----><div class="yun-card-body relative" w="full" flex="~ col" items="center" data-v-430e6195><!--[--><div class="site-info gap-1 items-center text-center" flex="~ col" p="t-8"><a href="/about" class="site-author-avatar inline-flex-center"><div class="relative yun-author-avatar"><div class="absolute size-full avatar-bg bg-image-$yun-home-hero-image-background-image filter-blur-2xl op-30"></div><img class="rounded-full size-full bg-white dark:bg-white/20 p-1 m-0 absolute" src="/avatar.jpg" alt="作者头像"><span class="site-author-status absolute" title="所有的空闲时间都在打游戏">🎮</span></div></a><a href="/about" class="site-author-name font-black font-serif text-$va-c-text op-80 hover:op-100 flex-center">mirari</a><a href="/about/site" class="site-name text-lg leading-loose">Mirari&#39;s Blog</a><h4 class="site-subtitle block op-70" text="xs">╮(╯▽╰)╭</h4><div class="site-description">严重拖延症</div></div><div class="yun-gradient-line my-2 op-20"></div><nav class="site-nav" text-xl mt-2><a href="/archives/" class="post-classify-nav-item gap-1 w-20 p-2 rounded transition op-80" flex="~ col center" title="归档" hover="bg-$va-c-bg-soft op-100"><div flex="~ col" class="text-$va-c-text inline-flex-center gap-1"><!-- Use CSS to toggle icons based on router-link-active class to avoid SSR hydration mismatch --><div class="text-2xl icon-default i-ri-archive-line"></div><div class="text-2xl icon-active i-ri-archive-fill"></div><span class="text-xs">归档</span></div><span class="count text-base text-black/80 dark:text-white/80">43</span></a><a href="/categories/" class="post-classify-nav-item gap-1 w-20 p-2 rounded transition op-80" flex="~ col center" title="分类" hover="bg-$va-c-bg-soft op-100"><div flex="~ col" class="text-$va-c-text inline-flex-center gap-1"><!-- Use CSS to toggle icons based on router-link-active class to avoid SSR hydration mismatch --><div class="text-2xl icon-default i-ri-folder-2-line"></div><div class="text-2xl icon-active i-ri-folder-2-fill"></div><span class="text-xs">分类</span></div><span class="count text-base text-black/80 dark:text-white/80">5</span></a><a href="/tags/" class="post-classify-nav-item gap-1 w-20 p-2 rounded transition op-80" flex="~ col center" title="标签" hover="bg-$va-c-bg-soft op-100"><div flex="~ col" class="text-$va-c-text inline-flex-center gap-1"><!-- Use CSS to toggle icons based on router-link-active class to avoid SSR hydration mismatch --><div class="text-2xl icon-default i-ri-price-tag-3-line"></div><div class="text-2xl icon-active i-ri-price-tag-3-fill"></div><span class="text-xs">标签</span></div><span class="count text-base text-black/80 dark:text-white/80">57</span></a></nav><div class="yun-gradient-line my-2 op-20"></div><div class="links-of-author"><!--[--><a class="links-of-author-item yun-icon-btn" rel="noopener" href="/atom.xml" title="RSS" target="_blank" style="color:orange;"><div class="i-ri-rss-line icon"></div></a><a class="links-of-author-item yun-icon-btn" rel="noopener" href="https://github.com/mirari" title="GitHub" target="_blank" style="color:#6e5494;"><div class="i-ri-github-line icon"></div></a><a class="links-of-author-item yun-icon-btn" rel="noopener" href="mailto:clover4@gmail.com" title="电子邮件" target="_blank" style="color:#8E71C1;"><div class="i-ri-mail-line icon"></div></a><a class="links-of-author-item yun-icon-btn" rel="noopener" href="https://www.travellings.cn/go.html" title="Travelling" target="_blank" style="color:var(--va-c-text);"><div class="i-ri-train-line icon"></div></a><!--]--></div><div class="yun-gradient-line my-2 op-20"></div><div class="links flex-center"><!--[--><a href="/sites/" class="va-link link-item yun-icon-btn" inline-flex title="站点地图" style="color:undefined;"><!--[--><div class="i-ri-planet-line icon size-6"></div><!--]--></a><a href="/links/" class="va-link link-item yun-icon-btn" inline-flex title="友情链接" style="color:dodgerblue;"><!--[--><div class="i-ri-genderless-line icon size-6"></div><!--]--></a><!--]--></div><!--]--></div><!----></div><!--[--><!--
+    Empty placeholder, meant to be overridden by the user (see demo/yun/components/YunAdBoard.vue).
+    `v-if="false"` renders a comment node instead of a real element: this avoids the SSR hydration
+    crash a raw `<template>` causes (#711), while still adding no gap to the parent flex layout,
+    which an empty `<div>` would (ab57216f).
+  --><!----><!--]--><!--]--><!--]--></div><!----><main class="yun-main lt-md:w-full" flex="~ center"><!--[--><div class="content w-full md:w-3xl lg:w-2xl xl:w-2xl 2xl:w-4xl" flex="~ col grow" p="lt-md:0"><div class="yun-card flex-center overflow-hidden" flex="col" min-h="100px" bg="$va-c-bg-light" m="0" data-v-430e6195><!----><!----><div class="yun-card-body relative" w="full" flex="~ col" items="center" data-v-430e6195><!--[--><!----><div class="mt-8 mb-4"><!--[--><header class="post-header"><h1 p="2" text="2xl center" font="serif black" style="color:" class="post-title flex-center"><!----><span inline-flex class="leading-none">windows环境下无法提交gh-pages、无法发布npm包的问题</span></h1></header><!--]--></div><!--[--><!--[--><!--[--><!--[--><!----><div flex="~ center" text="sm" class="post-meta-col post-meta gap-4"><div class="post-time flex items-center gap-4"><span class="posted-time inline-flex-center gap-1" title="发表于2018-04-17 10:47:47"><div class="inline-block" i-ri-calendar-line></div><time class="op-80">2018-04-17</time></span><span class="edited-time inline-flex-center gap-1" title="更新于2026-10-24 02:31:15"><div i-ri-calendar-2-line></div><time class="op-80">2026-10-24</time></span></div><!--[--><!--]--><div class="inline-flex-center gap-4"><div class="inline-flex-center post-counter gap-4"><span class="word-count inline-flex-center gap-1" title="本文字数"><div class="inline-block" i-ri-file-word-line></div><span class="op-80">332</span></span><span class="reading-time inline-flex-center gap-1" title="阅读时长"><div i-ri-timer-line></div><time class="op-80">2m</time></span></div><div class="inline-flex gap-4" text="sm" h="5"><div inline-flex justify="center" items="center" title="阅读次数"><div inline-flex i-ri-eye-line></div><span ml-1 inline-flex class="waline-pageview-count op-80" data-path="/posts/2018-04-17-problems_with_submitting_gh_pages_and_publishing_npm_packages_in_windows_environment"></span></div><div inline-flex justify="center" items="center" title="评论数"><div inline-flex i-ri-chat-4-line></div><span ml-1 inline-flex class="waline-comment-count op-80" data-path="/posts/2018-04-17-problems_with_submitting_gh_pages_and_publishing_npm_packages_in_windows_environment"></span></div></div><!----></div></div><!--]--><!----><div class="inline-flex mt-2" text="sm" py="1"><a href="/categories?category=%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0" class="transition post-category inline-flex-center text-xs border-$va-c-divider" px-2 h="7" border rounded-full hover="bg-blue-500 text-white"><div m="x-1" inline-flex i-ri-folder-2-line></div><span>学习笔记</span></a><span mx="2"></span><div class="post-tags inline-flex" items="center" gap="1" flex="wrap 1" justify="end"><!--[--><a href="/tags/?tag=npm" class="transition post-tag inline-flex-center text-xs border-$va-c-divider" px-2 h="7" rounded-full border hover="bg-blue-500"><span>npm</span></a><a href="/tags/?tag=github" class="transition post-tag inline-flex-center text-xs border-$va-c-divider" px-2 h="7" rounded-full border hover="bg-blue-500"><span>github</span></a><a href="/tags/?tag=git" class="transition post-tag inline-flex-center text-xs border-$va-c-divider" px-2 h="7" rounded-full border hover="bg-blue-500"><span>git</span></a><a href="/tags/?tag=nodejs" class="transition post-tag inline-flex-center text-xs border-$va-c-divider" px-2 h="7" rounded-full border hover="bg-blue-500"><span>nodejs</span></a><!--]--></div></div><!--]--><!--]--><!--]--><div p="x-4 b-8" class="sm:px-6 lg:px-12 xl:px-16" w="full"><!--[--><!--]--><!--[--><!-- <Transition appear> --><article class="markdown-body"><!--[--><!----><!----><!--[--><!--]--><!--[--><p>以下问题均出现在windows环境，使用IntelliJ IDEA中的npm选项卡双击执行命令时。</p><p>使用npm的gh-pages工具包，可以很方便地一键发布指定目录到项目的gh-pages分支。</p><p>以前用着好好的，但是最近使用的时候，忽然发现以下报错信息：</p><!-- more --><div class="language-"><button title="Copy code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code"><code v-pre><span class="line"><span>No such device or address: &#39;/dev/tty&#39;</span></span>
+<span class="line"><span>fatal: could not read Username for &#39;https://github.com&#39;: No error</span></span></code></pre><button class="code-block-unfold-btn"></button></div><p>网上搜到类似的问题都是hexo的发布，但这里并不像hexo一样用到config.yml，流传的处理方式也只是治标不治本（暴露了账号密码到配置文件中）。 关键问题还是执行过程中出现了windows不支持的语句。 最终处理方式是，重新安装git for windows，在安装过程这一步选择第二项：</p><figure><img src="/assets/1.kiGclqjW.png" alt="" loading="lazy" decoding="async"></figure><p>这样可以使cmd支持git命令。应该是之前手贱升级git的时候点错了。</p><p>随后尝试一键发布到npm仓库时又出现了如下错误：</p><div class="language-"><button title="Copy code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code"><code v-pre><span class="line"><span> Error: EPERM: operation not permitted, unlink &#39;...\Temp\npm-xxxxx-xxxxxxxx\tmp\fromDir-xxxxxxxx\package.tgz&#39;</span></span>
+<span class="line"><span>npm ERR!        at Error (native)</span></span></code></pre><button class="code-block-unfold-btn"></button></div><p>解决方式是打开Idea设置，找到<code>Node.js and npm</code>，将Package Manager从yarn改为npm。</p><!--]--><!--]--><!----><!----></article><!-- </Transition> --><!--]--><!--[--><!--[--><!--[--><!----><ul class="post-copyright" m="y-4"><li class="post-copyright-author"><strong>本文作者：</strong><span>mirari</span></li><li class="post-copyright-link"><strong>本文链接：</strong><a href="https://mirari.cc/posts/2018-04-17-problems_with_submitting_gh_pages_and_publishing_npm_packages_in_windows_environment" target="_blank" title="本文链接">https://mirari.cc/posts/2018-04-17-problems_with_submitting_gh_pages_and_publishing_npm_packages_in_windows_environment</a></li><li class="post-copyright-license"><strong>版权声明：</strong><span>本博客所有文章除特别声明外，均默认采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener" title="CC BY-NC-SA 4.0 ">CC BY-NC-SA</a> 许可协议。</span></li></ul><!--]--><!--]--><!--]--></div><!--]--></div><!----></div><!--[--><!--]--><!--[--><div class="post-nav"><div class="post-nav-item"><!----></div><div class="post-nav-item"><a href="/posts/2026-03-13-what_is_it_like_to_raise_a_lobster_that_complains_in_a_tavern/" class="post-nav-next" title="养一只会跑去酒馆吐槽的龙虾是什么体验？"><span class="title truncate" text="sm">养一只会跑去酒馆吐槽的龙虾是什么体验？</span><div class="icon" i-ri-arrow-right-s-line></div></a></div></div><!--]--><!--[--><!--]--><!--[--><div class="yun-card flex-center overflow-hidden comment yun-comment sm:p-6 lg:px-12 xl:px-16" flex="col" min-h="100px" bg="$va-c-bg-light" w="full" p="4" data-v-430e6195><!----><!----><div class="yun-card-body relative" w="full" flex="~ col" items="center" data-v-430e6195><!--[--><!----><!--]--></div><!----></div><!--]--><!--[--><!--
+    Empty placeholder, meant to be overridden by the user (see demo/yun/components/YunAdBoard.vue).
+    `v-if="false"` renders a comment node instead of a real element: this avoids the SSR hydration
+    crash a raw `<template>` causes (#711), while still adding no gap to the parent flex layout,
+    which an empty `<div>` would (ab57216f).
+  --><!----><!--]--><!--[--><!--]--><!--[--><!--]--></div><!--]--></main><!--[--><!----><!----><!----><!--]--><!--]--></div><footer flex="~ col" class="relative yun-footer va-footer px-4 py-4 pt-0 text-$va-c-text-light w-full mt-14" bg="white dark:$va-c-bg-soft" text="center sm"><div class="yun-cloud absolute top--10 left-0 right-0"><svg class="waves" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" fill="var(--yun-c-cloud)"></path></defs><g class="parallax"><use xlink:href="#gentle-wave" x="48" y="0"></use><use xlink:href="#gentle-wave" x="48" y="3"></use><use xlink:href="#gentle-wave" x="48" y="5"></use><use xlink:href="#gentle-wave" x="48" y="7"></use></g></svg></div><!----><div class="copyright flex justify-center items-center gap-2" p="1"><span> © <!--[-->2017 - <!--]--> 2026</span><!----><span>mirari</span></div><!----><!--[--><!--]--><div class="yun-footer-gradient"></div></footer></div><!--]--></div><script>window.__INITIAL_STATE__='{"pinia":{"yun-app":{"bannerAnimationDone":false},"app":{"showLoading":true},"site":{},"routerStore":{}}}'</script><script type="application/ld+json" data-hid="schema-org-graph">{"@context":"https://schema.org","@graph":[{"@id":"https://mirari.cc/#identity","@type":"Person","name":"mirari","url":"https://mirari.cc/","image":{"@id":"https://mirari.cc/#/schema/image/1"},"sameAs":["/atom.xml","https://github.com/mirari","mailto:clover4@gmail.com","https://www.travellings.cn/go.html"]},{"@id":"https://mirari.cc/#website","@type":"WebSite","dateModified":"2026-10-23T18:31:15.000Z","datePublished":"2018-04-17T02:47:47.000Z","inLanguage":"zh-CN","name":"windows环境下无法提交gh-pages、无法发布npm包的问题","url":"https://mirari.cc/","publisher":{"@id":"https://mirari.cc/#identity"}},{"@id":"https://mirari.cc/posts/2018-04-17-problems_with_submitting_gh_pages_and_publishing_npm_packages_in_windows_environment#webpage","@type":"WebPage","dateModified":"2026-10-23T18:31:15.000Z","datePublished":"2018-04-17T02:47:47.000Z","description":"严重拖延症","name":"windows环境下无法提交gh-pages、无法发布npm包的问题","url":"https://mirari.cc/posts/2018-04-17-problems_with_submitting_gh_pages_and_publishing_npm_packages_in_windows_environment","isPartOf":{"@id":"https://mirari.cc/#website"},"potentialAction":[{"@type":"ReadAction","target":["https://mirari.cc/posts/2018-04-17-problems_with_submitting_gh_pages_and_publishing_npm_packages_in_windows_environment"]}]},{"@id":"https://mirari.cc/posts/2018-04-17-problems_with_submitting_gh_pages_and_publishing_npm_packages_in_windows_environment#article","dateModified":"2026-10-23T18:31:15.000Z","datePublished":"2018-04-17T02:47:47.000Z","headline":"windows环境下无法提交gh-pages、无法发布npm包的问题","inLanguage":"zh-CN","thumbnailUrl":"https://mirari.cc/1.png","@type":["Article","BlogPosting"],"author":{"@id":"https://mirari.cc/#/schema/person/1"},"image":{"@id":"https://mirari.cc/#/schema/image/2"},"isPartOf":{"@id":"https://mirari.cc/posts/2018-04-17-problems_with_submitting_gh_pages_and_publishing_npm_packages_in_windows_environment#webpage"},"mainEntityOfPage":{"@id":"https://mirari.cc/posts/2018-04-17-problems_with_submitting_gh_pages_and_publishing_npm_packages_in_windows_environment#webpage"},"publisher":{"@id":"https://mirari.cc/#identity"}},{"@id":"https://mirari.cc/#/schema/person/1","@type":"Person","name":"mirari","url":"https://mirari.cc/"},{"@id":"https://mirari.cc/#/schema/image/1","@type":"ImageObject","contentUrl":"https://mirari.cc/avatar.jpg","inLanguage":"zh-CN","url":"https://mirari.cc/avatar.jpg"},{"@id":"https://mirari.cc/#/schema/image/2","@type":"ImageObject","contentUrl":"https://mirari.cc/1.png","inLanguage":"zh-CN","url":"https://mirari.cc/1.png"}]}</script>
+  <div id="valaxy-teleports"></div>
+  
+
+</body>
+</html>
