@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html  lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="/favicon.svg">
+    <script>
+    ;(function () {
+      const prefersDark =
+        window.matchMedia &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches
+      const setting = localStorage.getItem('vueuse-color-scheme') || 'auto'
+      if (setting === 'dark' || (prefersDark && setting !== 'light'))
+        document.documentElement.classList.toggle('dark', true)
+    })()
+    </script>
+  <style type="text/css">
+    :root { color-scheme: light dark; --va-c-bg: #fff; }
+    html.dark { --va-c-bg: #000; }
+    html { background-color: var(--va-c-bg); }
+  </style><style id="valaxy-fouc">body{opacity:0!important}</style><style>body{transition:opacity .15s ease}</style><noscript><style>body{opacity:1!important}</style></noscript><script>(function foucGuardScript(maxDuration) {
+  var done = 0;
+  function reveal() {
+    if (done) return;
+    done = 1;
+    var s = document.getElementById("valaxy-fouc");
+    if (s) s.remove();
+  }
+  function check() {
+    var links = document.querySelectorAll('link[rel="stylesheet"]');
+    for (var i = 0; i < links.length; i++) {
+      if (!links[i].sheet) return;
+    }
+    reveal();
+  }
+  new MutationObserver(check).observe(document.head, {
+    childList: true,
+    attributes: true,
+    attributeFilter: ["media", "rel"]
+  });
+  addEventListener("load", reveal);
+  if (maxDuration)
+    setTimeout(reveal, maxDuration);
+})(5000)</script>
+    <script>
+    const locale = localStorage.getItem('valaxy-locale') || 'zh-CN';
+    document.documentElement.setAttribute('lang', locale);
+    </script>
+    
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3550370964530707"
+          crossorigin="anonymous"></script>
+  <script type="module" crossorigin src="/assets/index.D7Fyc6CC.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/rolldown-runtime.BWaJ3C7D.js">
+  <link rel="modulepreload" crossorigin href="/assets/framework.Cowi0K9s.js">
+  <link rel="modulepreload" crossorigin href="/assets/chunks/vue-i18n.CPH0LMY3.js">
+  <link rel="modulepreload" crossorigin href="/assets/chunks/vue-router.9-_rSFdg.js">
+  <link rel="modulepreload" crossorigin href="/assets/chunks/dayjs.Cy-y3ib_.js">
+  <link rel="modulepreload" crossorigin href="/assets/chunks/pinia.CB4ntaYp.js">
+  <link rel="modulepreload" crossorigin href="/assets/chunks/@vueuse/motion.jrlBnzDE.js">
+  <link rel="modulepreload" crossorigin href="/assets/theme.BJ6GWN_1.js">
+  <link rel="modulepreload" crossorigin href="/assets/chunks/nprogress.B1osA4lt.js">
+  <link rel="stylesheet" crossorigin href="/assets/style.TQ6SRnQw.css">
+<link rel="preload" href="/assets/KaTeX_AMS-Regular.BQhdFMY1.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_AMS-Regular.DMm9YOAa.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Caligraphic-Bold.Dq_IR9rO.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Caligraphic-Bold.BEiXGLvX.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Caligraphic-Regular.Di6jR-x-.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Caligraphic-Regular.CTRA-rTL.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Fraktur-Bold.CL6g_b3V.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Fraktur-Bold.BsDP51OF.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Fraktur-Regular.CTYiF6lA.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Fraktur-Regular.Dxdc4cR9.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Main-Bold.Cx986IdX.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Main-Bold.Jm3AIy58.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Main-BoldItalic.DxDJ3AOS.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Main-BoldItalic.SpSLRI95.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Main-Italic.NWA7e6Wa.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Main-Italic.BMLOBm91.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Main-Regular.B22Nviop.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Main-Regular.Dr94JaBh.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Math-BoldItalic.CZnvNsCZ.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Math-BoldItalic.iY-2wyZ7.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Math-Italic.t53AETM-.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Math-Italic.DA0__PXp.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_SansSerif-Bold.D1sUS0GD.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_SansSerif-Bold.DbIhKOiC.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_SansSerif-Italic.C3H0VqGB.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_SansSerif-Italic.DN2j7dab.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_SansSerif-Regular.DDBCnlJ7.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_SansSerif-Regular.CS6fqUqJ.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Script-Regular.D3wIWfF6.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Script-Regular.D5yQViql.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Size1-Regular.mCD8mA8B.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Size1-Regular.C195tn64.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Size2-Regular.Dy4dx90m.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Size2-Regular.oD1tc_U0.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Size3-Regular.CTq5MqoE.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Size4-Regular.Dl5lxZxV.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Size4-Regular.BF-4gkZK.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Typewriter-Regular.CO6r4hn1.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Typewriter-Regular.C0xS9mPB.woff" as="font" type="font/woff" crossorigin>
+<link rel="modulepreload" crossorigin href="/assets/theme.BJ6GWN_1.js">
+<link rel="preload" href="/assets/none.DLM1AMsD.jpg" as="image">
+<link rel="preload" href="/assets/bg-img.kXdNMxcF.jpg" as="image">
+<link rel="preload" href="/assets/sidebar-bg-img.mp54gEws.webp" as="image">
+<link rel="preload" href="/assets/lg.CosQH4Cu.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/lg.B0dIV2BS.svg" as="image">
+<link rel="preload" href="/assets/loading.BZOHaeKn.gif" as="image">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mirari&#x27;s Blog</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@900&display=swap">
+<meta property="og:locale:alternate" content="en">
+<meta name="description" content="严重拖延症">
+<meta property="og:description" content="严重拖延症">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:site_name" content="Mirari's Blog">
+<meta property="og:title" content="Mirari's Blog">
+<meta property="og:image" content="https://mirari.cc/favicon.svg">
+<meta property="og:image:alt" content="Mirari's Blog">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mirari.cc/404">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="严重拖延症">
+<meta name="twitter:image" content="https://mirari.cc/favicon.svg">
+<meta name="twitter:title" content="Mirari's Blog">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta name="generator" content="Valaxy 1.2.0">
+<link rel="canonical" href="https://mirari.cc/404">
+<meta name="theme-color" content="#fff">
+<meta name="msapplication-TileColor" content="#fff">
+</head>
+<body>
+  <div id="app"><!--[--><!--[--><!--[--><!--v-if--><div class="yun-page-header-gradient"></div><div class="yun-nav-menu z-$yun-z-nav-menu fixed bg-transparent is-glass" data-v-e1dd1ae4><!--  --><div class="inline-flex justify-start items-center flex-1" data-v-e1dd1ae4><button type="button" class="vt-hamburger menu-btn sidebar-toggle leading-4 size-12 lg:hidden!" aria-label="mobile navigation" aria-expanded="false" inline-flex cursor="pointer" hover="bg-white/80 dark:bg-black/80" z="$yun-z-menu-btn" data-v-e1dd1ae4><span class="vt-hamburger-container"><span class="vt-hamburger-top"></span><span class="vt-hamburger-middle"></span><span class="vt-hamburger-bottom"></span></span></button><a href="/" class="va-link size-12 inline-flex-center cursor-pointer z-$yun-z-nav-menu text-$va-c-text" hover="bg-white/80 dark:bg-black/80 op-100" op-80 data-v-e1dd1ae4><!--[--><div class="size-6 i-ri-home-4-line"></div><!--]--></a><div class="hidden lg:contents" data-v-e1dd1ae4><!--[--><a href="/posts/" class="va-link size-12 inline-flex-center cursor-pointer z-$yun-z-nav-menu text-$va-c-text" hover="bg-white/80 dark:bg-black/80 op-100" op-80 title="博客文章" data-v-e1dd1ae4><!--[--><div class="size-6 i-ri-article-line"></div><!--]--></a><a href="/sites/" class="va-link size-12 inline-flex-center cursor-pointer z-$yun-z-nav-menu text-$va-c-text" hover="bg-white/80 dark:bg-black/80 op-100" op-80 title="站点地图" data-v-e1dd1ae4><!--[--><div class="size-6 i-ri-planet-line"></div><!--]--></a><!--]--></div></div><div class="flex flex-1 flex-center" data-v-e1dd1ae4><div flex="~ center col h-full" class="nav-menu-title-container cursor-pointer" data-v-e1dd1ae4><!----><span class="font-light truncate">Mirari&#39;s Blog</span></div></div><div class="inline-flex-center justify-end items-center flex-1" data-v-e1dd1ae4><!-- <template v-if="!app.isMobile && themeConfig.nav">
+          <template v-for="item in themeConfig.nav" :key="item.text">
+            <AppLink
+              v-if="'link' in item"
+              :to="item.link"
+              class="menu-btn inline-flex-center p-2 transition text-$va-c-text"
+              inline-flex cursor="pointer"
+              hover="bg-white/80 dark:bg-black/80"
+              z="$yun-z-menu-btn"
+            >
+              {{ item.text }}
+            </AppLink>
+            <template v-else-if="'items' in item" />
+          </template>
+        </template> --><button class="yun-icon-btn rounded-none! hidden sm:inline-flex" title="切换语言" style="color:var(--va-c-text);" data-v-e1dd1ae4><div i-ri-translate class="transition transform"></div></button><button type="button" class="yun-icon-btn yun-toggle-dark rounded-none!" title="切换深色模式" aria-label="切换深色模式" data-v-e1dd1ae4><div i="ri-sun-line dark:ri-moon-line"></div></button><!--[--><button class="yun-search-btn yun-icon-btn yun-search-action popup-trigger" title="搜索"><div i-ri-search-line aria-hidden="true"></div></button><!--[--><!--v-if--><!--]--><!--]--></div></div><!----><!--v-if--><!----><!--[--><div class="yun-bg"></div><!--]--><!----><button type="button" class="back-to-top yun-icon-btn" aria-label="回到顶部" title="回到顶部" tabindex="-1" aria-hidden="true" style="--yun-back-top-progress:0deg;"><div class="back-to-top-arrow" i-ri-arrow-up-s-line aria-hidden="true"></div></button><!--]--><!--[--><!--]--><!----><!--]--><main class="yun-404 va-main w-full min-h-screen" text="center" flex="~ col" justify="center" items="center" data-v-f53fefc3><div class="yun-404-line top" data-v-f53fefc3></div><h1 class="yun-404-code" aria-label="404" data-v-f53fefc3><!--[--><span class="yun-404-char" style="--char-index:0;" aria-hidden="true" data-v-f53fefc3>4</span><span class="yun-404-char" style="--char-index:1;" aria-hidden="true" data-v-f53fefc3>0</span><span class="yun-404-char" style="--char-index:2;" aria-hidden="true" data-v-f53fefc3>4</span><!--]--></h1><div class="yun-404-line bottom" data-v-f53fefc3></div><p class="yun-404-title yun-404-fade" data-v-f53fefc3>页面不存在</p><code class="yun-404-path yun-404-fade" data-v-f53fefc3></code><div class="yun-404-actions yun-404-fade" flex="~ wrap" justify="center" items="center" gap="3" data-v-f53fefc3><button class="btn rounded-full" p="x-6 y-2" text="sm" title="返回" data-v-f53fefc3>返回</button><!-- a 元素自带 text 属性，不能用 attributify 的 text="sm" --><!----></div></main><!--]--></div><script>window.__INITIAL_STATE__='{"pinia":{"yun-app":{"bannerAnimationDone":false},"app":{"showLoading":true}}}'</script><script type="application/ld+json" data-hid="schema-org-graph">{"@context":"https://schema.org","@graph":[{"@id":"https://mirari.cc/#identity","@type":"Person","name":"mirari","url":"https://mirari.cc/","image":{"@id":"https://mirari.cc/#/schema/image/1"},"sameAs":["/atom.xml","https://github.com/mirari","mailto:clover4@gmail.com","https://www.travellings.cn/go.html"]},{"@id":"https://mirari.cc/#website","@type":"WebSite","dateModified":"2026-10-25T16:58:33.000Z","datePublished":"2026-10-25T16:58:33.000Z","inLanguage":"zh-CN","url":"https://mirari.cc/","publisher":{"@id":"https://mirari.cc/#identity"}},{"@id":"https://mirari.cc/404#webpage","@type":"WebPage","description":"严重拖延症","url":"https://mirari.cc/404","isPartOf":{"@id":"https://mirari.cc/#website"},"potentialAction":[{"@type":"ReadAction","target":["https://mirari.cc/404"]}]},{"@id":"https://mirari.cc/#/schema/image/1","@type":"ImageObject","contentUrl":"https://mirari.cc/avatar.jpg","inLanguage":"zh-CN","url":"https://mirari.cc/avatar.jpg"}]}</script>
+  <div id="valaxy-teleports"></div>
+  
+
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html  lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="/favicon.svg">
+    <script>
+    ;(function () {
+      const prefersDark =
+        window.matchMedia &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches
+      const setting = localStorage.getItem('vueuse-color-scheme') || 'auto'
+      if (setting === 'dark' || (prefersDark && setting !== 'light'))
+        document.documentElement.classList.toggle('dark', true)
+    })()
+    </script>
+  <style type="text/css">
+    :root { color-scheme: light dark; --va-c-bg: #fff; }
+    html.dark { --va-c-bg: #000; }
+    html { background-color: var(--va-c-bg); }
+  </style><style id="valaxy-fouc">body{opacity:0!important}</style><style>body{transition:opacity .15s ease}</style><noscript><style>body{opacity:1!important}</style></noscript><script>(function foucGuardScript(maxDuration) {
+  var done = 0;
+  function reveal() {
+    if (done) return;
+    done = 1;
+    var s = document.getElementById("valaxy-fouc");
+    if (s) s.remove();
+  }
+  function check() {
+    var links = document.querySelectorAll('link[rel="stylesheet"]');
+    for (var i = 0; i < links.length; i++) {
+      if (!links[i].sheet) return;
+    }
+    reveal();
+  }
+  new MutationObserver(check).observe(document.head, {
+    childList: true,
+    attributes: true,
+    attributeFilter: ["media", "rel"]
+  });
+  addEventListener("load", reveal);
+  if (maxDuration)
+    setTimeout(reveal, maxDuration);
+})(5000)</script>
+    <script>
+    const locale = localStorage.getItem('valaxy-locale') || 'zh-CN';
+    document.documentElement.setAttribute('lang', locale);
+    </script>
+    
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3550370964530707"
+          crossorigin="anonymous"></script>
+  <script type="module" crossorigin src="/assets/index.D7Fyc6CC.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/rolldown-runtime.BWaJ3C7D.js">
+  <link rel="modulepreload" crossorigin href="/assets/framework.Cowi0K9s.js">
+  <link rel="modulepreload" crossorigin href="/assets/chunks/vue-i18n.CPH0LMY3.js">
+  <link rel="modulepreload" crossorigin href="/assets/chunks/vue-router.9-_rSFdg.js">
+  <link rel="modulepreload" crossorigin href="/assets/chunks/dayjs.Cy-y3ib_.js">
+  <link rel="modulepreload" crossorigin href="/assets/chunks/pinia.CB4ntaYp.js">
+  <link rel="modulepreload" crossorigin href="/assets/chunks/@vueuse/motion.jrlBnzDE.js">
+  <link rel="modulepreload" crossorigin href="/assets/theme.BJ6GWN_1.js">
+  <link rel="modulepreload" crossorigin href="/assets/chunks/nprogress.B1osA4lt.js">
+  <link rel="stylesheet" crossorigin href="/assets/style.TQ6SRnQw.css">
+<link rel="preload" href="/assets/KaTeX_AMS-Regular.BQhdFMY1.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_AMS-Regular.DMm9YOAa.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Caligraphic-Bold.Dq_IR9rO.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Caligraphic-Bold.BEiXGLvX.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Caligraphic-Regular.Di6jR-x-.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Caligraphic-Regular.CTRA-rTL.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Fraktur-Bold.CL6g_b3V.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Fraktur-Bold.BsDP51OF.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Fraktur-Regular.CTYiF6lA.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Fraktur-Regular.Dxdc4cR9.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Main-Bold.Cx986IdX.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Main-Bold.Jm3AIy58.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Main-BoldItalic.DxDJ3AOS.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Main-BoldItalic.SpSLRI95.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Main-Italic.NWA7e6Wa.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Main-Italic.BMLOBm91.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Main-Regular.B22Nviop.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Main-Regular.Dr94JaBh.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Math-BoldItalic.CZnvNsCZ.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Math-BoldItalic.iY-2wyZ7.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Math-Italic.t53AETM-.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Math-Italic.DA0__PXp.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_SansSerif-Bold.D1sUS0GD.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_SansSerif-Bold.DbIhKOiC.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_SansSerif-Italic.C3H0VqGB.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_SansSerif-Italic.DN2j7dab.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_SansSerif-Regular.DDBCnlJ7.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_SansSerif-Regular.CS6fqUqJ.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Script-Regular.D3wIWfF6.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Script-Regular.D5yQViql.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Size1-Regular.mCD8mA8B.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Size1-Regular.C195tn64.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Size2-Regular.Dy4dx90m.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Size2-Regular.oD1tc_U0.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Size3-Regular.CTq5MqoE.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Size4-Regular.Dl5lxZxV.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Size4-Regular.BF-4gkZK.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Typewriter-Regular.CO6r4hn1.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Typewriter-Regular.C0xS9mPB.woff" as="font" type="font/woff" crossorigin>
+<link rel="modulepreload" crossorigin href="/assets/theme.BJ6GWN_1.js">
+<link rel="preload" href="/assets/none.DLM1AMsD.jpg" as="image">
+<link rel="preload" href="/assets/bg-img.kXdNMxcF.jpg" as="image">
+<link rel="preload" href="/assets/sidebar-bg-img.mp54gEws.webp" as="image">
+<link rel="preload" href="/assets/lg.CosQH4Cu.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/lg.B0dIV2BS.svg" as="image">
+<link rel="preload" href="/assets/loading.BZOHaeKn.gif" as="image">
+<link rel="modulepreload" crossorigin href="/assets/2026-10-25-integrating_an_electric_sofa_into_mijia_smart_home.CEzQ99t2.js">
+<link rel="preload" href="/assets/image-20261025175044586.BmsQQNo9.png" as="image">
+<link rel="preload" href="/assets/IMG_20261023_115932.Be5LGtEr.jpg" as="image">
+<link rel="preload" href="/assets/image-20261025160335764.D8zgaleE.jpg" as="image">
+<link rel="preload" href="/assets/IMG_20261023_120008.tkLYOsQ0.jpg" as="image">
+<link rel="preload" href="/assets/IMG_20261023_115816.-pgdicbu.jpg" as="image">
+<link rel="preload" href="/assets/IMG_20261023_115838.Bc6LugKb.jpg" as="image">
+<link rel="preload" href="/assets/IMG_20261023_115830.4WjDNCIz.jpg" as="image">
+<link rel="preload" href="/assets/IMG_20261023_121029.ZFSETsLA.jpg" as="image">
+<link rel="preload" href="/assets/IMG_20261024_162646.Diibnlw4.jpg" as="image">
+<link rel="preload" href="/assets/IMG_20261024_165823.Ob4ErSTz.jpg" as="image">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>电动沙发接入米家智能家居 - Mirari&#x27;s Blog</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@900&display=swap">
+<meta property="og:locale:alternate" content="en">
+<meta name="description" content="严重拖延症">
+<meta property="og:description" content="严重拖延症">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:site_name" content="Mirari's Blog">
+<meta property="og:title" content="电动沙发接入米家智能家居">
+<meta property="og:image" content="https://mirari.cc/image-20261025175044586.png">
+<meta property="og:image:alt" content="电动沙发接入米家智能家居">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mirari.cc/posts/2026-10-25-integrating_an_electric_sofa_into_mijia_smart_home/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="严重拖延症">
+<meta name="twitter:image" content="https://mirari.cc/image-20261025175044586.png">
+<meta name="twitter:title" content="电动沙发接入米家智能家居">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta name="generator" content="Valaxy 1.2.0">
+<link rel="canonical" href="https://mirari.cc/posts/2026-10-25-integrating_an_electric_sofa_into_mijia_smart_home/">
+<meta name="theme-color" content="#fff">
+<meta name="msapplication-TileColor" content="#fff">
+</head>
+<body>
+  <div id="app"><!--[--><!--[--><!--[--><!--v-if--><div class="yun-page-header-gradient"></div><div class="yun-nav-menu z-$yun-z-nav-menu fixed bg-transparent is-glass" data-v-e1dd1ae4><!--  --><div class="inline-flex justify-start items-center flex-1" data-v-e1dd1ae4><button type="button" class="vt-hamburger menu-btn sidebar-toggle leading-4 size-12 lg:hidden!" aria-label="mobile navigation" aria-expanded="false" inline-flex cursor="pointer" hover="bg-white/80 dark:bg-black/80" z="$yun-z-menu-btn" data-v-e1dd1ae4><span class="vt-hamburger-container"><span class="vt-hamburger-top"></span><span class="vt-hamburger-middle"></span><span class="vt-hamburger-bottom"></span></span></button><a href="/" class="va-link size-12 inline-flex-center cursor-pointer z-$yun-z-nav-menu text-$va-c-text" hover="bg-white/80 dark:bg-black/80 op-100" op-80 data-v-e1dd1ae4><!--[--><div class="size-6 i-ri-home-4-line"></div><!--]--></a><div class="hidden lg:contents" data-v-e1dd1ae4><!--[--><a href="/posts/" class="va-link size-12 inline-flex-center cursor-pointer z-$yun-z-nav-menu text-$va-c-text" hover="bg-white/80 dark:bg-black/80 op-100" op-80 title="博客文章" data-v-e1dd1ae4><!--[--><div class="size-6 i-ri-article-line"></div><!--]--></a><a href="/sites/" class="va-link size-12 inline-flex-center cursor-pointer z-$yun-z-nav-menu text-$va-c-text" hover="bg-white/80 dark:bg-black/80 op-100" op-80 title="站点地图" data-v-e1dd1ae4><!--[--><div class="size-6 i-ri-planet-line"></div><!--]--></a><!--]--></div></div><div class="flex flex-1 flex-center" data-v-e1dd1ae4><div flex="~ center col h-full" class="nav-menu-title-container cursor-pointer" data-v-e1dd1ae4><!----><span class="font-light truncate">Mirari&#39;s Blog</span></div></div><div class="inline-flex-center justify-end items-center flex-1" data-v-e1dd1ae4><!-- <template v-if="!app.isMobile && themeConfig.nav">
+          <template v-for="item in themeConfig.nav" :key="item.text">
+            <AppLink
+              v-if="'link' in item"
+              :to="item.link"
+              class="menu-btn inline-flex-center p-2 transition text-$va-c-text"
+              inline-flex cursor="pointer"
+              hover="bg-white/80 dark:bg-black/80"
+              z="$yun-z-menu-btn"
+            >
+              {{ item.text }}
+            </AppLink>
+            <template v-else-if="'items' in item" />
+          </template>
+        </template> --><button class="yun-icon-btn rounded-none! hidden sm:inline-flex" title="切换语言" style="color:var(--va-c-text);" data-v-e1dd1ae4><div i-ri-translate class="transition transform"></div></button><button type="button" class="yun-icon-btn yun-toggle-dark rounded-none!" title="切换深色模式" aria-label="切换深色模式" data-v-e1dd1ae4><div i="ri-sun-line dark:ri-moon-line"></div></button><!--[--><button class="yun-search-btn yun-icon-btn yun-search-action popup-trigger" title="搜索"><div i-ri-search-line aria-hidden="true"></div></button><!--[--><!--v-if--><!--]--><!--]--></div></div><!----><!--v-if--><!----><!--[--><div class="yun-bg"></div><!--]--><!----><button type="button" class="back-to-top yun-icon-btn" aria-label="回到顶部" title="回到顶部" tabindex="-1" aria-hidden="true" style="--yun-back-top-progress:0deg;"><div class="back-to-top-arrow" i-ri-arrow-up-s-line aria-hidden="true"></div></button><!--]--><!--[--><!--]--><!----><!--]--><div class="min-h-screen flex flex-col"><!----><div class="mt-12 md:mt-24 yun-layout-wrapper-content yun-layout-wrapper__content"><!--[--><div class="yun-layout-left gap-4 sticky top-$yun-margin-top w-80"><!--[--><!--[--><div class="yun-card flex-center overflow-hidden p-4 min-h-sm" flex="~ col gap-1" min-h="100px" bg="$va-c-bg-light" data-v-430e6195><!----><!----><div class="yun-card-body relative" w="full" flex="~ col" items="center" data-v-430e6195><!--[--><div class="site-info gap-1 items-center text-center" flex="~ col" p="t-8"><a href="/about" class="site-author-avatar inline-flex-center"><div class="relative yun-author-avatar"><div class="absolute size-full avatar-bg bg-image-$yun-home-hero-image-background-image filter-blur-2xl op-30"></div><img class="rounded-full size-full bg-white dark:bg-white/20 p-1 m-0 absolute" src="/avatar.jpg" alt="作者头像"><span class="site-author-status absolute" title="所有的空闲时间都在打游戏">🎮</span></div></a><a href="/about" class="site-author-name font-black font-serif text-$va-c-text op-80 hover:op-100 flex-center">mirari</a><a href="/about/site" class="site-name text-lg leading-loose">Mirari&#39;s Blog</a><h4 class="site-subtitle block op-70" text="xs">╮(╯▽╰)╭</h4><div class="site-description">严重拖延症</div></div><div class="yun-gradient-line my-2 op-20"></div><nav class="site-nav" text-xl mt-2><a href="/archives/" class="post-classify-nav-item gap-1 w-20 p-2 rounded transition op-80" flex="~ col center" title="归档" hover="bg-$va-c-bg-soft op-100"><div flex="~ col" class="text-$va-c-text inline-flex-center gap-1"><!-- Use CSS to toggle icons based on router-link-active class to avoid SSR hydration mismatch --><div class="text-2xl icon-default i-ri-archive-line"></div><div class="text-2xl icon-active i-ri-archive-fill"></div><span class="text-xs">归档</span></div><span class="count text-base text-black/80 dark:text-white/80">46</span></a><a href="/categories/" class="post-classify-nav-item gap-1 w-20 p-2 rounded transition op-80" flex="~ col center" title="分类" hover="bg-$va-c-bg-soft op-100"><div flex="~ col" class="text-$va-c-text inline-flex-center gap-1"><!-- Use CSS to toggle icons based on router-link-active class to avoid SSR hydration mismatch --><div class="text-2xl icon-default i-ri-folder-2-line"></div><div class="text-2xl icon-active i-ri-folder-2-fill"></div><span class="text-xs">分类</span></div><span class="count text-base text-black/80 dark:text-white/80">6</span></a><a href="/tags/" class="post-classify-nav-item gap-1 w-20 p-2 rounded transition op-80" flex="~ col center" title="标签" hover="bg-$va-c-bg-soft op-100"><div flex="~ col" class="text-$va-c-text inline-flex-center gap-1"><!-- Use CSS to toggle icons based on router-link-active class to avoid SSR hydration mismatch --><div class="text-2xl icon-default i-ri-price-tag-3-line"></div><div class="text-2xl icon-active i-ri-price-tag-3-fill"></div><span class="text-xs">标签</span></div><span class="count text-base text-black/80 dark:text-white/80">58</span></a></nav><div class="yun-gradient-line my-2 op-20"></div><div class="links-of-author"><!--[--><a class="links-of-author-item yun-icon-btn" rel="noopener" href="/atom.xml" title="RSS" target="_blank" style="color:orange;"><div class="i-ri-rss-line icon"></div></a><a class="links-of-author-item yun-icon-btn" rel="noopener" href="https://github.com/mirari" title="GitHub" target="_blank" style="color:#6e5494;"><div class="i-ri-github-line icon"></div></a><a class="links-of-author-item yun-icon-btn" rel="noopener" href="mailto:clover4@gmail.com" title="电子邮件" target="_blank" style="color:#8E71C1;"><div class="i-ri-mail-line icon"></div></a><a class="links-of-author-item yun-icon-btn" rel="noopener" href="https://www.travellings.cn/go.html" title="Travelling" target="_blank" style="color:var(--va-c-text);"><div class="i-ri-train-line icon"></div></a><!--]--></div><div class="yun-gradient-line my-2 op-20"></div><div class="links flex-center"><!--[--><a href="/sites/" class="va-link link-item yun-icon-btn" inline-flex title="站点地图" style="color:undefined;"><!--[--><div class="i-ri-planet-line icon size-6"></div><!--]--></a><a href="/links/" class="va-link link-item yun-icon-btn" inline-flex title="友情链接" style="color:dodgerblue;"><!--[--><div class="i-ri-genderless-line icon size-6"></div><!--]--></a><!--]--></div><!--]--></div><!----></div><!--[--><!--
+    Empty placeholder, meant to be overridden by the user (see demo/yun/components/YunAdBoard.vue).
+    `v-if="false"` renders a comment node instead of a real element: this avoids the SSR hydration
+    crash a raw `<template>` causes (#711), while still adding no gap to the parent flex layout,
+    which an empty `<div>` would (ab57216f).
+  --><!----><!--]--><!--]--><!--]--></div><!----><main class="yun-main lt-md:w-full" flex="~ center"><!--[--><div class="content w-full md:w-3xl lg:w-2xl xl:w-2xl 2xl:w-4xl" flex="~ col grow" p="lt-md:0"><div class="yun-card flex-center overflow-hidden" flex="col" min-h="100px" bg="$va-c-bg-light" m="0" data-v-430e6195><!----><!----><div class="yun-card-body relative" w="full" flex="~ col" items="center" data-v-430e6195><!--[--><!----><div class="mt-8 mb-4"><!--[--><header class="post-header"><h1 p="2" text="2xl center" font="serif black" style="color:" class="post-title flex-center"><!----><span inline-flex class="leading-none">电动沙发接入米家智能家居</span></h1></header><!--]--></div><!--[--><!--[--><!--[--><!--[--><!----><div flex="~ center" text="sm" class="post-meta-col post-meta gap-4"><div class="post-time flex items-center gap-4"><span class="posted-time inline-flex-center gap-1" title="发表于2026-10-25 14:15:24"><div class="inline-block" i-ri-calendar-line></div><time class="op-80">2026-10-25</time></span><!----></div><!--[--><!--]--><div class="inline-flex-center gap-4"><div class="inline-flex-center post-counter gap-4"><span class="word-count inline-flex-center gap-1" title="本文字数"><div class="inline-block" i-ri-file-word-line></div><span class="op-80">2.7k</span></span><span class="reading-time inline-flex-center gap-1" title="阅读时长"><div i-ri-timer-line></div><time class="op-80">10m</time></span></div><div class="inline-flex gap-4" text="sm" h="5"><div inline-flex justify="center" items="center" title="阅读次数"><div inline-flex i-ri-eye-line></div><span ml-1 inline-flex class="waline-pageview-count op-80" data-path="/posts/2026-10-25-integrating_an_electric_sofa_into_mijia_smart_home/"></span></div><div inline-flex justify="center" items="center" title="评论数"><div inline-flex i-ri-chat-4-line></div><span ml-1 inline-flex class="waline-comment-count op-80" data-path="/posts/2026-10-25-integrating_an_electric_sofa_into_mijia_smart_home/"></span></div></div><!----></div></div><!--]--><!----><div class="inline-flex mt-2" text="sm" py="1"><a href="/categories?category=%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB" class="transition post-category inline-flex-center text-xs border-$va-c-divider" px-2 h="7" border rounded-full hover="bg-blue-500 text-white"><div m="x-1" inline-flex i-ri-folder-2-line></div><span>经验分享</span></a><span mx="2"></span><div class="post-tags inline-flex" items="center" gap="1" flex="wrap 1" justify="end"><!--[--><a href="/tags/?tag=%E8%A3%85%E4%BF%AE" class="transition post-tag inline-flex-center text-xs border-$va-c-divider" px-2 h="7" rounded-full border hover="bg-blue-500"><span>装修</span></a><a href="/tags/?tag=%E6%99%BA%E8%83%BD%E5%AE%B6%E5%B1%85" class="transition post-tag inline-flex-center text-xs border-$va-c-divider" px-2 h="7" rounded-full border hover="bg-blue-500"><span>智能家居</span></a><!--]--></div></div><!--]--><!--]--><!--]--><div p="x-4 b-8" class="sm:px-6 lg:px-12 xl:px-16" w="full"><!--[--><!--]--><!--[--><!-- <Transition appear> --><article class="markdown-body"><!--[--><!----><!----><!--[--><!--]--><!--[--><p>最近逛了一圈电动功能沙发，发现这个品类里的大多数品牌，似乎还停留在传统家具的思路里，对智能家居的反应普遍有些迟缓，有些意外。</p><p>电动沙发本身的结构并不复杂，核心部件就是伸缩电机(电动推杆)。很多沙发品牌不会自行研发，而是外购上游供应商的公版方案。淘宝上一个沙发电机的价格也就 200 元左右，但买沙发时增配一个电动位，往往就要加价 600—1000 元。</p><p>与智能冰箱、智能洗衣机这种噱头大于实际意义的电器不同，电动沙发的智能联动，有很明确的使用场景。</p><p>比如，一句话把客厅切换到观影状态，就需要同时调节灯光、窗帘、电视、音响和沙发等设备。</p><p>也许你对智能化的需求没那么高，不追求这些也很正常。但是我看到的很多电动沙发，连最基本的使用体验都没有好好设计。</p><h2 id="先说说开关体验" tabindex="-1">先说说开关体验 <a class="header-anchor" href="#先说说开关体验" aria-label="Permalink to &quot;先说说开关体验&quot;">​</a></h2><p>最典型的问题，就是控制展开和收起的两个按钮。</p><p>我逛到的大多数品牌，都只支持“按住才动，松手就停”这一种操作方式。从坐姿切换到平躺，需要用手指持续按住按钮 15—25 秒。想起身离开时，也不能站起来就走，还得继续躺着按住按钮，等沙发完全收起。</p><p>也许很多人不在意，但这类细节完全可以做得更讲究。我问门店销售，为什么不做一键展开、收起，得到的答复几乎都一样：这样才能停在自己觉得舒服的位置。</p><p>可这并没有回答我的问题。就操作逻辑而言，电动沙发完全可以参考电动窗帘：按一下开始，再按一下停止。哪怕只有一个按键，也可以采用“开—停—收—停”的循环，既能一键开收，也能随时停在中间。</p><p>实际逛下来，稍有不同的方案大致有这么几种：</p><ul><li>P 品牌：实体开关支持前面说的一键展开、收起。</li><li>忘了名字的品牌：支持遥控器，但公版造型和做工都比较廉价，缺乏质感。（其他品牌可能也支持遥控器，只是没有标配。）</li><li>Z 品牌：只有展厅最贵的一款支持一键切换，面板按钮很多，能保存好几个自定义位置，但价格已经到了两万多元。</li><li>G 品牌：实体开关仍然是原始的操作方式，不过可以通过 NFC 打开微信小程序，再用蓝牙连接沙发，在手机上完成一键开收或切换预设位置。</li><li>H品牌：可能是目前为止唯一一个原生支持米家的品牌，但也仅一款产品支持，只有黑和棕两种颜色可选，风格不搭不考虑，而且所在城市没有门店看不到实物。</li></ul><p>除此之外，我看到的大多还是那套“按住才动”的操作方式。</p><p>Z 品牌的高价方案对我来说可以直接排除了。这些功能的改良成本应该远低于它的溢价。它还内置了 Bose 音响，但看上去只是一个手机音乐播放器。这种无法接入家庭影院系统的音响，Hi-Fi 玩家应该不会多看一眼。</p><p>G 品牌的问题则在于生态不够开放。虽然能通过第三方接入的方式让小爱音箱控制，但设备本身进不了米家，要和其他设备联动就比较麻烦。每次打开小程序操作也远不如实体按钮方便。</p><h2 id="开关位置也影响体验" tabindex="-1">开关位置也影响体验 <a class="header-anchor" href="#开关位置也影响体验" aria-label="Permalink to &quot;开关位置也影响体验&quot;">​</a></h2><p>除了控制逻辑，按钮的位置和形态也有不少值得吐槽的地方。</p><p>最糟糕的一款，把开关放在扶手外侧，偏偏扶手又特别厚。坐着根本够不到，得支起身子趴在扶手上，再老老实实按上几十秒。</p><p>扶手薄一些的，外侧按钮虽然好按，但如果实际摆放时沙发一侧靠墙或者靠飘窗就会被挡住。(如果能接入智能家居，一个小圆饼无线开关就能解决)。</p><p>内侧按钮则大多采用隐藏式设计，可能是为了防止误触。但隐藏式按钮再搭配“按住才动”，就意味着手指要在夹缝里持续施压，挤到缺血。沙发展开时，坐垫侧面和固定扶手之间还会产生相对位移；如果表皮摩擦力比较大，手指背面就得在咕咕嘎嘎声中感受拉扯。</p><p>非隐藏式的按钮，也有个吐槽点，就是往往喜欢附带一个给手机充电的 USB 插口。但可想而知，在快充已经普及的今天，这种5V1A、5V2A的供电实在落后。而且我都有给电动沙发供电的插座了，另外接个快充头也费不了多少事，还比这样让数据线一直凸在扶手内侧更清爽。</p><figure><img src="/assets/image-20261025175044586.BmsQQNo9.png" alt="用AI画了个示意图" loading="lazy" decoding="async"></figure><h2 id="我的改造过程" tabindex="-1">我的改造过程 <a class="header-anchor" href="#我的改造过程" aria-label="Permalink to &quot;我的改造过程&quot;">​</a></h2><p>既然没法选择，最终就是随便挑了一个看得顺眼价格又还过得去的型号买回家。</p><p>幸运的是，公版电机的好处就是接口和方案相对通用，为第三方智能控制器提供了适配空间。</p><p>下面记录一下我的升级过程。</p><h3 id="_1-检查电机接口" tabindex="-1">1. 检查电机接口 <a class="header-anchor" href="#_1-检查电机接口" aria-label="Permalink to &quot;1. 检查电机接口&quot;">​</a></h3><p>先检查电机接口，确认是否可以升级。如果沙发两侧都有电机，却由同一个按钮面板控制，面板上还有个总开关，那大概率无法改造，不用看下去了。</p><p>先将沙发展开，露出背后的底部空间。我这款沙发的背面底部可以通过拉链打开。</p><figure><img src="/assets/IMG_20261023_115932.Be5LGtEr.jpg" alt="打开沙发背部，露出内部空间" loading="lazy" decoding="async"></figure><p>在钢架附近找到对插接头。一般有两个，图中右边较小的是 29V 电源接头，也就是 01 两针接头，可以先放着，后面还会提到。控制器需要接入的是箭头所指的较大接头，转开保护罩后就能将它拔开。</p><figure><img src="/assets/image-20261025160335764.D8zgaleE.jpg" alt="箭头标出的 5P 控制接头" loading="lazy" decoding="async"></figure><p>下图这种就是 5P 圆头，使用这种接头就表示大概率可以升级。把照片发给控制器卖家，确认适配情况后购买即可。每个电机需要一个控制器，左右两侧都电动的就买两个。</p><figure><img src="/assets/IMG_20261023_120008.tkLYOsQ0.jpg" alt="拔开后的 5P 圆头公母接头" loading="lazy" decoding="async"></figure><h3 id="_2-选择智能控制器" tabindex="-1">2. 选择智能控制器 <a class="header-anchor" href="#_2-选择智能控制器" aria-label="Permalink to &quot;2. 选择智能控制器&quot;">​</a></h3><p>确认接口适配后，再根据家里的智能家居方案选控制器。我买的是支持米家的蓝牙 Mesh 版本，每个价格117元，需要搭配相应的蓝牙网关使用。</p><p>如果家里用的不是米家，或者没有蓝牙网关，也可以考虑 Wi-Fi 版本。不过，选购时要分清“支持音箱控制”和“能直接接入米家”：有些产品和前面提到的 G 品牌方案类似，可以通过第三方接入的方式让小爱、小艺、小度、天猫精灵等音箱控制，却不能直接加入相应的智能家居设备列表。</p><figure><img src="/assets/IMG_20261023_115816.-pgdicbu.jpg" alt="带有 5P 公母接头的米家蓝牙 Mesh 控制器" loading="lazy" decoding="async"></figure><h3 id="_3-接入并固定控制器" tabindex="-1">3. 接入并固定控制器 <a class="header-anchor" href="#_3-接入并固定控制器" aria-label="Permalink to &quot;3. 接入并固定控制器&quot;">​</a></h3><p>可以看到控制器的接法非常简单。5P 接口本身就带供电，将它串接在原来的接头之间，公头接母头、母头接公头即可。</p><figure><img src="/assets/IMG_20261023_115838.Bc6LugKb.jpg" alt="控制器的 5P 公头" loading="lazy" decoding="async"></figure><figure><img src="/assets/IMG_20261023_115830.4WjDNCIz.jpg" alt="控制器的 5P 母头" loading="lazy" decoding="async"></figure><p>接好后用扎线带固定，安装效果如下。</p><figure><img src="/assets/IMG_20261023_121029.ZFSETsLA.jpg" alt="用扎线带固定在沙发底部的控制器" loading="lazy" decoding="async"></figure><h2 id="使用效果" tabindex="-1">使用效果 <a class="header-anchor" href="#使用效果" aria-label="Permalink to &quot;使用效果&quot;">​</a></h2><p>试用一下效果。接入米家后，我可以通过语音、无线按钮、设备联动等多种方式来控制沙发了。</p><p><video src="/assets/VID_20261023_155124.BbB9njnI.mp4" controls preload="metadata" playsinline></video></p><p>更实用的是，原来的实体按钮也一起升级了。现在展开和收起两个按钮，都支持这两种操作：</p><ul><li>短按一下开始，再按一下停止。</li><li>长按时持续运行，松手就停。</li></ul><p>完美覆盖了原始功能，打脸了此前销售声称为了自定义位置才特意保留的说法。</p><p>缺点也是有的。最大的问题是电机没有位置反馈，也就是无法知道它当前伸出了多少。</p><p>比如，我想让腿撑抬起、靠背却不放倒，就没法直接调用一个准确的位置，只能先让沙发完全收起，再展开大约 10 秒后停止。</p><p>如果沙发原本已经展开，或者停在半开状态，直接执行“展开 10 秒”就可能变成完全展开。</p><h2 id="顺手解决电源线长度问题" tabindex="-1">顺手解决电源线长度问题 <a class="header-anchor" href="#顺手解决电源线长度问题" aria-label="Permalink to &quot;顺手解决电源线长度问题&quot;">​</a></h2><p>最后附带提一下走线优化。</p><p>我这款沙发两侧都有电机，整张沙发长约 3 米，配的电源线却只有 2 米。而且不只是我买的这个品牌，另外几家也有类似的问题。</p><p>除非你的沙发两侧都准备了插座，否则横厅摆放时恐怕很难走线。</p><p>不推荐用插排或两孔插头延长线来解决。毕竟变压器本身体积就不小，即使把线延长了，中间吊着一个大块头，也不容易藏好。相比之下加长低压线更安全，也更方便把线整理到沙发底部。</p><p>我的做法是买一根电动沙发专用的一分二电源线，含运费 25 元，两根分线各长 2 米。分别接到沙发两侧后，再把汇总端的 01 接头接到其中一个原厂变压器上。加上变压器自带的 2 米电源线，就能把主要走线和变压器集中到一侧，藏起来方便多了。</p><figure><img src="/assets/IMG_20261024_162646.Diibnlw4.jpg" alt="电动沙发专用的一分二电源线" loading="lazy" decoding="async"></figure><p>安装后的效果如下。</p><figure><img src="/assets/IMG_20261024_165823.Ob4ErSTz.jpg" alt="整理并隐藏电源线后的沙发背面" loading="lazy" decoding="async"></figure><p>如果还想藏得更彻底，也可以考虑直接接到前面钢架附近的那个小电源接头，把线路全部留在沙发底部。不过现在这样已经够用了，我就懒得继续折腾了。</p><!--]--><!--]--><!----><!----></article><!-- </Transition> --><!--]--><!--[--><!--[--><!--[--><!----><ul class="post-copyright" m="y-4"><li class="post-copyright-author"><strong>本文作者：</strong><span>mirari</span></li><li class="post-copyright-link"><strong>本文链接：</strong><a href="https://mirari.cc/posts/2026-10-25-integrating_an_electric_sofa_into_mijia_smart_home/" target="_blank" title="本文链接">https://mirari.cc/posts/2026-10-25-integrating_an_electric_sofa_into_mijia_smart_home/</a></li><li class="post-copyright-license"><strong>版权声明：</strong><span>本博客所有文章除特别声明外，均默认采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener" title="CC BY-NC-SA 4.0 ">CC BY-NC-SA</a> 许可协议。</span></li></ul><!--]--><!--]--><!--]--></div><!--]--></div><!----></div><!--[--><!--]--><!--[--><div class="post-nav"><div class="post-nav-item"><!----></div><div class="post-nav-item"><a href="/posts/2026-03-13-what_is_it_like_to_raise_a_lobster_that_complains_in_a_tavern/" class="post-nav-next" title="养一只会跑去酒馆吐槽的龙虾是什么体验？"><span class="title truncate" text="sm">养一只会跑去酒馆吐槽的龙虾是什么体验？</span><div class="icon" i-ri-arrow-right-s-line></div></a></div></div><!--]--><!--[--><!--]--><!--[--><div class="yun-card flex-center overflow-hidden comment yun-comment sm:p-6 lg:px-12 xl:px-16" flex="col" min-h="100px" bg="$va-c-bg-light" w="full" p="4" data-v-430e6195><!----><!----><div class="yun-card-body relative" w="full" flex="~ col" items="center" data-v-430e6195><!--[--><!----><!--]--></div><!----></div><!--]--><!--[--><!--
+    Empty placeholder, meant to be overridden by the user (see demo/yun/components/YunAdBoard.vue).
+    `v-if="false"` renders a comment node instead of a real element: this avoids the SSR hydration
+    crash a raw `<template>` causes (#711), while still adding no gap to the parent flex layout,
+    which an empty `<div>` would (ab57216f).
+  --><!----><!--]--><!--[--><!--]--><!--[--><!--]--></div><!--]--></main><!--[--><!----><!----><!----><!--]--><!--]--></div><footer flex="~ col" class="relative yun-footer va-footer px-4 py-4 pt-0 text-$va-c-text-light w-full mt-14" bg="white dark:$va-c-bg-soft" text="center sm"><div class="yun-cloud absolute top--10 left-0 right-0"><svg class="waves" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" fill="var(--yun-c-cloud)"></path></defs><g class="parallax"><use xlink:href="#gentle-wave" x="48" y="0"></use><use xlink:href="#gentle-wave" x="48" y="3"></use><use xlink:href="#gentle-wave" x="48" y="5"></use><use xlink:href="#gentle-wave" x="48" y="7"></use></g></svg></div><!----><div class="copyright flex justify-center items-center gap-2" p="1"><span> © <!--[-->2017 - <!--]--> 2026</span><!----><span>mirari</span></div><!----><!--[--><!--]--><div class="yun-footer-gradient"></div></footer></div><!--]--></div><script>window.__INITIAL_STATE__='{"pinia":{"yun-app":{"bannerAnimationDone":false},"app":{"showLoading":true},"site":{},"routerStore":{}}}'</script><script type="application/ld+json" data-hid="schema-org-graph">{"@context":"https://schema.org","@graph":[{"@id":"https://mirari.cc/#identity","@type":"Person","name":"mirari","url":"https://mirari.cc/","image":{"@id":"https://mirari.cc/#/schema/image/1"},"sameAs":["/atom.xml","https://github.com/mirari","mailto:clover4@gmail.com","https://www.travellings.cn/go.html"]},{"@id":"https://mirari.cc/#website","@type":"WebSite","dateModified":"2026-10-25T06:15:24.000Z","datePublished":"2026-10-25T06:15:24.000Z","inLanguage":"zh-CN","name":"电动沙发接入米家智能家居","url":"https://mirari.cc/","publisher":{"@id":"https://mirari.cc/#identity"}},{"@id":"https://mirari.cc/posts/2026-10-25-integrating_an_electric_sofa_into_mijia_smart_home/#webpage","@type":"WebPage","dateModified":"2026-10-25T06:15:24.000Z","datePublished":"2026-10-25T06:15:24.000Z","description":"严重拖延症","name":"电动沙发接入米家智能家居","url":"https://mirari.cc/posts/2026-10-25-integrating_an_electric_sofa_into_mijia_smart_home/","isPartOf":{"@id":"https://mirari.cc/#website"},"potentialAction":[{"@type":"ReadAction","target":["https://mirari.cc/posts/2026-10-25-integrating_an_electric_sofa_into_mijia_smart_home/"]}]},{"@id":"https://mirari.cc/posts/2026-10-25-integrating_an_electric_sofa_into_mijia_smart_home/#article","dateModified":"2026-10-25T06:15:24.000Z","datePublished":"2026-10-25T06:15:24.000Z","headline":"电动沙发接入米家智能家居","inLanguage":"zh-CN","thumbnailUrl":"https://mirari.cc/image-20261025175044586.png","@type":["Article","BlogPosting"],"author":{"@id":"https://mirari.cc/#/schema/person/1"},"image":{"@id":"https://mirari.cc/#/schema/image/2"},"isPartOf":{"@id":"https://mirari.cc/posts/2026-10-25-integrating_an_electric_sofa_into_mijia_smart_home/#webpage"},"mainEntityOfPage":{"@id":"https://mirari.cc/posts/2026-10-25-integrating_an_electric_sofa_into_mijia_smart_home/#webpage"},"publisher":{"@id":"https://mirari.cc/#identity"}},{"@id":"https://mirari.cc/#/schema/person/1","@type":"Person","name":"mirari","url":"https://mirari.cc/"},{"@id":"https://mirari.cc/#/schema/image/1","@type":"ImageObject","contentUrl":"https://mirari.cc/avatar.jpg","inLanguage":"zh-CN","url":"https://mirari.cc/avatar.jpg"},{"@id":"https://mirari.cc/#/schema/image/2","@type":"ImageObject","contentUrl":"https://mirari.cc/image-20261025175044586.png","inLanguage":"zh-CN","url":"https://mirari.cc/image-20261025175044586.png"}]}</script>
+  <div id="valaxy-teleports"></div>
+  
+
+</body>
+</html>

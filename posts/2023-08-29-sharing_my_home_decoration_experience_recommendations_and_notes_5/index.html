@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html  lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="/favicon.svg">
+    <script>
+    ;(function () {
+      const prefersDark =
+        window.matchMedia &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches
+      const setting = localStorage.getItem('vueuse-color-scheme') || 'auto'
+      if (setting === 'dark' || (prefersDark && setting !== 'light'))
+        document.documentElement.classList.toggle('dark', true)
+    })()
+    </script>
+  <style type="text/css">
+    :root { color-scheme: light dark; --va-c-bg: #fff; }
+    html.dark { --va-c-bg: #000; }
+    html { background-color: var(--va-c-bg); }
+  </style><style id="valaxy-fouc">body{opacity:0!important}</style><style>body{transition:opacity .15s ease}</style><noscript><style>body{opacity:1!important}</style></noscript><script>(function foucGuardScript(maxDuration) {
+  var done = 0;
+  function reveal() {
+    if (done) return;
+    done = 1;
+    var s = document.getElementById("valaxy-fouc");
+    if (s) s.remove();
+  }
+  function check() {
+    var links = document.querySelectorAll('link[rel="stylesheet"]');
+    for (var i = 0; i < links.length; i++) {
+      if (!links[i].sheet) return;
+    }
+    reveal();
+  }
+  new MutationObserver(check).observe(document.head, {
+    childList: true,
+    attributes: true,
+    attributeFilter: ["media", "rel"]
+  });
+  addEventListener("load", reveal);
+  if (maxDuration)
+    setTimeout(reveal, maxDuration);
+})(5000)</script>
+    <script>
+    const locale = localStorage.getItem('valaxy-locale') || 'zh-CN';
+    document.documentElement.setAttribute('lang', locale);
+    </script>
+    
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3550370964530707"
+          crossorigin="anonymous"></script>
+  <script type="module" crossorigin src="/assets/index.D7Fyc6CC.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/rolldown-runtime.BWaJ3C7D.js">
+  <link rel="modulepreload" crossorigin href="/assets/framework.Cowi0K9s.js">
+  <link rel="modulepreload" crossorigin href="/assets/chunks/vue-i18n.CPH0LMY3.js">
+  <link rel="modulepreload" crossorigin href="/assets/chunks/vue-router.9-_rSFdg.js">
+  <link rel="modulepreload" crossorigin href="/assets/chunks/dayjs.Cy-y3ib_.js">
+  <link rel="modulepreload" crossorigin href="/assets/chunks/pinia.CB4ntaYp.js">
+  <link rel="modulepreload" crossorigin href="/assets/chunks/@vueuse/motion.jrlBnzDE.js">
+  <link rel="modulepreload" crossorigin href="/assets/theme.BJ6GWN_1.js">
+  <link rel="modulepreload" crossorigin href="/assets/chunks/nprogress.B1osA4lt.js">
+  <link rel="stylesheet" crossorigin href="/assets/style.TQ6SRnQw.css">
+<link rel="preload" href="/assets/KaTeX_AMS-Regular.BQhdFMY1.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_AMS-Regular.DMm9YOAa.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Caligraphic-Bold.Dq_IR9rO.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Caligraphic-Bold.BEiXGLvX.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Caligraphic-Regular.Di6jR-x-.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Caligraphic-Regular.CTRA-rTL.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Fraktur-Bold.CL6g_b3V.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Fraktur-Bold.BsDP51OF.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Fraktur-Regular.CTYiF6lA.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Fraktur-Regular.Dxdc4cR9.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Main-Bold.Cx986IdX.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Main-Bold.Jm3AIy58.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Main-BoldItalic.DxDJ3AOS.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Main-BoldItalic.SpSLRI95.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Main-Italic.NWA7e6Wa.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Main-Italic.BMLOBm91.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Main-Regular.B22Nviop.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Main-Regular.Dr94JaBh.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Math-BoldItalic.CZnvNsCZ.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Math-BoldItalic.iY-2wyZ7.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Math-Italic.t53AETM-.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Math-Italic.DA0__PXp.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_SansSerif-Bold.D1sUS0GD.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_SansSerif-Bold.DbIhKOiC.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_SansSerif-Italic.C3H0VqGB.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_SansSerif-Italic.DN2j7dab.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_SansSerif-Regular.DDBCnlJ7.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_SansSerif-Regular.CS6fqUqJ.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Script-Regular.D3wIWfF6.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Script-Regular.D5yQViql.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Size1-Regular.mCD8mA8B.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Size1-Regular.C195tn64.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Size2-Regular.Dy4dx90m.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Size2-Regular.oD1tc_U0.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Size3-Regular.CTq5MqoE.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Size4-Regular.Dl5lxZxV.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Size4-Regular.BF-4gkZK.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Typewriter-Regular.CO6r4hn1.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/KaTeX_Typewriter-Regular.C0xS9mPB.woff" as="font" type="font/woff" crossorigin>
+<link rel="modulepreload" crossorigin href="/assets/theme.BJ6GWN_1.js">
+<link rel="preload" href="/assets/none.DLM1AMsD.jpg" as="image">
+<link rel="preload" href="/assets/bg-img.kXdNMxcF.jpg" as="image">
+<link rel="preload" href="/assets/sidebar-bg-img.mp54gEws.webp" as="image">
+<link rel="preload" href="/assets/lg.CosQH4Cu.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/lg.B0dIV2BS.svg" as="image">
+<link rel="preload" href="/assets/loading.BZOHaeKn.gif" as="image">
+<link rel="modulepreload" crossorigin href="/assets/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_5.BolJUvQE.js">
+<link rel="preload" href="/assets/IMG_20220919_142715.DsHDBCtr.jpg" as="image">
+<link rel="preload" href="/assets/WechatIMG1202.DpV-dU4w.jpeg" as="image">
+<link rel="preload" href="/assets/IMG_20221013_004943.SeUZotvQ.jpg" as="image">
+<link rel="preload" href="/assets/IMG_20220922_085727.D4HUyL7b.jpg" as="image">
+<link rel="preload" href="/assets/image-20230901155919652.DAgJQUe7.png" as="image">
+<link rel="preload" href="/assets/IMG_20221022_190551.BPwjyrvL.jpg" as="image">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>8年2次装修，分享我的装修经验、建议与笔记(5.书房) - Mirari&#x27;s Blog</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@900&display=swap">
+<meta property="og:locale:alternate" content="en">
+<meta name="description" content="严重拖延症">
+<meta property="og:description" content="严重拖延症">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:site_name" content="Mirari's Blog">
+<meta property="og:title" content="8年2次装修，分享我的装修经验、建议与笔记(5.书房)">
+<meta property="og:image" content="https://mirari.cc/IMG_20220919_142715.jpg">
+<meta property="og:image:alt" content="8年2次装修，分享我的装修经验、建议与笔记(5.书房)">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_5/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="严重拖延症">
+<meta name="twitter:image" content="https://mirari.cc/IMG_20220919_142715.jpg">
+<meta name="twitter:title" content="8年2次装修，分享我的装修经验、建议与笔记(5.书房)">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta name="generator" content="Valaxy 1.2.0">
+<link rel="canonical" href="https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_5/">
+<meta name="theme-color" content="#fff">
+<meta name="msapplication-TileColor" content="#fff">
+</head>
+<body>
+  <div id="app"><!--[--><!--[--><!--[--><!--v-if--><div class="yun-page-header-gradient"></div><div class="yun-nav-menu z-$yun-z-nav-menu fixed bg-transparent is-glass" data-v-e1dd1ae4><!--  --><div class="inline-flex justify-start items-center flex-1" data-v-e1dd1ae4><button type="button" class="vt-hamburger menu-btn sidebar-toggle leading-4 size-12 lg:hidden!" aria-label="mobile navigation" aria-expanded="false" inline-flex cursor="pointer" hover="bg-white/80 dark:bg-black/80" z="$yun-z-menu-btn" data-v-e1dd1ae4><span class="vt-hamburger-container"><span class="vt-hamburger-top"></span><span class="vt-hamburger-middle"></span><span class="vt-hamburger-bottom"></span></span></button><a href="/" class="va-link size-12 inline-flex-center cursor-pointer z-$yun-z-nav-menu text-$va-c-text" hover="bg-white/80 dark:bg-black/80 op-100" op-80 data-v-e1dd1ae4><!--[--><div class="size-6 i-ri-home-4-line"></div><!--]--></a><div class="hidden lg:contents" data-v-e1dd1ae4><!--[--><a href="/posts/" class="va-link size-12 inline-flex-center cursor-pointer z-$yun-z-nav-menu text-$va-c-text" hover="bg-white/80 dark:bg-black/80 op-100" op-80 title="博客文章" data-v-e1dd1ae4><!--[--><div class="size-6 i-ri-article-line"></div><!--]--></a><a href="/sites/" class="va-link size-12 inline-flex-center cursor-pointer z-$yun-z-nav-menu text-$va-c-text" hover="bg-white/80 dark:bg-black/80 op-100" op-80 title="站点地图" data-v-e1dd1ae4><!--[--><div class="size-6 i-ri-planet-line"></div><!--]--></a><!--]--></div></div><div class="flex flex-1 flex-center" data-v-e1dd1ae4><div flex="~ center col h-full" class="nav-menu-title-container cursor-pointer" data-v-e1dd1ae4><!----><span class="font-light truncate">Mirari&#39;s Blog</span></div></div><div class="inline-flex-center justify-end items-center flex-1" data-v-e1dd1ae4><!-- <template v-if="!app.isMobile && themeConfig.nav">
+          <template v-for="item in themeConfig.nav" :key="item.text">
+            <AppLink
+              v-if="'link' in item"
+              :to="item.link"
+              class="menu-btn inline-flex-center p-2 transition text-$va-c-text"
+              inline-flex cursor="pointer"
+              hover="bg-white/80 dark:bg-black/80"
+              z="$yun-z-menu-btn"
+            >
+              {{ item.text }}
+            </AppLink>
+            <template v-else-if="'items' in item" />
+          </template>
+        </template> --><button class="yun-icon-btn rounded-none! hidden sm:inline-flex" title="切换语言" style="color:var(--va-c-text);" data-v-e1dd1ae4><div i-ri-translate class="transition transform"></div></button><button type="button" class="yun-icon-btn yun-toggle-dark rounded-none!" title="切换深色模式" aria-label="切换深色模式" data-v-e1dd1ae4><div i="ri-sun-line dark:ri-moon-line"></div></button><!--[--><button class="yun-search-btn yun-icon-btn yun-search-action popup-trigger" title="搜索"><div i-ri-search-line aria-hidden="true"></div></button><!--[--><!--v-if--><!--]--><!--]--></div></div><!----><!--v-if--><!----><!--[--><div class="yun-bg"></div><!--]--><!----><button type="button" class="back-to-top yun-icon-btn" aria-label="回到顶部" title="回到顶部" tabindex="-1" aria-hidden="true" style="--yun-back-top-progress:0deg;"><div class="back-to-top-arrow" i-ri-arrow-up-s-line aria-hidden="true"></div></button><!--]--><!--[--><!--]--><!----><!--]--><div class="min-h-screen flex flex-col"><!----><div class="mt-12 md:mt-24 yun-layout-wrapper-content yun-layout-wrapper__content"><!--[--><div class="yun-layout-left gap-4 sticky top-$yun-margin-top w-80"><!--[--><!--[--><div class="yun-card flex-center overflow-hidden p-4 min-h-sm" flex="~ col gap-1" min-h="100px" bg="$va-c-bg-light" data-v-430e6195><!----><!----><div class="yun-card-body relative" w="full" flex="~ col" items="center" data-v-430e6195><!--[--><div class="site-info gap-1 items-center text-center" flex="~ col" p="t-8"><a href="/about" class="site-author-avatar inline-flex-center"><div class="relative yun-author-avatar"><div class="absolute size-full avatar-bg bg-image-$yun-home-hero-image-background-image filter-blur-2xl op-30"></div><img class="rounded-full size-full bg-white dark:bg-white/20 p-1 m-0 absolute" src="/avatar.jpg" alt="作者头像"><span class="site-author-status absolute" title="所有的空闲时间都在打游戏">🎮</span></div></a><a href="/about" class="site-author-name font-black font-serif text-$va-c-text op-80 hover:op-100 flex-center">mirari</a><a href="/about/site" class="site-name text-lg leading-loose">Mirari&#39;s Blog</a><h4 class="site-subtitle block op-70" text="xs">╮(╯▽╰)╭</h4><div class="site-description">严重拖延症</div></div><div class="yun-gradient-line my-2 op-20"></div><nav class="site-nav" text-xl mt-2><a href="/archives/" class="post-classify-nav-item gap-1 w-20 p-2 rounded transition op-80" flex="~ col center" title="归档" hover="bg-$va-c-bg-soft op-100"><div flex="~ col" class="text-$va-c-text inline-flex-center gap-1"><!-- Use CSS to toggle icons based on router-link-active class to avoid SSR hydration mismatch --><div class="text-2xl icon-default i-ri-archive-line"></div><div class="text-2xl icon-active i-ri-archive-fill"></div><span class="text-xs">归档</span></div><span class="count text-base text-black/80 dark:text-white/80">46</span></a><a href="/categories/" class="post-classify-nav-item gap-1 w-20 p-2 rounded transition op-80" flex="~ col center" title="分类" hover="bg-$va-c-bg-soft op-100"><div flex="~ col" class="text-$va-c-text inline-flex-center gap-1"><!-- Use CSS to toggle icons based on router-link-active class to avoid SSR hydration mismatch --><div class="text-2xl icon-default i-ri-folder-2-line"></div><div class="text-2xl icon-active i-ri-folder-2-fill"></div><span class="text-xs">分类</span></div><span class="count text-base text-black/80 dark:text-white/80">6</span></a><a href="/tags/" class="post-classify-nav-item gap-1 w-20 p-2 rounded transition op-80" flex="~ col center" title="标签" hover="bg-$va-c-bg-soft op-100"><div flex="~ col" class="text-$va-c-text inline-flex-center gap-1"><!-- Use CSS to toggle icons based on router-link-active class to avoid SSR hydration mismatch --><div class="text-2xl icon-default i-ri-price-tag-3-line"></div><div class="text-2xl icon-active i-ri-price-tag-3-fill"></div><span class="text-xs">标签</span></div><span class="count text-base text-black/80 dark:text-white/80">58</span></a></nav><div class="yun-gradient-line my-2 op-20"></div><div class="links-of-author"><!--[--><a class="links-of-author-item yun-icon-btn" rel="noopener" href="/atom.xml" title="RSS" target="_blank" style="color:orange;"><div class="i-ri-rss-line icon"></div></a><a class="links-of-author-item yun-icon-btn" rel="noopener" href="https://github.com/mirari" title="GitHub" target="_blank" style="color:#6e5494;"><div class="i-ri-github-line icon"></div></a><a class="links-of-author-item yun-icon-btn" rel="noopener" href="mailto:clover4@gmail.com" title="电子邮件" target="_blank" style="color:#8E71C1;"><div class="i-ri-mail-line icon"></div></a><a class="links-of-author-item yun-icon-btn" rel="noopener" href="https://www.travellings.cn/go.html" title="Travelling" target="_blank" style="color:var(--va-c-text);"><div class="i-ri-train-line icon"></div></a><!--]--></div><div class="yun-gradient-line my-2 op-20"></div><div class="links flex-center"><!--[--><a href="/sites/" class="va-link link-item yun-icon-btn" inline-flex title="站点地图" style="color:undefined;"><!--[--><div class="i-ri-planet-line icon size-6"></div><!--]--></a><a href="/links/" class="va-link link-item yun-icon-btn" inline-flex title="友情链接" style="color:dodgerblue;"><!--[--><div class="i-ri-genderless-line icon size-6"></div><!--]--></a><!--]--></div><!--]--></div><!----></div><!--[--><!--
+    Empty placeholder, meant to be overridden by the user (see demo/yun/components/YunAdBoard.vue).
+    `v-if="false"` renders a comment node instead of a real element: this avoids the SSR hydration
+    crash a raw `<template>` causes (#711), while still adding no gap to the parent flex layout,
+    which an empty `<div>` would (ab57216f).
+  --><!----><!--]--><!--]--><!--]--></div><!----><main class="yun-main lt-md:w-full" flex="~ center"><!--[--><div class="content w-full md:w-3xl lg:w-2xl xl:w-2xl 2xl:w-4xl" flex="~ col grow" p="lt-md:0"><div class="yun-card flex-center overflow-hidden" flex="col" min-h="100px" bg="$va-c-bg-light" m="0" data-v-430e6195><!----><!----><div class="yun-card-body relative" w="full" flex="~ col" items="center" data-v-430e6195><!--[--><!----><div class="mt-8 mb-4"><!--[--><header class="post-header"><h1 p="2" text="2xl center" font="serif black" style="color:" class="post-title flex-center"><!----><span inline-flex class="leading-none">8年2次装修，分享我的装修经验、建议与笔记(5.书房)</span></h1></header><!--]--></div><!--[--><!--[--><!--[--><!--[--><!----><div flex="~ center" text="sm" class="post-meta-col post-meta gap-4"><div class="post-time flex items-center gap-4"><span class="posted-time inline-flex-center gap-1" title="发表于2023-09-01 19:48:52"><div class="inline-block" i-ri-calendar-line></div><time class="op-80">2023-09-01</time></span><span class="edited-time inline-flex-center gap-1" title="更新于2026-10-26 00:58:33"><div i-ri-calendar-2-line></div><time class="op-80">2026-10-26</time></span></div><!--[--><!--]--><div class="inline-flex-center gap-4"><div class="inline-flex-center post-counter gap-4"><span class="word-count inline-flex-center gap-1" title="本文字数"><div class="inline-block" i-ri-file-word-line></div><span class="op-80">1.8k</span></span><span class="reading-time inline-flex-center gap-1" title="阅读时长"><div i-ri-timer-line></div><time class="op-80">7m</time></span></div><div class="inline-flex gap-4" text="sm" h="5"><div inline-flex justify="center" items="center" title="阅读次数"><div inline-flex i-ri-eye-line></div><span ml-1 inline-flex class="waline-pageview-count op-80" data-path="/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_5/"></span></div><div inline-flex justify="center" items="center" title="评论数"><div inline-flex i-ri-chat-4-line></div><span ml-1 inline-flex class="waline-comment-count op-80" data-path="/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_5/"></span></div></div><!----></div></div><!--]--><!----><div class="inline-flex mt-2" text="sm" py="1"><a href="/categories?category=%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0" class="transition post-category inline-flex-center text-xs border-$va-c-divider" px-2 h="7" border rounded-full hover="bg-blue-500 text-white"><div m="x-1" inline-flex i-ri-folder-2-line></div><span>学习笔记</span></a><span mx="2"></span><div class="post-tags inline-flex" items="center" gap="1" flex="wrap 1" justify="end"><!--[--><a href="/tags/?tag=%E8%A3%85%E4%BF%AE" class="transition post-tag inline-flex-center text-xs border-$va-c-divider" px-2 h="7" rounded-full border hover="bg-blue-500"><span>装修</span></a><!--]--></div></div><!--]--><!--]--><!--]--><div p="x-4 b-8" class="sm:px-6 lg:px-12 xl:px-16" w="full"><!--[--><!--]--><!--[--><!-- <Transition appear> --><article class="markdown-body"><!--[--><!----><!----><!--[--><!--]--><!--[--><h1 id="目录" tabindex="-1">目录 <a class="header-anchor" href="#目录" aria-label="Permalink to &quot;目录&quot;">​</a></h1><p><a href="/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes">1.全屋</a></p><p><a href="/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_2">2.玄关</a></p><p><a href="/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_3">3.厨房</a></p><p><a href="/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_4">4.儿童房</a></p><p><a href="/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_5">5.书房</a></p><nav class="table-of-contents"><ul><li><a href="#书房">书房</a><ul><li><a href="#书桌">书桌</a></li><li><a href="#层板缝隙">层板缝隙</a></li><li><a href="#桌底挡板">桌底挡板</a></li><li><a href="#书房窗户">书房窗户</a></li><li><a href="#人体工学椅">人体工学椅</a></li></ul></li></ul></nav><p><a href="/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_6">6.客餐厅</a></p><p><a href="/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_7">7.主卧</a></p><p><a href="/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_8">8.卫生间</a></p><p><a href="/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_9">9.阳台</a></p><p><a href="/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_10">10.其他</a></p><h2 id="书房" tabindex="-1">书房 <a class="header-anchor" href="#书房" aria-label="Permalink to &quot;书房&quot;">​</a></h2><figure><img src="/assets/IMG_20220919_142715.DsHDBCtr.jpg" alt="" loading="lazy" decoding="async"></figure><figure><img src="/assets/WechatIMG1202.DpV-dU4w.jpeg" alt="" loading="lazy" decoding="async"></figure><p>对我来说书房就是娱乐房，也是方案改得最多的一个房间。</p><h3 id="书桌" tabindex="-1">书桌 <a class="header-anchor" href="#书桌" aria-label="Permalink to &quot;书桌&quot;">​</a></h3><p>我的设想是，有一个大长桌，能满足3人并排观看屏幕，同时还要留下摆第二台电脑的空间给家人用。</p><p>同时我希望一侧墙体能摆下100寸的投影幕布，还要能将平时用的显示器挪到旁边时不影响视线。由于投影和显示器需要共用一套音响，所以两者必须在同一面墙上。声音方位不对对我来说是不可接受的。</p><p>首先书桌的选择我抛弃了升降桌。</p><p>一是升降桌基本找不到这个尺寸的，达到2米这个宽度的书桌，需要在中间加支撑，否则板材强度不足。即使是单买升降腿再加板材也没法解决这个问题。(现在也有宽2米的升降桌了)</p><p>二是升降桌的功能在我看来并非必需。要调节舒适坐姿，调椅子高度就行了。要坐酸了想站着用电脑，我还不如沙发上去躺一会，毕竟家里不是上班，不是被逼着用电脑，何况坐姿舒适本来就不会酸。</p><p>三是升降桌需要解决线材问题。像我这种FT02的大机箱不会放在桌上，各种线材现在都只是堪堪够用，换成升降就全得重新买线。</p><p>所以最终就变成了一个大转角长桌，桌板是用两块18mm的爱格板压起来的，深度67cm，两边净长度都是200cm。由于长度超长，又在底下做了三角钢架和背板承重。这也是现在流行的悬浮书桌的做法。我最在意的不是悬浮感，而是打机时腿不能被桌脚影响姿势。</p><p>这块桌板性价比很低，肯定有更实惠的方案，但我没有折腾。</p><p>有人说这像办公桌，可能是暗色洞洞板和光污染没搞起来，投影/OLED大电视也没上。</p><p>缺点是书房储物功能较弱，没有配置书架。</p><h3 id="层板缝隙" tabindex="-1">层板缝隙 <a class="header-anchor" href="#层板缝隙" aria-label="Permalink to &quot;层板缝隙&quot;">​</a></h3><p>如果电脑桌上方或者左右的定制书架会放置音箱、液晶时钟等用电设备，建议在层板后方与背板连接处留出缝隙，方便走线。</p><p>同样的思路也可以用在餐边柜、卫生间的镜柜等地方，不但能走线，还方便DIY灯带。</p><p>之前提到过文信的定制是不支持这种设计的。</p><h3 id="桌底挡板" tabindex="-1">桌底挡板 <a class="header-anchor" href="#桌底挡板" aria-label="Permalink to &quot;桌底挡板&quot;">​</a></h3><figure><img src="/assets/IMG_20221013_004943.SeUZotvQ.jpg" alt="" loading="lazy" decoding="async"></figure><p>这是我自创的办法，还没见过别人使用。买1、2块伸缩衣柜隔板(约二三十元)竖起来，就可以盖住桌底背后的线了，怎么伸腿都不怕勾到线。推荐给懒得理线的人。</p><h3 id="书房窗户" tabindex="-1">书房窗户 <a class="header-anchor" href="#书房窗户" aria-label="Permalink to &quot;书房窗户&quot;">​</a></h3><p>高层的风不是一般的大，尤其是杭州的夏天。一旦忘记关窗，暴雨时后果不堪设想。</p><p>因为我把书桌做满了窗前，有70cm的桌板，加上显示器阻挡，这时候伸手关窗会比较困难。</p><p>我就开始考虑将窗户窗帘智能化。</p><p>由于窗前就是电脑，虽然没有预留插座但供电完全不成问题。</p><h4 id="电动开窗器" tabindex="-1">电动开窗器 <a class="header-anchor" href="#电动开窗器" aria-label="Permalink to &quot;电动开窗器&quot;">​</a></h4><figure><img src="/assets/IMG_20220922_085727.D4HUyL7b.jpg" alt="" loading="lazy" decoding="async"></figure><p>安装效果如下：</p><p><a href="https://www.xiaohongshu.com/explore/64f193f2000000001d01561d" target="_blank" rel="noreferrer">https://www.xiaohongshu.com/explore/64f193f2000000001d01561d</a></p><p>安装过程简单，但需要用到手电钻。</p><p>安装完成后，电机正好被百叶帘挡住，不注意基本看不到。</p><p>要说不足的话电机速度再快点就好了。</p><p>还有个缺点是纱窗会无法安装。幸好这个窗我本来就基本不开。</p><p>另外我这个安装得太靠外面了，导致开窗角度有限。</p><p>但是我本来就出于安全考虑，已经用拼多多6元一包的限位器卡在窗户轨道上，限制了开窗角度，所以问题也不大。</p><h4 id="电动百叶帘" tabindex="-1">电动百叶帘 <a class="header-anchor" href="#电动百叶帘" aria-label="Permalink to &quot;电动百叶帘&quot;">​</a></h4><p>已经装好的百叶帘也要智能化，用的就是卷帘伴侣。</p><figure><img src="/assets/image-20230901155919652.DAgJQUe7.png" alt="" loading="lazy" decoding="async"></figure><p>安装效果如下：</p><p><a href="https://www.xiaohongshu.com/explore/64f19627000000001e022e25" target="_blank" rel="noreferrer">https://www.xiaohongshu.com/explore/64f19627000000001e022e25</a></p><h3 id="人体工学椅" tabindex="-1">人体工学椅 <a class="header-anchor" href="#人体工学椅" aria-label="Permalink to &quot;人体工学椅&quot;">​</a></h3><figure><img src="/assets/IMG_20221022_190551.BPwjyrvL.jpg" alt="" loading="lazy" decoding="async"></figure><p>买椅子时特地去实体店试坐了embody，脑子里一直回荡着四个字——平平无奇，也可能是我坐的时间太短。</p><p>往后仰的时候会习惯性抬头，然后就会意识到头部没有支撑。</p><p>回家以后顺便看了保友金豪e、steelcase gesture、humanscale freedom啥的，总是感觉外形太普通，不像embody是坐上去平平无奇，连一眼看过去也是平平无奇。</p><p>我想着如果我要花上万元买一把椅子，外形还那么普通，还要说服自己坐着舒服才重要，那也太艰难了。</p><p>然后看到了所谓的赫曼米勒新旗舰cosm，一方面想着不希望随大流千篇一律的embody，又感觉这种免调节的比较符合我对简约的偏好，外形也足够抢眼。</p><p>关键是官方标价与第三方差价巨大，embody价格坚挺在12000-14000，aeron能便宜不少，而cosm干脆就是官方价的零头，纠结半天以后选了cosm。</p><p>一开始不适应网面，感觉勒肉，但用了几个月下来已经完全习惯了。网面弹性良好，透气性强，头也可以后仰放松。</p><p>但是，我仍然认为这把椅子并不值这个价。</p><p>其实我对坐和睡都没什么讲究，在旧房子里我坐着一把大概不到200元的普通椅子，时间再长也完全没有不适，现在的新椅子并没有让我感受到价值几千元的提升。</p><p>所以我觉得，如果你对现在坐着的椅子很习惯，就不要指望换成一把万元椅能带来什么神奇的体验提升。追求性价比的话，选择国产的京东京造、网易严选，都是不错的选择，功能性也丰富。</p><p>从定位上来说，cosm是新旗舰，官方售价比embody更高，只是embody知名度太高，销量更好，以致于第三方渠道价格居高不下。而cosm的简约不可调节、什么人都适合的泛用性，表明它其实更适合的是公司会议室、会客厅之类的公共场景。所以现在我不建议在书房选择这款椅子。</p><p><a href="/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_6">下一篇：6.客餐厅</a></p><!--]--><!--]--><!----><!--[--><div m="y-4" class="end flex justify-center items-center"><hr class="line inline-flex" w="full" m="!y-2"><span p="x-4" font="bold" class="whitespace-nowrap">To Be Continued.</span><hr class="line inline-flex" w="full" m="!y-2"></div><!--]--></article><!-- </Transition> --><!--]--><!--[--><!--[--><!--[--><!----><ul class="post-copyright" m="y-4"><li class="post-copyright-author"><strong>本文作者：</strong><span>mirari</span></li><li class="post-copyright-link"><strong>本文链接：</strong><a href="https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_5/" target="_blank" title="本文链接">https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_5/</a></li><li class="post-copyright-license"><strong>版权声明：</strong><span>本博客所有文章除特别声明外，均默认采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener" title="CC BY-NC-SA 4.0 ">CC BY-NC-SA</a> 许可协议。</span></li></ul><!--]--><!--]--><!--]--></div><!--]--></div><!----></div><!--[--><!--]--><!--[--><div class="post-nav"><div class="post-nav-item"><a href="/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_4/" class="post-nav-prev" title="8年2次装修，分享我的装修经验、建议与笔记(4.儿童房)"><div class="icon" i-ri-arrow-left-s-line></div><span class="title truncate" text="sm">8年2次装修，分享我的装修经验、建议与笔记(4.儿童房)</span></a></div><div class="post-nav-item"><a href="/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_6/" class="post-nav-next" title="8年2次装修，分享我的装修经验、建议与笔记(6.客餐厅)"><span class="title truncate" text="sm">8年2次装修，分享我的装修经验、建议与笔记(6.客餐厅)</span><div class="icon" i-ri-arrow-right-s-line></div></a></div></div><!--]--><!--[--><!--]--><!--[--><div class="yun-card flex-center overflow-hidden comment yun-comment sm:p-6 lg:px-12 xl:px-16" flex="col" min-h="100px" bg="$va-c-bg-light" w="full" p="4" data-v-430e6195><!----><!----><div class="yun-card-body relative" w="full" flex="~ col" items="center" data-v-430e6195><!--[--><!----><!--]--></div><!----></div><!--]--><!--[--><!--
+    Empty placeholder, meant to be overridden by the user (see demo/yun/components/YunAdBoard.vue).
+    `v-if="false"` renders a comment node instead of a real element: this avoids the SSR hydration
+    crash a raw `<template>` causes (#711), while still adding no gap to the parent flex layout,
+    which an empty `<div>` would (ab57216f).
+  --><!----><!--]--><!--[--><!--]--><!--[--><!--]--></div><!--]--></main><!--[--><!----><!----><!----><!--]--><!--]--></div><footer flex="~ col" class="relative yun-footer va-footer px-4 py-4 pt-0 text-$va-c-text-light w-full mt-14" bg="white dark:$va-c-bg-soft" text="center sm"><div class="yun-cloud absolute top--10 left-0 right-0"><svg class="waves" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" fill="var(--yun-c-cloud)"></path></defs><g class="parallax"><use xlink:href="#gentle-wave" x="48" y="0"></use><use xlink:href="#gentle-wave" x="48" y="3"></use><use xlink:href="#gentle-wave" x="48" y="5"></use><use xlink:href="#gentle-wave" x="48" y="7"></use></g></svg></div><!----><div class="copyright flex justify-center items-center gap-2" p="1"><span> © <!--[-->2017 - <!--]--> 2026</span><!----><span>mirari</span></div><!----><!--[--><!--]--><div class="yun-footer-gradient"></div></footer></div><!--]--></div><script>window.__INITIAL_STATE__='{"pinia":{"yun-app":{"bannerAnimationDone":false},"app":{"showLoading":true},"site":{},"routerStore":{}}}'</script><script type="application/ld+json" data-hid="schema-org-graph">{"@context":"https://schema.org","@graph":[{"@id":"https://mirari.cc/#identity","@type":"Person","name":"mirari","url":"https://mirari.cc/","image":{"@id":"https://mirari.cc/#/schema/image/1"},"sameAs":["/atom.xml","https://github.com/mirari","mailto:clover4@gmail.com","https://www.travellings.cn/go.html"]},{"@id":"https://mirari.cc/#website","@type":"WebSite","dateModified":"2026-10-25T16:58:33.000Z","datePublished":"2023-09-01T11:48:52.000Z","inLanguage":"zh-CN","name":"8年2次装修，分享我的装修经验、建议与笔记(5.书房)","url":"https://mirari.cc/","publisher":{"@id":"https://mirari.cc/#identity"}},{"@id":"https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_5/#webpage","@type":"WebPage","dateModified":"2026-10-25T16:58:33.000Z","datePublished":"2023-09-01T11:48:52.000Z","description":"严重拖延症","name":"8年2次装修，分享我的装修经验、建议与笔记(5.书房)","url":"https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_5/","isPartOf":{"@id":"https://mirari.cc/#website"},"potentialAction":[{"@type":"ReadAction","target":["https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_5/"]}]},{"@id":"https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_5/#article","dateModified":"2026-10-25T16:58:33.000Z","datePublished":"2023-09-01T11:48:52.000Z","headline":"8年2次装修，分享我的装修经验、建议与笔记(5.书房)","inLanguage":"zh-CN","thumbnailUrl":"https://mirari.cc/IMG_20220919_142715.jpg","@type":["Article","BlogPosting"],"author":{"@id":"https://mirari.cc/#/schema/person/1"},"image":{"@id":"https://mirari.cc/#/schema/image/2"},"isPartOf":{"@id":"https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_5/#webpage"},"mainEntityOfPage":{"@id":"https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_5/#webpage"},"publisher":{"@id":"https://mirari.cc/#identity"}},{"@id":"https://mirari.cc/#/schema/person/1","@type":"Person","name":"mirari","url":"https://mirari.cc/"},{"@id":"https://mirari.cc/#/schema/image/1","@type":"ImageObject","contentUrl":"https://mirari.cc/avatar.jpg","inLanguage":"zh-CN","url":"https://mirari.cc/avatar.jpg"},{"@id":"https://mirari.cc/#/schema/image/2","@type":"ImageObject","contentUrl":"https://mirari.cc/IMG_20220919_142715.jpg","inLanguage":"zh-CN","url":"https://mirari.cc/IMG_20220919_142715.jpg"}]}</script>
+  <div id="valaxy-teleports"></div>
+  
+
+</body>
+</html>
