@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Mirari的小站</title>
+        <link>https://mirari.cc/</link>
+        <description>严重拖延症</description>
+        <lastBuildDate>Fri, 20 Nov 2026 09:05:57 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <image>
+            <title>Mirari的小站</title>
+            <url>https://mirari.cc/avatar.jpg</url>
+            <link>https://mirari.cc/</link>
+        </image>
+        <copyright>CC BY-NC-SA 4.0 2026 © mirari</copyright>
+        <atom:link href="https://mirari.cc/feed.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[电动沙发接入米家智能家居]]></title>
+            <link>https://mirari.cc/posts/2026-10-25-integrating_an_electric_sofa_into_mijia_smart_home</link>
+            <guid isPermaLink="false">https://mirari.cc/posts/2026-10-25-integrating_an_electric_sofa_into_mijia_smart_home</guid>
+            <pubDate>Sun, 25 Oct 2026 14:15:24 GMT</pubDate>
+            <description><![CDATA[最近逛了一圈电动功能沙发，发现这个品类里的大多数品牌，似乎还停留在传统家具的思路里，对智能家居的反应普遍有些迟缓，有些意外。 电动沙发本身的结构并不复杂，核心部件就是伸缩电机(电动推杆)。很多沙发品牌不会自行研发，而是外购上游供应商的公版方案。淘宝上一个沙发电机的价格也就 200 元左右，但买沙发时增配一个电动位，往往就要加价 600—1000 元。…]]></description>
+            <content:encoded><![CDATA[<p>最近逛了一圈电动功能沙发，发现这个品类里的大多数品牌，似乎还停留在传统家具的思路里，对智能家居的反应普遍有些迟缓，有些意外。</p>
+<p>电动沙发本身的结构并不复杂，核心部件就是伸缩电机(电动推杆)。很多沙发</p>
+<br/><p>访问 <a href="https://mirari.cc/posts/2026-10-25-integrating_an_electric_sofa_into_mijia_smart_home" target="_blank">https://mirari.cc/posts/2026-10-25-integrating_an_electric_sofa_into_mijia_smart_home</a> 阅读全文。</p>]]></content:encoded>
+            <author>clover4@gmail.com (mirari)</author>
+        </item>
+        <item>
+            <title><![CDATA[养一只会跑去酒馆吐槽的龙虾是什么体验？]]></title>
+            <link>https://mirari.cc/posts/2026-03-13-what_is_it_like_to_raise_a_lobster_that_complains_in_a_tavern</link>
+            <guid isPermaLink="false">https://mirari.cc/posts/2026-03-13-what_is_it_like_to_raise_a_lobster_that_complains_in_a_tavern</guid>
+            <pubDate>Fri, 13 Mar 2026 01:24:42 GMT</pubDate>
+            <description><![CDATA[关于“养龙虾”的基本概念就不赘述了。如果只是把它接入聊天工具，那它充其量还是个问答助手，和豆包之类没有本质区别；如果只是利用它保持在线的能力，硬塞一些普通的日程提醒，也纯粹是为了做而做，缺乏真正的必要性。 但是，如果你放手让它自己出去探索、学习和实践，然后再暗中观察它的行动表现，绝对能让你找回当年玩《旅行青蛙》时那种“养儿子”的奇妙感觉。…]]></description>
+            <content:encoded><![CDATA[<p>关于“养龙虾”的基本概念就不赘述了。如果只是把它接入聊天工具，那它充其量还是个问答助手，和豆包之类没有本质区别；如果只是利用它保持在线的能力，硬塞一些普通的日程提醒，也纯粹是为了做而做，缺乏真正的必</p>
+<br/><p>访问 <a href="https://mirari.cc/posts/2026-03-13-what_is_it_like_to_raise_a_lobster_that_complains_in_a_tavern" target="_blank">https://mirari.cc/posts/2026-03-13-what_is_it_like_to_raise_a_lobster_that_complains_in_a_tavern</a> 阅读全文。</p>]]></content:encoded>
+            <author>clover4@gmail.com (mirari)</author>
+        </item>
+        <item>
+            <title><![CDATA[地暖面板故障维修更换与接入米家智能家居]]></title>
+            <link>https://mirari.cc/posts/2024-12-14-underfloor-heating-thermostat-replacement-and-mijia</link>
+            <guid isPermaLink="false">https://mirari.cc/posts/2024-12-14-underfloor-heating-thermostat-replacement-and-mijia</guid>
+            <pubDate>Sat, 14 Dec 2024 21:09:54 GMT</pubDate>
+            <description><![CDATA[新的采暖季到来，打开地暖时发现书房的温控面板出现故障。 如今已是交付第三年，地暖已经过保。 物业师傅初步判断是面板坏了，但他们不会维修，需要联系对接的第三方售后的人来更换面板。这样一来不但费时长久，价格也未必划算。 实际上地暖这个系统是由壁挂炉、分水器、温控器等许多部件共同构成的。它们分别来自不同品牌，遵循标准后组装成系统，并不需要锁死在一个品牌上。因此，温控器故障后，可以自行购买第三方产品，甚至…]]></description>
+            <content:encoded><![CDATA[<p>新的采暖季到来，打开地暖时发现书房的温控面板出现故障。</p>
+<p><img src="https://mirari.cc/assets/thermostat-fault.C0yuzDSw.webp" alt="发生故障的原地暖温控面板"></p>
+<p>如今已是交付第三年，地暖已经过保。</p>
+<p>物业师傅初步判断是</p>
+<br/><p>访问 <a href="https://mirari.cc/posts/2024-12-14-underfloor-heating-thermostat-replacement-and-mijia" target="_blank">https://mirari.cc/posts/2024-12-14-underfloor-heating-thermostat-replacement-and-mijia</a> 阅读全文。</p>]]></content:encoded>
+            <author>clover4@gmail.com (mirari)</author>
+        </item>
+        <item>
+            <title><![CDATA[支付宝小程序批量自动化部署]]></title>
+            <link>https://mirari.cc/posts/2024-09-03-alipay_mini_program_automated_deployment</link>
+            <guid isPermaLink="false">https://mirari.cc/posts/2024-09-03-alipay_mini_program_automated_deployment</guid>
+            <pubDate>Tue, 03 Sep 2024 15:10:46 GMT</pubDate>
+            <description><![CDATA[下面梳理一下支付宝小程序的批量自动化部署实现流程。 大致流程与微信小程序类似，请参考微信小程序批量自动化部署。 跟着文档操作，首先需要到支付宝小程序管理后台右上角点击头像后点击账户中心(不是开发配置)中进行配置。 注意，只有管理员可以看到这个页面，应用管理员无法使用此功能。…]]></description>
+            <content:encoded><![CDATA[<p>下面梳理一下支付宝小程序的批量自动化部署实现流程。</p>
+<h2>准备工作</h2>
+<p>大致流程与微信小程序类似，请参考[微信小程序批量自动化部署](/posts/2024-07-18-wechat_mini_pr</p>
+<br/><p>访问 <a href="https://mirari.cc/posts/2024-09-03-alipay_mini_program_automated_deployment" target="_blank">https://mirari.cc/posts/2024-09-03-alipay_mini_program_automated_deployment</a> 阅读全文。</p>]]></content:encoded>
+            <author>clover4@gmail.com (mirari)</author>
+        </item>
+        <item>
+            <title><![CDATA[头条小程序批量自动化部署]]></title>
+            <link>https://mirari.cc/posts/2024-09-03-toutiao_mini_program_automated_deployment</link>
+            <guid isPermaLink="false">https://mirari.cc/posts/2024-09-03-toutiao_mini_program_automated_deployment</guid>
+            <pubDate>Tue, 03 Sep 2024 15:10:17 GMT</pubDate>
+            <description><![CDATA[下面梳理一下头条小程序的批量自动化部署实现流程。 大致流程与微信小程序类似，请参考微信小程序批量自动化部署。 跟着文档操作，首先需要到头条小程序管理后台的开发设置中进行配置。 点击立即启用按钮即可创建密钥，关闭后只能重新生成。 将密钥文件下载到安全的位置。由于我们的项目是私有库，这里就直接放到了项目deploy/toutiao目录下。多个小程序的密钥可以放在一起，这里我将密钥起名为${appid}…]]></description>
+            <content:encoded><![CDATA[<p>下面梳理一下头条小程序的批量自动化部署实现流程。</p>
+<h2>准备工作</h2>
+<p>大致流程与微信小程序类似，请参考[微信小程序批量自动化部署](/posts/2024-07-18-wechat_mini_pro</p>
+<br/><p>访问 <a href="https://mirari.cc/posts/2024-09-03-toutiao_mini_program_automated_deployment" target="_blank">https://mirari.cc/posts/2024-09-03-toutiao_mini_program_automated_deployment</a> 阅读全文。</p>]]></content:encoded>
+            <author>clover4@gmail.com (mirari)</author>
+        </item>
+        <item>
+            <title><![CDATA[微信小程序批量自动化部署]]></title>
+            <link>https://mirari.cc/posts/2024-07-18-wechat_mini_program_automated_deployment</link>
+            <guid isPermaLink="false">https://mirari.cc/posts/2024-07-18-wechat_mini_program_automated_deployment</guid>
+            <pubDate>Thu, 18 Jul 2024 14:24:14 GMT</pubDate>
+            <description><![CDATA[CI/CD这个概念很实用，但我们这种小作坊，没有一些很高大上的应用。 最常见的使用场景就是，开发者一键提交分支master，交给工作流工具完成构建，部署的后续操作，自动更新测试或线上环境。 个人博客等项目可以使用Github action来实现，但公司的代码在云效上，我更习惯于使用云效Flow来实现自动化部署。他的操作菜单是可视化的，非常方便，还有一些推送机器人消息的傻瓜化配置插件。…]]></description>
+            <content:encoded><![CDATA[<p>CI/CD这个概念很实用，但我们这种小作坊，没有一些很高大上的应用。</p>
+<p>最常见的使用场景就是，开发者一键提交分支master，交给工作流工具完成构建，部署的后续操作，自动更新测试或线上环境。</p>
+<p>个人</p>
+<br/><p>访问 <a href="https://mirari.cc/posts/2024-07-18-wechat_mini_program_automated_deployment" target="_blank">https://mirari.cc/posts/2024-07-18-wechat_mini_program_automated_deployment</a> 阅读全文。</p>]]></content:encoded>
+            <author>clover4@gmail.com (mirari)</author>
+        </item>
+        <item>
+            <title><![CDATA[Mac修复应用无法打开]]></title>
+            <link>https://mirari.cc/posts/2024-05-21-fixing_apps_not_opening_on_mac_systems</link>
+            <guid isPermaLink="false">https://mirari.cc/posts/2024-05-21-fixing_apps_not_opening_on_mac_systems</guid>
+            <pubDate>Tue, 21 May 2024 17:46:29 GMT</pubDate>
+            <description><![CDATA[在一些第三方网站下载安装MacOS应用时，打开dmg文件，有时候会有一个“修复无法打开”的图标。 遇到应用拖动到Applications文件夹无法打开时，双击运行一下就可以解决问题。 但是在Sonoma 14.5版本下，这些操作失效了。 在隐私与安全性中配置“任何来源”(sudo spctl…]]></description>
+            <content:encoded><![CDATA[<p>在一些第三方网站下载安装MacOS应用时，打开dmg文件，有时候会有一个“修复无法打开”的图标。</p>
+<p>遇到应用拖动到Applications文件夹无法打开时，双击运行一下就可以解决问题。</p>
+<p>但是在So</p>
+<br/><p>访问 <a href="https://mirari.cc/posts/2024-05-21-fixing_apps_not_opening_on_mac_systems" target="_blank">https://mirari.cc/posts/2024-05-21-fixing_apps_not_opening_on_mac_systems</a> 阅读全文。</p>]]></content:encoded>
+            <author>clover4@gmail.com (mirari)</author>
+        </item>
+        <item>
+            <title><![CDATA[vue实现AI问答小助手(4)——服务端推送(SSE)]]></title>
+            <link>https://mirari.cc/posts/2024-05-18-vue_implements_ai_assistant_4_sse</link>
+            <guid isPermaLink="false">https://mirari.cc/posts/2024-05-18-vue_implements_ai_assistant_4_sse</guid>
+            <pubDate>Sat, 18 May 2024 17:40:12 GMT</pubDate>
+            <description><![CDATA[与AI聊天接口交互时，由于生成内容需要一定时间，如果等到所有内容都生成完毕才返回，那用户等待的时间会很长，使用体验就很差。 因此，必须实现流式返回。 一般情况下聊天之类的功能往往会用socket来实现，但由于AI总是一问一答，其实更适合的方案就是SSE(server-sent events)。 SSE是只能单向传输的，即服务端向客户端推送数据，客户端只能被动接收。…]]></description>
+            <content:encoded><![CDATA[<p>与AI聊天接口交互时，由于生成内容需要一定时间，如果等到所有内容都生成完毕才返回，那用户等待的时间会很长，使用体验就很差。</p>
+<p>因此，必须实现流式返回。</p>
+<p>一般情况下聊天之类的功能往往会用socket</p>
+<br/><p>访问 <a href="https://mirari.cc/posts/2024-05-18-vue_implements_ai_assistant_4_sse" target="_blank">https://mirari.cc/posts/2024-05-18-vue_implements_ai_assistant_4_sse</a> 阅读全文。</p>]]></content:encoded>
+            <author>clover4@gmail.com (mirari)</author>
+        </item>
+        <item>
+            <title><![CDATA[vue实现AI问答小助手(2)——流式TTS文字转语音]]></title>
+            <link>https://mirari.cc/posts/2024-05-16-vue_implements_ai_assistant_2_stream_tts</link>
+            <guid isPermaLink="false">https://mirari.cc/posts/2024-05-16-vue_implements_ai_assistant_2_stream_tts</guid>
+            <pubDate>Thu, 16 May 2024 20:52:43 GMT</pubDate>
+            <description><![CDATA[TTS(Text-to-speech)文字转语音使用的是阿里云的服务，文档地址： https://help.aliyun.com/zh/isi/developer-reference/streaming-text-tts-wss 文档只给出了一些配置项的说明，以及java端的代码示例，但没有web端的。所以这篇笔记可以给web开发者参考。 首先，AI答复的消息是通过SSE(server-sent…]]></description>
+            <content:encoded><![CDATA[<p>TTS(Text-to-speech)文字转语音使用的是阿里云的服务，文档地址：</p>
+<p><a href="https://help.aliyun.com/zh/isi/developer-reference/stream">https://help.aliyun.com/zh/isi/developer-reference/stream</a></p>
+<br/><p>访问 <a href="https://mirari.cc/posts/2024-05-16-vue_implements_ai_assistant_2_stream_tts" target="_blank">https://mirari.cc/posts/2024-05-16-vue_implements_ai_assistant_2_stream_tts</a> 阅读全文。</p>]]></content:encoded>
+            <author>clover4@gmail.com (mirari)</author>
+        </item>
+        <item>
+            <title><![CDATA[vue实现AI问答小助手(3)——实现录音和语音转文字]]></title>
+            <link>https://mirari.cc/posts/2024-05-17-vue_implements_ai_assistant_3_asr</link>
+            <guid isPermaLink="false">https://mirari.cc/posts/2024-05-17-vue_implements_ai_assistant_3_asr</guid>
+            <pubDate>Thu, 16 May 2024 20:52:43 GMT</pubDate>
+            <description><![CDATA[由于操作模式是类似微信的按下录音松开发送，所以转换文字就不需要像文字转语音那样流式了。 大致流程如下： 按下语音按钮开始录音：调用浏览器api申请麦克风权限，获取音频流。使用Recorder配置录音码流并对音频流进行录制。 松开按钮后结束录音：结束麦克风拾音关闭音频流，关闭录制，并获得录音blob文件。 调用阿里云的接口将blob文件转换成文字(这里与微信场景不同，服务器不负责处理语音)。…]]></description>
+            <content:encoded><![CDATA[<p>由于操作模式是类似微信的按下录音松开发送，所以转换文字就不需要像文字转语音那样流式了。</p>
+<p>大致流程如下：</p>
+<ol>
+<li>按下语音按钮开始录音：调用浏览器api申请麦克风权限，获取音频流。使用Recorde</li>
+</ol>
+<br/><p>访问 <a href="https://mirari.cc/posts/2024-05-17-vue_implements_ai_assistant_3_asr" target="_blank">https://mirari.cc/posts/2024-05-17-vue_implements_ai_assistant_3_asr</a> 阅读全文。</p>]]></content:encoded>
+            <author>clover4@gmail.com (mirari)</author>
+        </item>
+        <item>
+            <title><![CDATA[vue实现AI问答小助手(1)——播放语音]]></title>
+            <link>https://mirari.cc/posts/2024-05-15-vue_implements_ai_assistant_1_audio_player</link>
+            <guid isPermaLink="false">https://mirari.cc/posts/2024-05-15-vue_implements_ai_assistant_1_audio_player</guid>
+            <pubDate>Wed, 15 May 2024 22:02:19 GMT</pubDate>
+            <description><![CDATA[项目需要开发一个类似微信操作体验的AI问答小助手，记录下开发过程。 先从最简单的功能说起。 第一步是实现语音播放功能，也就是将从TTS(Text-to-speech)文字转语音服务中获取到的二进制语音文件播放出来。 项目使用vite+vue3+typescript搭建，基于vitesse脚手架，且尽可能使用了vueuse的工具库。…]]></description>
+            <content:encoded><![CDATA[<p>项目需要开发一个类似微信操作体验的AI问答小助手，记录下开发过程。</p>
+<p>先从最简单的功能说起。</p>
+<p>第一步是实现语音播放功能，也就是将从TTS(Text-to-speech)文字转语音服务中获取到的二进</p>
+<br/><p>访问 <a href="https://mirari.cc/posts/2024-05-15-vue_implements_ai_assistant_1_audio_player" target="_blank">https://mirari.cc/posts/2024-05-15-vue_implements_ai_assistant_1_audio_player</a> 阅读全文。</p>]]></content:encoded>
+            <author>clover4@gmail.com (mirari)</author>
+        </item>
+        <item>
+            <title><![CDATA[配置npmrc解决自动化部署时cypress等依赖安装问题]]></title>
+            <link>https://mirari.cc/posts/2024-05-08-configure_npmrc_to_solve_the_dependency_installation_issues_with_automated_deployment</link>
+            <guid isPermaLink="false">https://mirari.cc/posts/2024-05-08-configure_npmrc_to_solve_the_dependency_installation_issues_with_automated_deployment</guid>
+            <pubDate>Sun, 05 May 2024 22:02:19 GMT</pubDate>
+            <description><![CDATA[公司的代码仓库在阿里云的云效上，自动化部署使用的是云效的流水线Flow。 流水线默认提供的node版本最高是18，且默认的pnpm版本也较低。而现在的项目基本都是用pnpm作为包管理工具的。 如果编译环境不能做到一致，部署时就可能出现一些奇怪问题。 此外，构建主机在国内，安装依赖时也会遇到网络问题。…]]></description>
+            <content:encoded><![CDATA[<p>公司的代码仓库在阿里云的云效上，自动化部署使用的是云效的流水线Flow。</p>
+<p>流水线默认提供的node版本最高是18，且默认的pnpm版本也较低。而现在的项目基本都是用pnpm作为包管理工具的。</p>
+<p>如</p>
+<br/><p>访问 <a href="https://mirari.cc/posts/2024-05-08-configure_npmrc_to_solve_the_dependency_installation_issues_with_automated_deployment" target="_blank">https://mirari.cc/posts/2024-05-08-configure_npmrc_to_solve_the_dependency_installation_issues_with_automated_deployment</a> 阅读全文。</p>]]></content:encoded>
+            <author>clover4@gmail.com (mirari)</author>
+        </item>
+        <item>
+            <title><![CDATA[8年2次装修，分享我的装修经验、建议与笔记(10.其他)]]></title>
+            <link>https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_10</link>
+            <guid isPermaLink="false">https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_10</guid>
+            <pubDate>Sun, 03 Sep 2023 19:48:52 GMT</pubDate>
+            <description><![CDATA[1.全屋 2.玄关 3.厨房 4.儿童房 5.书房 6.客餐厅 7.主卧 8.卫生间 9.阳台 10.其他 [[toc]] 顺带提一下车位的选择。 纠结是否人防没有必要，战时连房子都未必在了，车位是不是人防毫无意义。 实际上人防也能办产证，但杭州所有车位都没有产证，大家买卖车位合同都是指转让使用权，合同都会写明使用权跟随房屋产权延期。 所以实际车位买卖过户都没有差异。 选择车位的优先级是：…]]></description>
+            <content:encoded><![CDATA[<h1>目录</h1>
+<p><a href="/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes">1.全屋</a></p>
+<p>[2</p>
+<br/><p>访问 <a href="https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_10" target="_blank">https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_10</a> 阅读全文。</p>]]></content:encoded>
+            <author>clover4@gmail.com (mirari)</author>
+        </item>
+        <item>
+            <title><![CDATA[8年2次装修，分享我的装修经验、建议与笔记(1.全屋)]]></title>
+            <link>https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes</link>
+            <guid isPermaLink="false">https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes</guid>
+            <pubDate>Fri, 01 Sep 2023 19:48:52 GMT</pubDate>
+            <description><![CDATA[1.全屋 [[TOC]] 2.玄关 3.厨房 4.儿童房 5.书房 6.客餐厅 7.主卧 8.卫生间 9.阳台 10.其他 原本是入住后就打算发的，结果拖延症比较严重，硬是拖了一年才完成了七七八八。 不过拖到现在，正好入住满1周年，说明我的文字都是经过了亲身实际体验得出的，也算有一定的说服力。 我一共经历了两次装修，之前的婚房是14年装修的。…]]></description>
+            <content:encoded><![CDATA[<h1>目录</h1>
+<p><a href="/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes">1.全屋</a></p>
+<p>[[</p>
+<br/><p>访问 <a href="https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes" target="_blank">https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes</a> 阅读全文。</p>]]></content:encoded>
+            <author>clover4@gmail.com (mirari)</author>
+        </item>
+        <item>
+            <title><![CDATA[8年2次装修，分享我的装修经验、建议与笔记(2.玄关)]]></title>
+            <link>https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_2</link>
+            <guid isPermaLink="false">https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_2</guid>
+            <pubDate>Fri, 01 Sep 2023 19:48:52 GMT</pubDate>
+            <description><![CDATA[1.全屋 2.玄关 [[TOC]] 3.厨房 4.儿童房 5.书房 6.客餐厅 7.主卧 8.卫生间 9.阳台 10.其他 原始的门吸没有磁性，只能防碰撞。所以我换了一个在拼多多上买的带磁吸的门吸，用双面胶固定。 原本拿到手感觉磁性很强，吸上了要使劲才能拉开。装到门上后才发现这点磁力其实不够看。但目前用于固定开门防止风把门吹上还是够用的。 老房子那边装的是带天地钩的小米指纹锁，记得价格是1200。]]></description>
+            <content:encoded><![CDATA[<h1>目录</h1>
+<p><a href="/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes">1.全屋</a></p>
+<p>[2</p>
+<br/><p>访问 <a href="https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_2" target="_blank">https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_2</a> 阅读全文。</p>]]></content:encoded>
+            <author>clover4@gmail.com (mirari)</author>
+        </item>
+        <item>
+            <title><![CDATA[8年2次装修，分享我的装修经验、建议与笔记(3.厨房)]]></title>
+            <link>https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_3</link>
+            <guid isPermaLink="false">https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_3</guid>
+            <pubDate>Fri, 01 Sep 2023 19:48:52 GMT</pubDate>
+            <description><![CDATA[1.全屋 2.玄关 3.厨房 [[TOC]] 4.儿童房 5.书房 6.客餐厅 7.主卧 8.卫生间 9.阳台 10.其他 厨房格局比较局促，勉强做出了一个U型，但台面空间非常有限。 我的最终选择是卡萨帝633L，主要是冲着它的法式四门、大容量，以及尺寸合适。 实际使用时，结果在保鲜舱室里放的是鸡蛋，压根不讲究如何放置更保鲜。 可以看看知乎wilson的一些讲解文章：…]]></description>
+            <content:encoded><![CDATA[<h1>目录</h1>
+<p><a href="/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes">1.全屋</a></p>
+<p>[2</p>
+<br/><p>访问 <a href="https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_3" target="_blank">https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_3</a> 阅读全文。</p>]]></content:encoded>
+            <author>clover4@gmail.com (mirari)</author>
+        </item>
+        <item>
+            <title><![CDATA[8年2次装修，分享我的装修经验、建议与笔记(4.儿童房)]]></title>
+            <link>https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_4</link>
+            <guid isPermaLink="false">https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_4</guid>
+            <pubDate>Fri, 01 Sep 2023 19:48:52 GMT</pubDate>
+            <description><![CDATA[1.全屋 2.玄关 3.厨房 4.儿童房 [[TOC]] 5.书房 6.客餐厅 7.主卧 8.卫生间 9.阳台 10.其他 北次卧做成了儿童房。 一片狼藉，贵在真实。 没有选择理论上采光更好的南次卧做儿童房，原因如下： 南次卧连接阳台，等于少了一面可以承载生活功能的墙。 对老人房来说，卧室只要有衣柜和床就够了，但对儿童房来说，应当具备有书桌书柜等所有功能家具。如果少一面墙，布局会非常局促。…]]></description>
+            <content:encoded><![CDATA[<h1>目录</h1>
+<p><a href="/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes">1.全屋</a></p>
+<p>[2</p>
+<br/><p>访问 <a href="https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_4" target="_blank">https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_4</a> 阅读全文。</p>]]></content:encoded>
+            <author>clover4@gmail.com (mirari)</author>
+        </item>
+        <item>
+            <title><![CDATA[8年2次装修，分享我的装修经验、建议与笔记(5.书房)]]></title>
+            <link>https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_5</link>
+            <guid isPermaLink="false">https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_5</guid>
+            <pubDate>Fri, 01 Sep 2023 19:48:52 GMT</pubDate>
+            <description><![CDATA[1.全屋 2.玄关 3.厨房 4.儿童房 5.书房 [[TOC]] 6.客餐厅 7.主卧 8.卫生间 9.阳台 10.其他 对我来说书房就是娱乐房，也是方案改得最多的一个房间。 我的设想是，有一个大长桌，能满足3人并排观看屏幕，同时还要留下摆第二台电脑的空间给家人用。…]]></description>
+            <content:encoded><![CDATA[<h1>目录</h1>
+<p><a href="/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes">1.全屋</a></p>
+<p>[2</p>
+<br/><p>访问 <a href="https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_5" target="_blank">https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_5</a> 阅读全文。</p>]]></content:encoded>
+            <author>clover4@gmail.com (mirari)</author>
+        </item>
+        <item>
+            <title><![CDATA[8年2次装修，分享我的装修经验、建议与笔记(6.客餐厅)]]></title>
+            <link>https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_6</link>
+            <guid isPermaLink="false">https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_6</guid>
+            <pubDate>Fri, 01 Sep 2023 19:48:52 GMT</pubDate>
+            <description><![CDATA[1.全屋 2.玄关 3.厨房 4.儿童房 5.书房 6.客餐厅 [[TOC]] 7.主卧 8.卫生间 9.阳台 10.其他 精装标配的横厅，布局几乎没有变化。 窗帘一节里已经说了梦幻帘的适用场景。 我认为窗帘的电动化是很有必要的，因为人会懒，而窗帘的智能化又属于确定性较高的应用场景。而且像客厅这个面宽的窗帘手动拉费时费力。 我只设置了一条自动化指令，就是日落时打开窗帘。关上窗帘靠人主动操作。…]]></description>
+            <content:encoded><![CDATA[<h1>目录</h1>
+<p><a href="/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes">1.全屋</a></p>
+<p>[2</p>
+<br/><p>访问 <a href="https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_6" target="_blank">https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_6</a> 阅读全文。</p>]]></content:encoded>
+            <author>clover4@gmail.com (mirari)</author>
+        </item>
+        <item>
+            <title><![CDATA[8年2次装修，分享我的装修经验、建议与笔记(7.主卧)]]></title>
+            <link>https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_7</link>
+            <guid isPermaLink="false">https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_7</guid>
+            <pubDate>Fri, 01 Sep 2023 19:48:52 GMT</pubDate>
+            <description><![CDATA[1.全屋 2.玄关 3.厨房 4.儿童房 5.书房 6.客餐厅 7.主卧 [[TOC]] 8.卫生间 9.阳台 10.其他 原本精装给的主卧衣柜布局，是非常传统的L型衣柜。 这种方案在我看来非常俗气，不到万不得已我是不甘心就这么选的。 它的缺点是凭空制造了一堵墙，柜门要么开在厕所这一侧，要么开在靠床这一侧，不管怎么选，另一侧都会变成无功能性的墙，这对注重实用性的我来说是难以接受的。（双面开门的柜子…]]></description>
+            <content:encoded><![CDATA[<h1>目录</h1>
+<p><a href="/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes">1.全屋</a></p>
+<p>[2</p>
+<br/><p>访问 <a href="https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_7" target="_blank">https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_7</a> 阅读全文。</p>]]></content:encoded>
+            <author>clover4@gmail.com (mirari)</author>
+        </item>
+        <item>
+            <title><![CDATA[8年2次装修，分享我的装修经验、建议与笔记(8.卫生间)]]></title>
+            <link>https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_8</link>
+            <guid isPermaLink="false">https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_8</guid>
+            <pubDate>Fri, 01 Sep 2023 19:48:52 GMT</pubDate>
+            <description><![CDATA[1.全屋 2.玄关 3.厨房 4.儿童房 5.书房 6.客餐厅 7.主卧 8.卫生间 [[TOC]] 9.阳台 10.其他 精装的一个缺陷让我耿耿于怀，就是台面上没有留一个插座，只有侧面的吹风机插座，从侧面接明线会比较丑。 现在台面上的用电设备种类很丰富了，比如电动剃须刀(博朗那种带清洗和充电底座的)、电动牙刷(比如博朗的牙刷水牙线套装)、智能音箱和时钟等等，但精装这部分的标准配置还没跟进，十分遗…]]></description>
+            <content:encoded><![CDATA[<h1>目录</h1>
+<p><a href="/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes">1.全屋</a></p>
+<p>[2</p>
+<br/><p>访问 <a href="https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_8" target="_blank">https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_8</a> 阅读全文。</p>]]></content:encoded>
+            <author>clover4@gmail.com (mirari)</author>
+        </item>
+        <item>
+            <title><![CDATA[8年2次装修，分享我的装修经验、建议与笔记(9.阳台)]]></title>
+            <link>https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_9</link>
+            <guid isPermaLink="false">https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_9</guid>
+            <pubDate>Fri, 01 Sep 2023 19:48:52 GMT</pubDate>
+            <description><![CDATA[1.全屋 2.玄关 3.厨房 4.儿童房 5.书房 6.客餐厅 7.主卧 8.卫生间 9.阳台 [[TOC]] 10.其他 有了烘干机，晾衣架的存在不是很必要。但总有临时晾点东西的需求，加上家人坚持，还是上了。 旧房用的是900元的电动晾衣架，用下来最大的问题是灯太暗。它抢占了顶部的照明电位，却没法提供匹配的亮度，尤其是晾满衣服以后，剩下的光线更是少得可怜，到了晚上昏暗得看东西都累，这就很令人苦恼…]]></description>
+            <content:encoded><![CDATA[<h1>目录</h1>
+<p><a href="/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes">1.全屋</a></p>
+<p>[2</p>
+<br/><p>访问 <a href="https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_9" target="_blank">https://mirari.cc/posts/2023-08-29-sharing_my_home_decoration_experience_recommendations_and_notes_9</a> 阅读全文。</p>]]></content:encoded>
+            <author>clover4@gmail.com (mirari)</author>
+        </item>
+        <item>
+            <title><![CDATA[平移门智能化改造方案]]></title>
+            <link>https://mirari.cc/posts/2023-07-21-smart-sliding-door-retrofit</link>
+            <guid isPermaLink="false">https://mirari.cc/posts/2023-07-21-smart-sliding-door-retrofit</guid>
+            <pubDate>Fri, 21 Jul 2023 06:00:00 GMT</pubDate>
+            <description><![CDATA[我家的户型，阳台与两个卧室通过移门相连。 由于扫拖机器人被放置在了阳台，当两个移门全部关闭时，定时工作的扫拖机便无法进屋了。为了解决这一痛点，我试着将精装交付的玻璃平移门改造成智能电控。 我在主卧和次卧分别采用了不同的方案，现在将安装与使用中的体验经验写下分享。 淘宝购入，我买的品牌是云仪。 主卧轨道长度为228cm，总价约需要700元；次卧轨道长度为168cm，总价约620元。 有黑白两色可选。]]></description>
+            <content:encoded><![CDATA[<p>我家的户型，阳台与两个卧室通过移门相连。</p>
+<p><img src="https://mirari.cc/assets/floor-plan.CHHNkvYV.png" alt="阳台与主卧、次卧之间的移门位置"></p>
+<p>由于扫拖机器人被放置在了阳台，当两个移门全部关闭时，定时工作的扫拖机便无法进屋</p>
+<br/><p>访问 <a href="https://mirari.cc/posts/2023-07-21-smart-sliding-door-retrofit" target="_blank">https://mirari.cc/posts/2023-07-21-smart-sliding-door-retrofit</a> 阅读全文。</p>]]></content:encoded>
+            <author>clover4@gmail.com (mirari)</author>
+        </item>
+        <item>
+            <title><![CDATA[微信小程序迁移支付宝踩坑]]></title>
+            <link>https://mirari.cc/posts/2023-06-02-pitfalls_of_migrating_wechat_mini_program_to_alipay</link>
+            <guid isPermaLink="false">https://mirari.cc/posts/2023-06-02-pitfalls_of_migrating_wechat_mini_program_to_alipay</guid>
+            <pubDate>Fri, 02 Jun 2023 11:15:15 GMT</pubDate>
+            <description><![CDATA[需要迁移的小程序是原生的微信小程序，涉及大量微信小程序的原生api和功能，工作量不小。 首先还是要用到迁移工具Antmove，可惜这个工具已经多年未更新，生成的代码必然是没法直接运行的，而且后来的使用中发现，有一些支付宝原本不支持的功能做了降级适配，实际上现在已经支持了，而Antmove做的处理反而会出问题。 基础的迁移操作和差异对比可参考以下文章： 一些微信小程序和支付宝小程序对应的差异…]]></description>
+            <content:encoded><![CDATA[<p>需要迁移的小程序是原生的微信小程序，涉及大量微信小程序的原生api和功能，工作量不小。</p>
+<p>首先还是要用到迁移工具<a href="https://ant-move.github.io/">Antmove</a>，可惜这个</p>
+<br/><p>访问 <a href="https://mirari.cc/posts/2023-06-02-pitfalls_of_migrating_wechat_mini_program_to_alipay" target="_blank">https://mirari.cc/posts/2023-06-02-pitfalls_of_migrating_wechat_mini_program_to_alipay</a> 阅读全文。</p>]]></content:encoded>
+            <author>clover4@gmail.com (mirari)</author>
+        </item>
+        <item>
+            <title><![CDATA[一段脚本同时编译FatFramework和XCFramework]]></title>
+            <link>https://mirari.cc/posts/2021-07-28-compiling_fatframework_and_xcframework_simultaneously_with_a_script</link>
+            <guid isPermaLink="false">https://mirari.cc/posts/2021-07-28-compiling_fatframework_and_xcframework_simultaneously_with_a_script</guid>
+            <pubDate>Wed, 28 Jul 2021 18:06:16 GMT</pubDate>
+            <description><![CDATA[FatFramework即传统的Framework大包，一个二进制文件同时包含了真机和模拟器在不同架构下的代码，是以前闭源分发常用的形式。 XCFramework本质上是一个文件夹合集，里面包含了真机和模拟器两个子文件夹，再里面才是Framework本体。另外还有一个Info.plist配置文件，在xcode11之后可以用来将当前环境所需的指令集自动对应到指定的Framework。…]]></description>
+            <content:encoded><![CDATA[<h3>简介</h3>
+<p>FatFramework即传统的Framework大包，一个二进制文件同时包含了真机和模拟器在不同架构下的代码，是以前闭源分发常用的形式。</p>
+<p>XCFramework本质上是一个文件夹</p>
+<br/><p>访问 <a href="https://mirari.cc/posts/2021-07-28-compiling_fatframework_and_xcframework_simultaneously_with_a_script" target="_blank">https://mirari.cc/posts/2021-07-28-compiling_fatframework_and_xcframework_simultaneously_with_a_script</a> 阅读全文。</p>]]></content:encoded>
+            <author>clover4@gmail.com (mirari)</author>
+        </item>
+        <item>
+            <title><![CDATA[M1芯片Mac搭建ios开发环境踩坑]]></title>
+            <link>https://mirari.cc/posts/2021-07-28-pitfalls_of_setting_up_ios_development_environment_on_m1_chip_mac</link>
+            <guid isPermaLink="false">https://mirari.cc/posts/2021-07-28-pitfalls_of_setting_up_ios_development_environment_on_m1_chip_mac</guid>
+            <pubDate>Wed, 28 Jul 2021 10:20:47 GMT</pubDate>
+            <description><![CDATA[除了能在AppStore下到或者可以轻易获取的工具，我的iOS开发环境还需要以下环境支持： homebrew cocoapods fastlane xcode的arm64模拟器 原始的写法因为无法访问raw.githubusercontent.com，可能导致安装卡住或者失败。 经过一番踩坑，最终找到了这个网站： https://brew.idayer.com/…]]></description>
+            <content:encoded><![CDATA[<p>除了能在AppStore下到或者可以轻易获取的工具，我的iOS开发环境还需要以下环境支持：</p>
+<ul>
+<li>homebrew</li>
+<li>cocoapods</li>
+<li>fastlane</li>
+<li>xcode的arm64模拟器</li>
+</ul>
+<br/><p>访问 <a href="https://mirari.cc/posts/2021-07-28-pitfalls_of_setting_up_ios_development_environment_on_m1_chip_mac" target="_blank">https://mirari.cc/posts/2021-07-28-pitfalls_of_setting_up_ios_development_environment_on_m1_chip_mac</a> 阅读全文。</p>]]></content:encoded>
+            <author>clover4@gmail.com (mirari)</author>
+        </item>
+        <item>
+            <title><![CDATA[Husky6配置正确但无法触发githook的问题]]></title>
+            <link>https://mirari.cc/posts/2021-05-31-issue_with_husky6_configuration_correct_but_unable_to_trigger_githook</link>
+            <guid isPermaLink="false">https://mirari.cc/posts/2021-05-31-issue_with_husky6_configuration_correct_but_unable_to_trigger_githook</guid>
+            <pubDate>Mon, 31 May 2021 16:56:24 GMT</pubDate>
+            <description><![CDATA[项目中之前一直使用husky进行代码质量控制，主要包含两个步骤： 代码提交前，先执行eslint校验，不通过则不允许提交。 commit记录需要符合规范，用于自动生成changelog。 Husky6的配置步骤如下： 确保package.json的依赖包含： 在项目目录下会出现一个.husky文件夹，包含一个.gitignore文件和一个_目录，不要改动它们，是存放husky脚本的。…]]></description>
+            <content:encoded><![CDATA[<p>项目中之前一直使用husky进行代码质量控制，主要包含两个步骤：</p>
+<ul>
+<li>代码提交前，先执行eslint校验，不通过则不允许提交。</li>
+<li>commit记录需要符合规范，用于自动生成changelog。</li>
+</ul>
+<br/><p>访问 <a href="https://mirari.cc/posts/2021-05-31-issue_with_husky6_configuration_correct_but_unable_to_trigger_githook" target="_blank">https://mirari.cc/posts/2021-05-31-issue_with_husky6_configuration_correct_but_unable_to_trigger_githook</a> 阅读全文。</p>]]></content:encoded>
+            <author>clover4@gmail.com (mirari)</author>
+        </item>
+        <item>
+            <title><![CDATA[如何在一段URL中插入参数]]></title>
+            <link>https://mirari.cc/posts/2020-09-16-how_to_insert_parameters_into_a_url</link>
+            <guid isPermaLink="false">https://mirari.cc/posts/2020-09-16-how_to_insert_parameters_into_a_url</guid>
+            <pubDate>Wed, 16 Sep 2020 11:17:03 GMT</pubDate>
+            <description><![CDATA[有一个很简单的需求如下： 给你一段URL，在其中插入一些参数，并返回新的URL，如何实现？ 这里的参数，有时候称为query，有时候称为params，一般称为search，指的是 http://www.example.com:80/path/to/myfile.html?key1=value1&key2=value2#SomewhereInTheDocument 中的key1和key2。…]]></description>
+            <content:encoded><![CDATA[<p>有一个很简单的需求如下：</p>
+<p>给你一段URL，在其中插入一些参数，并返回新的URL，如何实现？</p>
+<p>这里的参数，有时候称为<code>query</code>，有时候称为<code>params</code>，一般称为<code>search</code>，指的是</p>
+<br/><p>访问 <a href="https://mirari.cc/posts/2020-09-16-how_to_insert_parameters_into_a_url" target="_blank">https://mirari.cc/posts/2020-09-16-how_to_insert_parameters_into_a_url</a> 阅读全文。</p>]]></content:encoded>
+            <author>clover4@gmail.com (mirari)</author>
+        </item>
+        <item>
+            <title><![CDATA[淘宝商家应用（阿里小程序）开发踩坑记录（已弃坑）]]></title>
+            <link>https://mirari.cc/posts/2020-05-05-pitfall_record_of_developing_taobao_merchant_applications_ali_mini_programs</link>
+            <guid isPermaLink="false">https://mirari.cc/posts/2020-05-05-pitfall_record_of_developing_taobao_merchant_applications_ali_mini_programs</guid>
+            <pubDate>Fri, 07 Aug 2020 15:53:55 GMT</pubDate>
+            <description><![CDATA[阿里正在将淘宝无线开放平台等业务整合为商家应用，类似于支付宝小程序，也就是以小程序的形式进行淘宝天猫店铺的展现、营销。 最近正在开发商家应用小程序，踩了无数坑，原本以为微信小程序已经够坑了，没想到这个几乎照搬微信小程序模式的淘宝小程序更坑。毕竟刚起步，抱怨也没用，将我遇到的问题先记录下来，让后来者可以少花一些时间。…]]></description>
+            <content:encoded><![CDATA[<p>阿里正在将淘宝无线开放平台等业务整合为商家应用，类似于支付宝小程序，也就是以小程序的形式进行淘宝天猫店铺的展现、营销。</p>
+<p>最近正在开发商家应用小程序，踩了无数坑，原本以为微信小程序已经够坑了，没想到</p>
+<br/><p>访问 <a href="https://mirari.cc/posts/2020-05-05-pitfall_record_of_developing_taobao_merchant_applications_ali_mini_programs" target="_blank">https://mirari.cc/posts/2020-05-05-pitfall_record_of_developing_taobao_merchant_applications_ali_mini_programs</a> 阅读全文。</p>]]></content:encoded>
+            <author>clover4@gmail.com (mirari)</author>
+        </item>
+        <item>
+            <title><![CDATA[MyBatisPlus分页多表关联查询]]></title>
+            <link>https://mirari.cc/posts/2020-07-22-mybatisplus_paging_multi-table_association_query</link>
+            <guid isPermaLink="false">https://mirari.cc/posts/2020-07-22-mybatisplus_paging_multi-table_association_query</guid>
+            <pubDate>Wed, 22 Jul 2020 18:33:00 GMT</pubDate>
+            <description><![CDATA[BaseMapper提供的默认查询方法都是单表的，如果需要多表关联查询，同时还要支持分页，一个方案就是自己写Sql。 现在自己写Sql一般用的应该不是传统MyBatis那种写xml的老方法，而是通过在Mapper类里写注解来实现。 还需要解决的就是如何在自定义Sql语句中拼接MyBatisPlus的分页参数和查询条件。 示例如下：…]]></description>
+            <content:encoded><![CDATA[<p><code>BaseMapper</code>提供的默认查询方法都是单表的，如果需要多表关联查询，同时还要支持分页，一个方案就是自己写Sql。</p>
+<p>现在自己写Sql一般用的应该不是传统MyBatis那种写xml的老方法，而</p>
+<br/><p>访问 <a href="https://mirari.cc/posts/2020-07-22-mybatisplus_paging_multi-table_association_query" target="_blank">https://mirari.cc/posts/2020-07-22-mybatisplus_paging_multi-table_association_query</a> 阅读全文。</p>]]></content:encoded>
+            <author>clover4@gmail.com (mirari)</author>
+        </item>
+        <item>
+            <title><![CDATA[MySql批量修改表和表内字段的字符集和排序规则]]></title>
+            <link>https://mirari.cc/posts/2020-07-22-bulk_modification_of_table_and_field_character_set_and_sorting_rules_in_mysql</link>
+            <guid isPermaLink="false">https://mirari.cc/posts/2020-07-22-bulk_modification_of_table_and_field_character_set_and_sorting_rules_in_mysql</guid>
+            <pubDate>Wed, 22 Jul 2020 18:28:35 GMT</pubDate>
+            <description><![CDATA[在将测试库的新增表通过Navicat向阿里云的MySql数据库复制后，发现前端页面请求查询失败。 目标数据库的默认排序规则是utf8mb4_0900_ai_ci，已存在的表都使用了这个编码，而来源数据库的排序规则是utf8mb4_unicode_ci，新复制的表都用的是后者。 数据库进行多表关联查询时，如果两张表的字符集或者排序规则不一致，就会报错。…]]></description>
+            <content:encoded><![CDATA[<p>在将测试库的新增表通过Navicat向阿里云的MySql数据库复制后，发现前端页面请求查询失败。</p>
+<p>目标数据库的默认排序规则是<code>utf8mb4_0900_ai_ci</code>，已存在的表都使用了这个编码，而</p>
+<br/><p>访问 <a href="https://mirari.cc/posts/2020-07-22-bulk_modification_of_table_and_field_character_set_and_sorting_rules_in_mysql" target="_blank">https://mirari.cc/posts/2020-07-22-bulk_modification_of_table_and_field_character_set_and_sorting_rules_in_mysql</a> 阅读全文。</p>]]></content:encoded>
+            <author>clover4@gmail.com (mirari)</author>
+        </item>
+        <item>
+            <title><![CDATA[移动端页面加载时使用脚本自动跳转不会产生历史记录]]></title>
+            <link>https://mirari.cc/posts/2020-07-01-automatic_redirect_without_history_when_loading_mobile_pages_with_script</link>
+            <guid isPermaLink="false">https://mirari.cc/posts/2020-07-01-automatic_redirect_without_history_when_loading_mobile_pages_with_script</guid>
+            <pubDate>Wed, 01 Jul 2020 18:06:25 GMT</pubDate>
+            <description><![CDATA[最近遇到这样一个需求： 打开当前页面时，可能会带上一个参数pid。 页面初始化时，如果发现存在此参数，就立刻跳转到其对应的外部页面。 当用户从外部页面后退时，可以回到当前页面，此时正常显示页面内容。 我的实现方式是： 用hash传递pid。 在页面入口脚本中，如果hash中没有pid，就正常渲染页面。…]]></description>
+            <content:encoded><![CDATA[<p>最近遇到这样一个需求：</p>
+<ul>
+<li>
+<p>打开当前页面时，可能会带上一个参数<code>pid</code>。</p>
+</li>
+<li>
+<p>页面初始化时，如果发现存在此参数，就立刻跳转到其对应的外部页面。</p>
+</li>
+<li>
+<p>当用户从外部页面后退时，可以回到当前页面，</p>
+</li>
+</ul>
+<br/><p>访问 <a href="https://mirari.cc/posts/2020-07-01-automatic_redirect_without_history_when_loading_mobile_pages_with_script" target="_blank">https://mirari.cc/posts/2020-07-01-automatic_redirect_without_history_when_loading_mobile_pages_with_script</a> 阅读全文。</p>]]></content:encoded>
+            <author>clover4@gmail.com (mirari)</author>
+        </item>
+        <item>
+            <title><![CDATA[解锁网易云音乐的灰色歌曲、会员歌曲]]></title>
+            <link>https://mirari.cc/posts/2020-04-02-unlocking_grayed_out_songs_and_member_songs_on_netease_cloud_music</link>
+            <guid isPermaLink="false">https://mirari.cc/posts/2020-04-02-unlocking_grayed_out_songs_and_member_songs_on_netease_cloud_music</guid>
+            <pubDate>Thu, 02 Apr 2020 22:48:56 GMT</pubDate>
+            <description><![CDATA[首先感谢开源项目UnblockNeteaseMusic。 能听被屏蔽的歌曲靠的就是它，这篇教程只是让使用变得更为方便而已。 解锁的大致原理就是依靠代理的形式，嫁接可用的音频源到网易云音乐里被屏蔽的请求地址上。所以它其实可以适用在任何终端，只不过移动端的不太便利，代理设置只能全局，理想的方式是在路由器上搭建服务，或者发布到自己的云服务器上。 这里不讨论移动端的解决方案，只说PC端的，这个比较简单。…]]></description>
+            <content:encoded><![CDATA[<p>首先感谢开源项目<a href="https://github.com/nondanee/UnblockNeteaseMusic">UnblockNeteaseMusic</a>。</p>
+<p>能听被屏蔽的歌曲靠的就是它，这篇教程</p>
+<br/><p>访问 <a href="https://mirari.cc/posts/2020-04-02-unlocking_grayed_out_songs_and_member_songs_on_netease_cloud_music" target="_blank">https://mirari.cc/posts/2020-04-02-unlocking_grayed_out_songs_and_member_songs_on_netease_cloud_music</a> 阅读全文。</p>]]></content:encoded>
+            <author>clover4@gmail.com (mirari)</author>
+        </item>
+        <item>
+            <title><![CDATA[使用scss开发小程序（各种小程序平台通用）]]></title>
+            <link>https://mirari.cc/posts/2020-04-02-developing_mini_programs_using_scss_universal_for_various_mini_program_platforms</link>
+            <guid isPermaLink="false">https://mirari.cc/posts/2020-04-02-developing_mini_programs_using_scss_universal_for_various_mini_program_platforms</guid>
+            <pubDate>Thu, 02 Apr 2020 18:13:14 GMT</pubDate>
+            <description><![CDATA[微信小程序的wxss、阿里旗下淘宝、支付宝小程序的acss等等语法很类似原生css，但是在web开发里用惯了动态css语言，再写回原生css很不习惯，尤其是父子样式的嵌套写法非常繁琐。 因此，我希望能有一个自动化构建方案，能够简单地将scss转换成小程序的样式语言。…]]></description>
+            <content:encoded><![CDATA[<p>微信小程序的<code>wxss</code>、阿里旗下淘宝、支付宝小程序的<code>acss</code>等等语法很类似原生css，但是在web开发里用惯了动态css语言，再写回原生css很不习惯，尤其是父子样式的嵌套写法非常繁琐。</p>
+<p>因</p>
+<br/><p>访问 <a href="https://mirari.cc/posts/2020-04-02-developing_mini_programs_using_scss_universal_for_various_mini_program_platforms" target="_blank">https://mirari.cc/posts/2020-04-02-developing_mini_programs_using_scss_universal_for_various_mini_program_platforms</a> 阅读全文。</p>]]></content:encoded>
+            <author>clover4@gmail.com (mirari)</author>
+        </item>
+        <item>
+            <title><![CDATA[TypeScript中以变量方式传递类]]></title>
+            <link>https://mirari.cc/posts/2020-01-18-passing_classes_as_variables_in_typescript</link>
+            <guid isPermaLink="false">https://mirari.cc/posts/2020-01-18-passing_classes_as_variables_in_typescript</guid>
+            <pubDate>Sat, 18 Jan 2020 16:29:50 GMT</pubDate>
+            <description><![CDATA[最近尝试用TypeScript写一个工具库，需要实现这样一个场景： 声明一个抽象类Parent 声明一组子类ChildA、ChildB继承这个Parent，实现它的抽象方法 实现一个方法，根据参数返回对应的子类 用拿到的子类创建实例 代码示例如下： 首先注意new后面getAnimal方法的执行需要用括号包起来，否则将得到以下错误：…]]></description>
+            <content:encoded><![CDATA[<p>最近尝试用TypeScript写一个工具库，需要实现这样一个场景：</p>
+<ol>
+<li>
+<p>声明一个抽象类Parent</p>
+</li>
+<li>
+<p>声明一组子类ChildA、ChildB继承这个Parent，实现它的抽象方法</p>
+</li>
+<li></li>
+</ol>
+<br/><p>访问 <a href="https://mirari.cc/posts/2020-01-18-passing_classes_as_variables_in_typescript" target="_blank">https://mirari.cc/posts/2020-01-18-passing_classes_as_variables_in_typescript</a> 阅读全文。</p>]]></content:encoded>
+            <author>clover4@gmail.com (mirari)</author>
+        </item>
+        <item>
+            <title><![CDATA[cssnano升级导致z-index被重新计算的解决办法]]></title>
+            <link>https://mirari.cc/posts/2019-08-13-solution_to_z-index_recalculation_due_to_cssnano_upgrade</link>
+            <guid isPermaLink="false">https://mirari.cc/posts/2019-08-13-solution_to_z-index_recalculation_due_to_cssnano_upgrade</guid>
+            <pubDate>Tue, 13 Aug 2019 15:55:08 GMT</pubDate>
+            <description><![CDATA[之前遇到了一个遮罩层级的奇怪问题。在dev环境能在弹窗前正常显示的全屏动画，在编译打包以后实际运行时跑到了弹窗的后面。 弹窗的z-index是500，按理说将动画放到501就应该能显示了，结果发现实际编译出来的z-index仅仅是1。 最后发现这个z-index被重新计算是cssnano的杰作。因为它只处理了项目本身的样式，而不包括第三方库的样式。 cssnano的配置如下：…]]></description>
+            <content:encoded><![CDATA[<p>之前遇到了一个遮罩层级的奇怪问题。在dev环境能在弹窗前正常显示的全屏动画，在编译打包以后实际运行时跑到了弹窗的后面。<br>
+弹窗的z-index是500，按理说将动画放到501就应该能显示了，结果发现实际</p>
+<br/><p>访问 <a href="https://mirari.cc/posts/2019-08-13-solution_to_z-index_recalculation_due_to_cssnano_upgrade" target="_blank">https://mirari.cc/posts/2019-08-13-solution_to_z-index_recalculation_due_to_cssnano_upgrade</a> 阅读全文。</p>]]></content:encoded>
+            <author>clover4@gmail.com (mirari)</author>
+        </item>
+        <item>
+            <title><![CDATA[CSS3实现转盘抽奖]]></title>
+            <link>https://mirari.cc/posts/2019-06-25-implementing_spin_wheel_lottery_with_css3</link>
+            <guid isPermaLink="false">https://mirari.cc/posts/2019-06-25-implementing_spin_wheel_lottery_with_css3</guid>
+            <pubDate>Tue, 25 Jun 2019 11:11:20 GMT</pubDate>
+            <description><![CDATA[最近有个转盘抽奖的需求，搜了一下现有的轮子，有的是用jQuery的动画函数实现的，有的是用canvas绘图然后再用高频率的setTimeout调用旋转方法，前者太老了没法简单移植到vue项目，后者感觉性能表现可能不会太好。 也有一些用CSS动画的方案，设计了加速-匀速-减速三个动画，再计算偏转角度让三个动画尽可能无缝衔接，但我感觉绕了大远路，应该有更简单轻量的实现方案。…]]></description>
+            <content:encoded><![CDATA[<p>最近有个转盘抽奖的需求，搜了一下现有的轮子，有的是用jQuery的动画函数实现的，有的是用canvas绘图然后再用高频率的setTimeout调用旋转方法，前者太老了没法简单移植到vue项目，后者感觉</p>
+<br/><p>访问 <a href="https://mirari.cc/posts/2019-06-25-implementing_spin_wheel_lottery_with_css3" target="_blank">https://mirari.cc/posts/2019-06-25-implementing_spin_wheel_lottery_with_css3</a> 阅读全文。</p>]]></content:encoded>
+            <author>clover4@gmail.com (mirari)</author>
+        </item>
+        <item>
+            <title><![CDATA[让IDE识别webpack的别名alias'@']]></title>
+            <link>https://mirari.cc/posts/2019-06-10-make_ide_recognize_webpack_alias</link>
+            <guid isPermaLink="false">https://mirari.cc/posts/2019-06-10-make_ide_recognize_webpack_alias</guid>
+            <pubDate>Mon, 10 Jun 2019 16:39:39 GMT</pubDate>
+            <description><![CDATA[许多项目脚手架默认就会把src目录添加一个@别名，项目中实际引入时，虽然可以精简路径，但也带来一个很麻烦的问题： IDE无法识别这些别名，因此导致无法自动完成路径、无法识别引用资源的输出、出现不必要的告警等情况。 偶然发现vscode的web项目里有一个jsconfig.json文件，如： 只要有这个文件，vscode就可以正常识别出别名了。…]]></description>
+            <content:encoded><![CDATA[<p>许多项目脚手架默认就会把src目录添加一个<code>@</code>别名，项目中实际引入时，虽然可以精简路径，但也带来一个很麻烦的问题：<br>
+IDE无法识别这些别名，因此导致无法自动完成路径、无法识别引用资源的输出、出现不必</p>
+<br/><p>访问 <a href="https://mirari.cc/posts/2019-06-10-make_ide_recognize_webpack_alias" target="_blank">https://mirari.cc/posts/2019-06-10-make_ide_recognize_webpack_alias</a> 阅读全文。</p>]]></content:encoded>
+            <author>clover4@gmail.com (mirari)</author>
+        </item>
+        <item>
+            <title><![CDATA[内嵌iframe页面在IOS下会受内部元素影响自动撑开的问题]]></title>
+            <link>https://mirari.cc/posts/2018-05-30-issue_with_embedded_iframe_pages_expanding_due_to_internal_element_impact_on_ios</link>
+            <guid isPermaLink="false">https://mirari.cc/posts/2018-05-30-issue_with_embedded_iframe_pages_expanding_due_to_internal_element_impact_on_ios</guid>
+            <pubDate>Wed, 30 May 2018 16:15:07 GMT</pubDate>
+            <description><![CDATA[IOS下的webview页面，内嵌iframe元素，将其样式指定为宽高100%： 在安卓下运行均无问题，但是在IOS下会出现异常。 具体表现为iframe页面内的子元素一旦超出原先的边界，只要能影响到html元素的宽高，就会自动撑开iframe，即使html元素设置了overflow:hidden也没用。…]]></description>
+            <content:encoded><![CDATA[<p>IOS下的webview页面，内嵌iframe元素，将其样式指定为宽高100%：</p>
+<pre><code class="language-css">.iframe {
+  width: 100%;
+  height: 100%;
+}
+</code></pre>
+<p>在安卓下运</p>
+<br/><p>访问 <a href="https://mirari.cc/posts/2018-05-30-issue_with_embedded_iframe_pages_expanding_due_to_internal_element_impact_on_ios" target="_blank">https://mirari.cc/posts/2018-05-30-issue_with_embedded_iframe_pages_expanding_due_to_internal_element_impact_on_ios</a> 阅读全文。</p>]]></content:encoded>
+            <author>clover4@gmail.com (mirari)</author>
+        </item>
+        <item>
+            <title><![CDATA[babel-preset-env无法确保ES6的for..of语法兼容性]]></title>
+            <link>https://mirari.cc/posts/2018-04-17-babel-preset-env_unable_to_ensure_compatibility_of_es6_for-of_syntax</link>
+            <guid isPermaLink="false">https://mirari.cc/posts/2018-04-17-babel-preset-env_unable_to_ensure_compatibility_of_es6_for-of_syntax</guid>
+            <pubDate>Tue, 17 Apr 2018 16:42:35 GMT</pubDate>
+            <description><![CDATA[babel-preset-env是现在最主流的babel解决方案，但是前阵子踩到了一个坑。 部分机型在执行到ES6的for of语句时就会报错。 原因有两个。 一是babel-preset-env默认只转换语法(syntax)，而不会转换全局对象(Iterator、Generator、Set、Maps、Proxy、Reflect、Symbol、Promise等)和全局对象上的新增方法（Object…]]></description>
+            <content:encoded><![CDATA[<p><code>babel-preset-env</code>是现在最主流的babel解决方案，但是前阵子踩到了一个坑。<br>
+部分机型在执行到ES6的<code>for of</code>语句时就会报错。</p>
+<p>原因有两个。</p>
+<p>一是`babel-pres</p>
+<br/><p>访问 <a href="https://mirari.cc/posts/2018-04-17-babel-preset-env_unable_to_ensure_compatibility_of_es6_for-of_syntax" target="_blank">https://mirari.cc/posts/2018-04-17-babel-preset-env_unable_to_ensure_compatibility_of_es6_for-of_syntax</a> 阅读全文。</p>]]></content:encoded>
+            <author>clover4@gmail.com (mirari)</author>
+        </item>
+        <item>
+            <title><![CDATA[windows环境下无法提交gh-pages、无法发布npm包的问题]]></title>
+            <link>https://mirari.cc/posts/2018-04-17-problems_with_submitting_gh_pages_and_publishing_npm_packages_in_windows_environment</link>
+            <guid isPermaLink="false">https://mirari.cc/posts/2018-04-17-problems_with_submitting_gh_pages_and_publishing_npm_packages_in_windows_environment</guid>
+            <pubDate>Tue, 17 Apr 2018 10:47:47 GMT</pubDate>
+            <description><![CDATA[以下问题均出现在windows环境，使用IntelliJ IDEA中的npm选项卡双击执行命令时。 使用npm的gh-pages工具包，可以很方便地一键发布指定目录到项目的gh-pages分支。 以前用着好好的，但是最近使用的时候，忽然发现以下报错信息：]]></description>
+            <content:encoded><![CDATA[<p>以下问题均出现在windows环境，使用IntelliJ IDEA中的npm选项卡双击执行命令时。</p>
+<p>使用npm的gh-pages工具包，可以很方便地一键发布指定目录到项目的gh-pages分支。</p>
+<p>以前用着好好的，但是最近使用的时候，忽然发现以下报错信息：</p>
+<br/><p>访问 <a href="https://mirari.cc/posts/2018-04-17-problems_with_submitting_gh_pages_and_publishing_npm_packages_in_windows_environment" target="_blank">https://mirari.cc/posts/2018-04-17-problems_with_submitting_gh_pages_and_publishing_npm_packages_in_windows_environment</a> 阅读全文。</p>]]></content:encoded>
+            <author>clover4@gmail.com (mirari)</author>
+        </item>
+        <item>
+            <title><![CDATA[Chrome升级到版本61后出现偏色问题的解决方法]]></title>
+            <link>https://mirari.cc/posts/2017-09-11-solution_to_color_deviation_issue_after_chrome_upgraded_to_version_61</link>
+            <guid isPermaLink="false">https://mirari.cc/posts/2017-09-11-solution_to_color_deviation_issue_after_chrome_upgraded_to_version_61</guid>
+            <pubDate>Mon, 11 Sep 2017 14:47:49 GMT</pubDate>
+            <description><![CDATA[9月初Chrome发布了最新的正式版，版本号61，升级以后却发现所有网页都变成了奶白清新配色。 不管CSS原本设置是什么颜色，最终显示效果都会比设置得更白一些。 如图：]]></description>
+            <content:encoded><![CDATA[<p>9月初Chrome发布了最新的正式版，版本号61，升级以后却发现所有网页都变成了奶白清新配色。</p>
+<p>不管CSS原本设置是什么颜色，最终显示效果都会比设置得更白一些。</p>
+<p>如图：</p>
+<br/><p>访问 <a href="https://mirari.cc/posts/2017-09-11-solution_to_color_deviation_issue_after_chrome_upgraded_to_version_61" target="_blank">https://mirari.cc/posts/2017-09-11-solution_to_color_deviation_issue_after_chrome_upgraded_to_version_61</a> 阅读全文。</p>]]></content:encoded>
+            <author>clover4@gmail.com (mirari)</author>
+        </item>
+        <item>
+            <title><![CDATA[使用相对路径发布vue-cli项目的坑]]></title>
+            <link>https://mirari.cc/posts/2017-09-08-pitfalls_of_publishing_vue_cli_projects_using_relative_paths</link>
+            <guid isPermaLink="false">https://mirari.cc/posts/2017-09-08-pitfalls_of_publishing_vue_cli_projects_using_relative_paths</guid>
+            <pubDate>Fri, 08 Sep 2017 16:21:07 GMT</pubDate>
+            <description><![CDATA[使用vue-cli可以快速创建一个webpack项目脚手架，有相当多的项目都使用了相似的配置。 它们对发布环境的配置差不多是这样的：]]></description>
+            <content:encoded><![CDATA[<p>使用vue-cli可以快速创建一个webpack项目脚手架，有相当多的项目都使用了相似的配置。<br>
+它们对发布环境的配置差不多是这样的：</p>
+<pre><code class="language-javascript">module.exports = {
+  build: {
+    env: require('./prod.env'),
+    index: path.resolve(__dirname, '../dist/index.html'),
+    assetsRoot: path.resolve(__dirname, '../dist'),
+    assetsSubDirectory: 'assets',
+    assetsPublicPath: '/',
+    productionSourceMap: false,
+    // Gzip off by default as many popular static hosts such as
+    // Surge or Netlify already gzip all static assets for you.
+    // Before setting to `true`, make sure to:
+    // npm install --save-dev compression-webpack-plugin
+    productionGzip: false,
+    productionGzipExtensions: ['js', 'css']
+  },
+  ...
+}
+</code></pre>
+<br/><p>访问 <a href="https://mirari.cc/posts/2017-09-08-pitfalls_of_publishing_vue_cli_projects_using_relative_paths" target="_blank">https://mirari.cc/posts/2017-09-08-pitfalls_of_publishing_vue_cli_projects_using_relative_paths</a> 阅读全文。</p>]]></content:encoded>
+            <author>clover4@gmail.com (mirari)</author>
+        </item>
+        <item>
+            <title><![CDATA[Vue图片浏览组件v-viewer，支持旋转、缩放、翻转等操作]]></title>
+            <link>https://mirari.cc/posts/v-viewer</link>
+            <guid isPermaLink="false">https://mirari.cc/posts/v-viewer</guid>
+            <pubDate>Sun, 27 Aug 2017 02:13:35 GMT</pubDate>
+            <description><![CDATA[v-viewer 是基于 Viewer.js 的 Vue 图片浏览组件，支持缩放、旋转、翻转和图片切换，提供组件、指令和 API 三种使用方式。 如有使用问题、Bug 反馈或功能建议，请到 GitHub Issues 留言，请勿在本文评论区留言，以便集中跟进和处理。]]></description>
+            <content:encoded><![CDATA[<h1>v-viewer</h1>
+<p>v-viewer 是基于 <a href="https://github.com/fengyuanchen/viewerjs">Viewer.js</a> 的 Vue 图片浏览组件，支持缩放、旋转、翻转和图片切换，提供组件、指令和 API 三种使用方式。</p>
+<blockquote>
+<p>如有使用问题、Bug 反馈或功能建议，请到 <a href="https://github.com/mirari/v-viewer/issues">GitHub Issues</a> 留言，请勿在本文评论区留言，以便集中跟进和处理。</p>
+</blockquote>
+<br/><p>访问 <a href="https://mirari.cc/posts/v-viewer" target="_blank">https://mirari.cc/posts/v-viewer</a> 阅读全文。</p>]]></content:encoded>
+            <author>clover4@gmail.com (mirari)</author>
+        </item>
+        <item>
+            <title><![CDATA[全屏切换组件vue-fullscreen]]></title>
+            <link>https://mirari.cc/posts/vue-fullscreen</link>
+            <guid isPermaLink="false">https://mirari.cc/posts/vue-fullscreen</guid>
+            <pubDate>Mon, 14 Aug 2017 23:57:33 GMT</pubDate>
+            <description><![CDATA[vue-fullscreen 提供组件、指令和 API 三种使用方式，可以将整个页面或指定元素切换为全屏，支持浏览器原生全屏和网页全屏。 如有使用问题、Bug 反馈或功能建议，请到 GitHub Issues 留言，请勿在本文评论区留言，以便集中跟进和处理。]]></description>
+            <content:encoded><![CDATA[<h1>vue-fullscreen</h1>
+<p>vue-fullscreen 提供组件、指令和 API 三种使用方式，可以将整个页面或指定元素切换为全屏，支持浏览器原生全屏和网页全屏。</p>
+<blockquote>
+<p>如有使用问题、Bug 反馈或功能建议，请到 <a href="https://github.com/mirari/vue-fullscreen/issues">GitHub Issues</a> 留言，请勿在本文评论区留言，以便集中跟进和处理。</p>
+</blockquote>
+<br/><p>访问 <a href="https://mirari.cc/posts/vue-fullscreen" target="_blank">https://mirari.cc/posts/vue-fullscreen</a> 阅读全文。</p>]]></content:encoded>
+            <author>clover4@gmail.com (mirari)</author>
+        </item>
+        <item>
+            <title><![CDATA[列表元素无内容时高度为0导致串行的问题]]></title>
+            <link>https://mirari.cc/posts/2017-08-14-problems_with_serialization_due_to_zero_height_of_list_elements_with_no_content</link>
+            <guid isPermaLink="false">https://mirari.cc/posts/2017-08-14-problems_with_serialization_due_to_zero_height_of_list_elements_with_no_content</guid>
+            <pubDate>Mon, 14 Aug 2017 22:01:04 GMT</pubDate>
+            <description><![CDATA[如果有一组标题-内容形式的数据需要展现，用table感觉太笨重了一些，最符合语义化的做法应该是使用dl元素。 比如下面这个例子，展现了一个水平列表，样式定义来自bootstrap：]]></description>
+            <content:encoded><![CDATA[<p>如果有一组标题-内容形式的数据需要展现，用table感觉太笨重了一些，最符合语义化的做法应该是使用<code>dl</code>元素。</p>
+<p>比如下面这个例子，展现了一个水平列表，样式定义来自bootstrap：</p>
+<br/><p>访问 <a href="https://mirari.cc/posts/2017-08-14-problems_with_serialization_due_to_zero_height_of_list_elements_with_no_content" target="_blank">https://mirari.cc/posts/2017-08-14-problems_with_serialization_due_to_zero_height_of_list_elements_with_no_content</a> 阅读全文。</p>]]></content:encoded>
+            <author>clover4@gmail.com (mirari)</author>
+        </item>
+    </channel>
+</rss>

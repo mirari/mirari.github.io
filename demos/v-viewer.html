@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>v-viewer 在线演示</title>
+    <link rel="stylesheet" href="https://unpkg.com/viewerjs/dist/viewer.css" />
+    <style>
+      :root {
+        color-scheme: light dark;
+        --demo-bg: light-dark(#fff, #1c1c20);
+        --demo-text: light-dark(#3c3c43, #e8e8ed);
+        --demo-font: system-ui, sans-serif;
+        font-family: var(--demo-font);
+        color: var(--demo-text);
+        background: var(--demo-bg);
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+      }
+      [v-cloak],
+      .gallery {
+        display: none;
+      }
+      .stage {
+        height: 440px;
+        overflow: hidden;
+        border-radius: 12px;
+      }
+      #load-status {
+        padding: 20px;
+      }
+    </style>
+    <script>
+      if (window.parent !== window) {
+        try {
+          const blogRoot = window.parent.document.documentElement;
+          const syncTheme = () => {
+            const styles = window.parent.getComputedStyle(blogRoot);
+            const root = document.documentElement;
+            root.style.colorScheme = blogRoot.classList.contains("dark")
+              ? "dark"
+              : "light";
+            const tokens = {
+              "--demo-bg": "--va-c-bg-light",
+              "--demo-surface": "--va-c-bg-soft",
+              "--demo-text": "--va-c-text",
+              "--demo-border": "--yun-surface-line",
+              "--demo-accent": "--va-c-primary-dark",
+              "--demo-font": "--va-font-sans",
+            };
+            for (const [target, source] of Object.entries(tokens)) {
+              const value = styles.getPropertyValue(source).trim();
+              if (value) root.style.setProperty(target, value);
+            }
+          };
+          syncTheme();
+          new MutationObserver(syncTheme).observe(blogRoot, {
+            attributes: true,
+            attributeFilter: ["class", "style"],
+          });
+        } catch {
+          // Standalone and cross-origin embeds follow the system color scheme.
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <p id="load-status" role="status">正在加载演示…</p>
+    <div id="app" v-cloak>
+      <div class="stage">
+        <div v-viewer="options" class="gallery">
+          <img
+            v-for="(src, index) in images"
+            :key="src"
+            :src="src"
+            :alt="'风景 ' + (index + 1)"
+            width="960"
+            height="640"
+          />
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/viewerjs/dist/viewer.min.js"></script>
+    <script src="https://unpkg.com/v-viewer"></script>
+    <script>
+      const status = document.getElementById("load-status");
+      if (!window.Vue || !window.Viewer || !window.VueViewer?.vViewer) {
+        status.textContent = "演示依赖加载失败，请刷新页面重试。";
+      } else {
+        Vue.createApp({
+          directives: { viewer: VueViewer.vViewer },
+          data: () => ({
+            images: Array.from(
+              { length: 5 },
+              (_, i) =>
+                `./images/v-viewer/photo-${String(i + 1).padStart(2, "0")}.jpg`,
+            ),
+            options: {
+              inline: true,
+              button: false,
+              title: false,
+              focus: false,
+              fullscreen: false,
+            },
+          }),
+        }).mount("#app");
+        status.remove();
+      }
+    </script>
+  </body>
+</html>

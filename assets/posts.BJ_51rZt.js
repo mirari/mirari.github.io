@@ -1,0 +1,1 @@
+import{E as e,N as t,O as n,b as r,lt as i,q as a}from"./framework.BrU6iPBe.js";import{t as o}from"./YunLayoutWrapper.Gp0qvwvI.js";import{t as s}from"./YunPostList.DKaOH37d.js";import"./chunks/vue-i18n.BMzUdKRh.js";t();var c=n({__name:`posts`,setup(t){return(t,n)=>{let c=s,l=o;return a(),r(l,null,{default:i(()=>[e(c)]),_:1})}}});export{c as default};

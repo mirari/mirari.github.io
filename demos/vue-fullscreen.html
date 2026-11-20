@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>vue-fullscreen 在线演示</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        --demo-bg: light-dark(#fff, #1c1c20);
+        --demo-surface: light-dark(#f9f9f9, #222227);
+        --demo-text: light-dark(#3c3c43, #e8e8ed);
+        --demo-border: light-dark(rgb(20 20 30 / 9%), rgb(255 255 255 / 9%));
+        --demo-accent: #006cd0;
+        --demo-font: system-ui, sans-serif;
+        font-family: var(--demo-font);
+        color: var(--demo-text);
+        background: var(--demo-bg);
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        padding: 20px;
+      }
+      [v-cloak] {
+        display: none;
+      }
+      p {
+        line-height: 1.7;
+      }
+      button {
+        font: inherit;
+        cursor: pointer;
+        border: 1px solid var(--demo-border);
+        border-radius: 6px;
+        padding: 10px 18px;
+        color: inherit;
+        background: transparent;
+      }
+      button:hover {
+        background: var(--demo-surface);
+      }
+      button:focus-visible {
+        outline: 2px solid var(--demo-accent);
+        outline-offset: 4px;
+      }
+      .primary {
+        background: var(--demo-accent);
+        color: #fff;
+        border-color: var(--demo-accent);
+      }
+      .primary:hover {
+        background: var(--demo-accent);
+        filter: brightness(0.92);
+      }
+      .fullscreen-target {
+        height: 360px;
+      }
+      .stage {
+        height: 100%;
+        min-height: 280px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 24px;
+        text-align: center;
+        border: 1px solid var(--demo-border);
+        border-radius: 10px;
+        background: var(--demo-surface);
+      }
+      h1 {
+        font-size: clamp(26px, 5vw, 44px);
+        line-height: 1.25;
+        font-weight: 500;
+        margin: 0 0 24px;
+      }
+      .error {
+        color: light-dark(#b42318, #fda29b);
+      }
+      @media (max-width: 400px) {
+        body {
+          padding: 14px;
+        }
+        .stage {
+          padding: 20px 14px;
+        }
+      }
+    </style>
+    <script>
+      if (window.parent !== window) {
+        try {
+          const blogRoot = window.parent.document.documentElement;
+          const syncTheme = () => {
+            const styles = window.parent.getComputedStyle(blogRoot);
+            const root = document.documentElement;
+            root.style.colorScheme = blogRoot.classList.contains("dark")
+              ? "dark"
+              : "light";
+            const tokens = {
+              "--demo-bg": "--va-c-bg-light",
+              "--demo-surface": "--va-c-bg-soft",
+              "--demo-text": "--va-c-text",
+              "--demo-border": "--yun-surface-line",
+              "--demo-accent": "--va-c-primary-dark",
+              "--demo-font": "--va-font-sans",
+            };
+            for (const [target, source] of Object.entries(tokens)) {
+              const value = styles.getPropertyValue(source).trim();
+              if (value) root.style.setProperty(target, value);
+            }
+          };
+          syncTheme();
+          new MutationObserver(syncTheme).observe(blogRoot, {
+            attributes: true,
+            attributeFilter: ["class", "style"],
+          });
+        } catch {
+          // Standalone and cross-origin embeds follow the system color scheme.
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <p id="load-status" role="status">正在加载演示…</p>
+    <div id="app" v-cloak>
+      <fullscreen
+        v-model="active"
+        class="fullscreen-target"
+        @error="handleError"
+      >
+        <div class="stage">
+          <h1>vue-fullscreen</h1>
+          <button class="primary" @click="toggle">
+            {{ active ? '退出全屏' : '进入全屏' }}
+          </button>
+        </div>
+      </fullscreen>
+      <p v-if="error" class="error" role="alert">{{ error }}</p>
+    </div>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/vue-fullscreen"></script>
+    <script>
+      const status = document.getElementById("load-status");
+      if (!window.Vue || !window.VueFullscreen?.Fullscreen) {
+        status.textContent = "演示依赖加载失败，请刷新页面重试。";
+      } else {
+        Vue.createApp({
+          components: { fullscreen: VueFullscreen.Fullscreen },
+          data: () => ({
+            active: false,
+            error: "",
+          }),
+          methods: {
+            toggle() {
+              this.error = "";
+              this.active = !this.active;
+            },
+            handleError(error) {
+              this.active = false;
+              this.error = error.message || "无法进入全屏，请检查浏览器权限。";
+            },
+          },
+        }).mount("#app");
+        status.remove();
+      }
+    </script>
+  </body>
+</html>

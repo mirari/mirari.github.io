@@ -1,0 +1,1 @@
+import{t as e}from"./YunFooter.BYGEOFBu.js";import{t}from"./YunPostList.DKaOH37d.js";import"./chunks/vue-i18n.BMzUdKRh.js";import{E as n,N as r,S as i,m as a,q as o,t as s,y as c}from"./framework.BrU6iPBe.js";r();var l={},u={class:`mt-37 mb-4`};function d(r,s){let l=t,d=e;return o(),i(a,null,[c(`div`,u,[n(l)]),n(d)],64)}var f=s(l,[[`render`,d]]);export{f as default};

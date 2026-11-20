@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html  lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="/favicon.svg">
+    <script>
+    ;(function () {
+      const prefersDark =
+        window.matchMedia &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches
+      const setting = localStorage.getItem('vueuse-color-scheme') || 'auto'
+      if (setting === 'dark' || (prefersDark && setting !== 'light'))
+        document.documentElement.classList.toggle('dark', true)
+    })()
+    </script>
+  <style type="text/css">
+    :root { color-scheme: light dark; --va-c-bg: #fff; }
+    html.dark { --va-c-bg: #000; }
+    html { background-color: var(--va-c-bg); }
+  </style><style id="valaxy-fouc">body{margin:0;opacity:0!important}</style><noscript><style>body{opacity:1!important}</style></noscript><script>(function foucGuardScript(maxDuration) {
+  var done = 0;
+  var observer = new MutationObserver(check);
+  var timer = maxDuration ? setTimeout(reveal, maxDuration) : void 0;
+  function reveal() {
+    if (done) return;
+    done = 1;
+    observer.disconnect();
+    clearTimeout(timer);
+    document.removeEventListener("load", check, true);
+    removeEventListener("load", reveal);
+    var s = document.getElementById("valaxy-fouc");
+    if (s) s.remove();
+  }
+  function check() {
+    if (!document.body) return;
+    var links = document.head.querySelectorAll('link[rel~="stylesheet"]');
+    for (var i = 0; i < links.length; i++) {
+      var link = links[i];
+      if (!link.disabled && !link.sheet) return;
+    }
+    reveal();
+  }
+  observer.observe(document.documentElement, { childList: true });
+  observer.observe(document.head, {
+    childList: true,
+    subtree: true,
+    attributes: true,
+    attributeFilter: ["media", "rel", "disabled"]
+  });
+  document.addEventListener("load", check, true);
+  addEventListener("load", reveal);
+})(5000)</script>
+    <script>
+    const locale = localStorage.getItem('valaxy-locale') || "zh-CN";
+    document.documentElement.setAttribute('lang', locale);
+    </script>
+    
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3550370964530707"
+          crossorigin="anonymous"></script>
+  <script type="module" crossorigin src="/assets/index.CkBL1DAo.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/rolldown-runtime.BWaJ3C7D.js">
+  <link rel="modulepreload" crossorigin href="/assets/framework.BrU6iPBe.js">
+  <link rel="modulepreload" crossorigin href="/assets/chunks/vue-i18n.BMzUdKRh.js">
+  <link rel="modulepreload" crossorigin href="/assets/chunks/vue-router.B75Qnzes.js">
+  <link rel="modulepreload" crossorigin href="/assets/chunks/dayjs.CmmmqirO.js">
+  <link rel="modulepreload" crossorigin href="/assets/vue.DKb5ZKVl.sB-WHQA5.js">
+  <link rel="modulepreload" crossorigin href="/assets/chunks/pinia.BPqeDpnj.js">
+  <link rel="modulepreload" crossorigin href="/assets/client.BiSFZloA.js">
+  <link rel="modulepreload" crossorigin href="/assets/module.EOU1vHDA.js">
+  <link rel="modulepreload" crossorigin href="/assets/composables.C-ctAlFF.js">
+  <link rel="modulepreload" crossorigin href="/assets/YunFooter.BYGEOFBu.js">
+  <link rel="modulepreload" crossorigin href="/assets/YunLayoutWrapper.Gp0qvwvI.js">
+  <link rel="modulepreload" crossorigin href="/assets/YunOverlay.ByxbNvu6.js">
+  <link rel="modulepreload" crossorigin href="/assets/YunAdBoard.CUzhkzkz.js">
+  <link rel="modulepreload" crossorigin href="/assets/YunCard.DGb064D4.js">
+  <link rel="modulepreload" crossorigin href="/assets/sanitize.DgVZ_sV9.js">
+  <link rel="modulepreload" crossorigin href="/assets/AppLink.DEA4vflp.js">
+  <link rel="modulepreload" crossorigin href="/assets/chunks/@vueuse/motion.CAF3gSmk.js">
+  <link rel="modulepreload" crossorigin href="/assets/chunks/nprogress.B1osA4lt.js">
+  <link rel="stylesheet" crossorigin href="/assets/style.BtSOcRJ5.css">
+<link rel="preload" href="/assets/floor-plan.CHHNkvYV.png" as="image">
+<link rel="preload" href="/assets/1.Dd57CgBk.png" as="image">
+<link rel="preload" href="/assets/thermostat-fault.C0yuzDSw.webp" as="image">
+<link rel="preload" href="/assets/bg-img.kXdNMxcF.jpg" as="image">
+<link rel="preload" href="/assets/sidebar-bg-img.mp54gEws.webp" as="image">
+<link rel="modulepreload" crossorigin href="/assets/AppLink.DEA4vflp.js">
+<link rel="modulepreload" crossorigin href="/assets/404.1nf37UPv.js">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mirari的小站</title>
+<meta property="og:locale:alternate" content="en">
+<meta name="description" content="严重拖延症">
+<meta property="og:description" content="严重拖延症">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:site_name" content="Mirari的小站">
+<meta property="og:title" content="Mirari的小站">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mirari.cc/404">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:description" content="严重拖延症">
+<meta name="twitter:title" content="Mirari的小站">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta name="generator" content="Valaxy 1.4.0">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#fff">
+<meta name="msapplication-TileColor" content="#fff">
+</head>
+<body>
+  <div id="app"><!--[--><!--[--><!--[--><!--v-if--><div class="yun-page-header-gradient"></div><div class="yun-nav-menu z-$yun-z-nav-menu fixed bg-transparent is-glass" data-v-a4fc5800><!--  --><div class="inline-flex justify-start items-center flex-1" data-v-a4fc5800><button type="button" class="vt-hamburger menu-btn sidebar-toggle leading-4 size-12 lg:hidden!" aria-label="mobile navigation" aria-expanded="false" inline-flex cursor="pointer" hover="bg-white/80 dark:bg-black/80" z="$yun-z-menu-btn" data-v-a4fc5800><span class="vt-hamburger-container"><span class="vt-hamburger-top"></span><span class="vt-hamburger-middle"></span><span class="vt-hamburger-bottom"></span></span></button><a href="/" class="va-link yun-nav-menu-item inline-flex-center cursor-pointer z-$yun-z-nav-menu" aria-label="首页" title="首页" data-v-a4fc5800 data-v-2aae07d1><!--[--><div class="size-5 i-ri-home-4-line" aria-hidden="true" data-v-2aae07d1></div><!--]--></a><div class="hidden lg:contents" data-v-a4fc5800><!--[--><a href="/posts/" class="va-link yun-nav-menu-item inline-flex-center cursor-pointer z-$yun-z-nav-menu" aria-label="文章" title="文章" data-v-a4fc5800 data-v-2aae07d1><!--[--><div class="size-5 i-ri-article-line" aria-hidden="true" data-v-2aae07d1></div><!--]--></a><a href="/sites/" class="va-link yun-nav-menu-item inline-flex-center cursor-pointer z-$yun-z-nav-menu" aria-label="站点地图" title="站点地图" data-v-a4fc5800 data-v-2aae07d1><!--[--><div class="size-5 i-ri-planet-line" aria-hidden="true" data-v-2aae07d1></div><!--]--></a><!--]--></div></div><div class="flex flex-1 flex-center" data-v-a4fc5800><div flex="~ center col h-full" class="nav-menu-title-container cursor-pointer" data-v-a4fc5800><!----><span class="font-light truncate">Mirari的小站</span></div></div><div class="inline-flex-center justify-end items-center flex-1" data-v-a4fc5800><!-- <template v-if="!app.isMobile && themeConfig.nav">
+        <template v-for="item in themeConfig.nav" :key="item.text">
+          <AppLink
+            v-if="'link' in item"
+            :to="item.link"
+            class="menu-btn inline-flex-center p-2 transition text-$va-c-text"
+            inline-flex cursor="pointer"
+            hover="bg-white/80 dark:bg-black/80"
+            z="$yun-z-menu-btn"
+          >
+            {{ item.text }}
+          </AppLink>
+          <template v-else-if="'items' in item" />
+        </template>
+      </template> --><button class="yun-icon-btn hidden sm:inline-flex" title="切换语言" style="color:var(--va-c-text);" data-v-a4fc5800><div i-ri-translate class="transition transform"></div></button><button type="button" class="yun-icon-btn yun-toggle-dark" title="切换深色模式" aria-label="切换深色模式" data-v-a4fc5800><div i="ri-sun-line dark:ri-moon-line"></div></button><!--[--><button class="yun-search-btn yun-icon-btn yun-search-action popup-trigger" title="搜索"><div i-ri-search-line aria-hidden="true"></div></button><!----><!--]--></div></div><!----><!--v-if--><!----><!--[--><div class="yun-bg"></div><!--]--><!----><button type="button" class="back-to-top yun-icon-btn" aria-label="回到顶部" title="回到顶部" tabindex="-1" aria-hidden="true" style="--yun-back-top-progress:0deg;"><div class="back-to-top-arrow" i-ri-arrow-up-s-line aria-hidden="true"></div></button><!--]--><!--[--><!--]--><!----><!--]--><main class="yun-404 va-main w-full min-h-screen" text="center" flex="~ col" justify="center" items="center" data-v-df451e56><div class="yun-404-line top" data-v-df451e56></div><h1 class="yun-404-code" aria-label="404" data-v-df451e56><!--[--><span class="yun-404-char" style="--char-index:0;" aria-hidden="true" data-v-df451e56>4</span><span class="yun-404-char" style="--char-index:1;" aria-hidden="true" data-v-df451e56>0</span><span class="yun-404-char" style="--char-index:2;" aria-hidden="true" data-v-df451e56>4</span><!--]--></h1><div class="yun-404-line bottom" data-v-df451e56></div><p class="yun-404-title yun-404-fade" data-v-df451e56>页面不存在</p><code class="yun-404-path yun-404-fade" data-v-df451e56></code><div class="yun-404-actions yun-404-fade" flex="~ wrap" justify="center" items="center" gap="3" data-v-df451e56><button class="btn rounded-full" p="x-6 y-2" text="sm" title="返回" data-v-df451e56>返回</button><!-- a 元素自带 text 属性，不能用 attributify 的 text="sm" --><!----></div></main><!--]--></div><script>window.__INITIAL_STATE__='{"pinia":{"yun-app":{"bannerAnimationDone":false},"app":{"showLoading":true}}}'</script><script type="application/ld+json" data-hid="schema-org-graph">{"@context":"https://schema.org","@graph":[{"@id":"https://mirari.cc/#identity","@type":"Person","email":"clover4@gmail.com","name":"mirari","url":"https://mirari.cc/","image":{"@id":"https://mirari.cc/#/schema/image/1"},"sameAs":["https://github.com/mirari","https://www.travellings.cn/go.html"]},{"@id":"https://mirari.cc/#website","@type":"WebSite","description":"严重拖延症","inLanguage":"zh-CN","name":"Mirari的小站","url":"https://mirari.cc/","publisher":{"@id":"https://mirari.cc/#identity"}},{"@id":"https://mirari.cc/#webpage","@type":"WebPage","dateModified":"2026-11-20T09:05:19.000Z","datePublished":"2026-11-20T09:05:19.000Z","description":"严重拖延症","name":"Mirari的小站","url":"https://mirari.cc/404","about":{"@id":"https://mirari.cc/#identity"},"isPartOf":{"@id":"https://mirari.cc/#website"},"potentialAction":[{"@type":"ReadAction","target":["https://mirari.cc/"]}]},{"@id":"https://mirari.cc/#/schema/image/1","@type":"ImageObject","contentUrl":"https://mirari.cc/avatar.jpg","inLanguage":"zh-CN","url":"https://mirari.cc/avatar.jpg"}]}</script>
+  <div id="valaxy-teleports"></div>
+  
+
+</body>
+</html>

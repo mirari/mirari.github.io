@@ -1,0 +1,1 @@
+import"./client.BiSFZloA.js";import"./index.CkBL1DAo.js";var e=`/assets/none.DLM1AMsD.jpg`;function t(t,n=e){let r=t.target;r.setAttribute(`data-src`,r.src),r.src=n}export{t};
